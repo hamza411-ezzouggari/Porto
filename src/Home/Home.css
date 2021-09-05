@@ -16,7 +16,7 @@ a {
   justify-content: center;
 }
 .Navbar-general > nav {
-  width: 98%;
+  width: 96%;
 }
 .img-logo {
   display: flex;
@@ -66,4 +66,9 @@ a {
   background: linear-gradient(to bottom, #e8edec, #d2d1d3);
   box-shadow: 0px 3px 20px 0px black;
   transform: scale(1.2);
+}
+.element-left {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40rem;
 }

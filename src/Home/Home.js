@@ -1,6 +1,9 @@
 import React from "react";
 import "./Home.css";
 import logo from "./image Navbar/logo_ecomblack_lg.png";
+import loope from "./image Navbar/loupe.png";
+import user from "./image Navbar/user.png";
+import shopping from "./image Navbar/shopping-bag.png";
 const Home = () => {
   return (
     <div className="content-hoome">
@@ -17,6 +20,17 @@ const Home = () => {
             <li>FEATURES</li>
             <li>BLOG</li>
             <li>BUY PORTO!</li>
+            <div className="element-left">
+              <li>
+                <img src={loope} className="img-loope" alt="images" />
+              </li>
+              <li>
+                <img src={user} className="img-user" alt="images" />
+              </li>
+              <li>
+                <img src={shopping} className="img-user" alt="images" />
+              </li>
+            </div>
           </ul>
         </nav>
       </div>
