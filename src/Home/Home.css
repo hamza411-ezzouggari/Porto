@@ -52,7 +52,7 @@ a {
   content: " ";
   position: absolute;
   top: 0;
-  left: 0;
+  left: 4;
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -71,4 +71,16 @@ a {
   display: flex;
   flex-direction: row;
   margin-left: 40rem;
+}
+
+.dropdown__arrow {
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  position: absolute;
+  top: 50%;
+  right: -0.1rem;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg) translateY(-50%);
+  transform-origin: right;
 }

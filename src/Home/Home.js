@@ -14,10 +14,18 @@ const Home = () => {
               <img src={logo} className="img-logo" alt="images" />
             </div>
             <li>HOME</li>
-            <li>CATEGORIES</li>
-            <li>PRODUCTS</li>
-            <li>PAGES</li>
-            <li>FEATURES</li>
+            <li>
+              CATEGORIES <div class="dropdown__arrow"></div>
+            </li>
+            <li>
+              PRODUCTS <div class="dropdown__arrow"></div>
+            </li>
+            <li>
+              PAGES <div class="dropdown__arrow"></div>
+            </li>
+            <li>
+              FEATURES <div class="dropdown__arrow"></div>
+            </li>
             <li>BLOG</li>
             <li>BUY PORTO!</li>
             <div className="element-left">
