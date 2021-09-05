@@ -84,3 +84,27 @@ a {
   transform: rotate(45deg) translateY(-50%);
   transform-origin: right;
 }
+.img-loope {
+  display: flex;
+  justify-content: center;
+}
+.img-user {
+  display: flex;
+  justify-content: center;
+}
+.img-user {
+  display: flex;
+  justify-content: center;
+}
+.HOME {
+  display: flex;
+  justify-content: center;
+}
+.BLOG {
+  display: flex;
+  justify-content: center;
+}
+.BUY {
+  display: flex;
+  justify-content: center;
+}

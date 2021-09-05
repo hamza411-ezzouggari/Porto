@@ -13,7 +13,7 @@ const Home = () => {
             <div className="logo-navbar">
               <img src={logo} className="img-logo" alt="images" />
             </div>
-            <li>HOME</li>
+            <li className="HOME">HOME</li>
             <li>
               CATEGORIES <div class="dropdown__arrow"></div>
             </li>
@@ -26,17 +26,17 @@ const Home = () => {
             <li>
               FEATURES <div class="dropdown__arrow"></div>
             </li>
-            <li>BLOG</li>
-            <li>BUY PORTO!</li>
+            <li className="BLOG">BLOG</li>
+            <li className="BUY">BUY PORTO !</li>
             <div className="element-left">
-              <li>
-                <img src={loope} className="img-loope" alt="images" />
+              <li className="img-loope">
+                <img src={loope} alt="images" />
               </li>
-              <li>
-                <img src={user} className="img-user" alt="images" />
+              <li className="img-user">
+                <img src={user} alt="images" />
               </li>
-              <li>
-                <img src={shopping} className="img-user" alt="images" />
+              <li className="img-user">
+                <img src={shopping} alt="images" />
               </li>
             </div>
           </ul>
