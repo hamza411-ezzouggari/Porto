@@ -17,8 +17,24 @@ const Home = () => {
             <li>
               CATEGORIES <div class="dropdown__arrow"></div>
             </li>
-            <li>
+            <li className="nav">
               PRODUCTS <div class="dropdown__arrow"></div>
+              <div className="menu-sub1">
+                <ul className="menu-sub">
+                  <li className="li-1">
+                    <a href="#">hamza1</a>
+                  </li>
+                  <li className="li-1">
+                    <a href="#">hamza1</a>
+                  </li>
+                  <li className="li-1">
+                    <a href="#">hamza1</a>
+                  </li>
+                  <li className="li-1">
+                    <a href="#">hamza1</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
               PAGES <div class="dropdown__arrow"></div>
