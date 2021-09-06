@@ -18,21 +18,41 @@ const Home = () => {
               CATEGORIES <div class="dropdown__arrow"></div>
             </li>
             <li className="nav">
-              PRODUCTS <div class="dropdown__arrow"></div>
+              PRODUCTS
+              <div class="dropdown__arrow"></div>
               <div className="menu-sub1">
                 <ul className="menu-sub">
-                  <li className="li-1">
-                    <a href="#">hamza1</a>
-                  </li>
-                  <li className="li-1">
-                    <a href="#">hamza1</a>
-                  </li>
-                  <li className="li-1">
-                    <a href="#">hamza1</a>
-                  </li>
-                  <li className="li-1">
-                    <a href="#">hamza1</a>
-                  </li>
+                  <div className="product-left">
+                    <h4 className="title-product">PRODUCT PAGES</h4>
+                    <li className="li-1">
+                      <a href="#">SIMPLE PRODUCT</a>
+                    </li>
+                    <li className="li-1">
+                      <a href="#">CONFIGURABLE PRODUCT</a>
+                    </li>
+                    <li className="li-1">
+                      <a href="#">BUNDLE PRODUCT</a>
+                    </li>
+                    <li className="li-1">
+                      <a href="#">GROUPED PRODUCT</a>
+                    </li>
+                    <li className="li-1">
+                      <a href="#">DOWNLOADABLE PRODUCT</a>
+                    </li>
+                    <li className="li-1">
+                      <a href="#">ADDTOCART STICKY</a>
+                    </li>
+                    <li className="li-1">
+                      <a href="#">VERTICAL TABS</a>
+                    </li>
+                    <li className="li-1">
+                      <a href="#">ACCORDION TABS</a>
+                    </li>
+                    <li className="li-1">
+                      <a href="#">STICKY TABS</a>
+                    </li>
+                  </div>
+                  <div className="product-right"></div>
                 </ul>
               </div>
             </li>
