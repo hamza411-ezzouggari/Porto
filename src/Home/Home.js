@@ -5,6 +5,7 @@ import loope from "./image Navbar/loupe.png";
 import user from "./image Navbar/user.png";
 import shopping from "./image Navbar/shopping-bag.png";
 import shop1 from "./image Navbar/shop1_megamenu.jpg";
+import banner from "./image Navbar/menu-banner.jpg";
 const Home = () => {
   return (
     <div className="content-hoome">
@@ -72,8 +73,8 @@ const Home = () => {
                         <a href="#">8 COLUMNS PRODUCTS</a>
                       </li>
                     </div>
-                    <div className="image-product">
-                      <img src={shop1} className="shop1-designe" alt="images" />
+                    <div className="image-banner">
+                      <img src={banner} className="shop1-banner" alt="images" />
                     </div>
                   </div>
                 </ul>
