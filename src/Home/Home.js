@@ -16,7 +16,68 @@ const Home = () => {
             </div>
             <li className="HOME">HOME</li>
             <li>
-              CATEGORIES <div class="dropdown__arrow"></div>
+              CATEGORIES
+              <div class="dropdown__arrow"></div>
+              <div className="menu-sub1">
+                <ul className="menu-sub">
+                  <div className="content-menu">
+                    <div className="product-left">
+                      <h4 className="title-product">VARIATION 1</h4>
+                      <li className="li-1">
+                        <a href="#">FULLWIDTH BANNER</a>
+                      </li>
+                      <li className="li-1">
+                        <a href="#">BOXED IMAGE BANNER</a>
+                      </li>
+                      <li className="li-1">
+                        <a href="#">BOXED SLIDER BANNER</a>
+                      </li>
+                      <li className="li-1">
+                        <a href="#">LEFT SIDEBAR</a>
+                      </li>
+                      <li className="li-1">
+                        <a href="#">RIGHT SIDEBAR</a>
+                      </li>
+                      <li className="li-1">
+                        <a href="#">PRODUCT FLEX GRID</a>
+                      </li>
+                      <li className="li-1">
+                        <a href="#">PRODUCT LIST ITEM TYPES</a>
+                      </li>
+                    </div>
+                    <div className="product-right">
+                      <h4 className="title-product">VARIATIONS 2</h4>
+                      <li className="li-1">
+                        <a href="#">AJAX INFINITE SCROLL</a>
+                        <span className="cat-label">
+                          <a>* New *</a>
+                        </span>
+                      </li>
+                      <li className="li-1">
+                        <a href="#">3 COLUMNS PRODUCTS</a>
+                      </li>
+                      <li className="li-1">
+                        <a href="#">4 COLUMNS PRODUCTS</a>
+                      </li>
+                      <li className="li-1">
+                        <a href="#">5 COLUMNS PRODUCTS</a>
+                      </li>
+                      <li className="li-1">
+                        <a href="#">6 COLUMNS PRODUCTS</a>
+                      </li>
+                      <li className="li-1">
+                        <a href="#">7 COLUMNS PRODUCTS</a>
+                      </li>
+                      <li className="li-1">
+                        <a href="#">8 COLUMNS PRODUCTS</a>
+                      </li>
+                    </div>
+                    <div className="image-product">
+                      <img src={shop1} className="shop1-designe" alt="images" />
+                    </div>
+                  </div>
+                </ul>
+              </div>
             </li>
             <li className="nav">
               PRODUCTS
