@@ -201,3 +201,7 @@ span > a {
   width: 15rem;
   height: 18rem;
 }
+.li-2 > a:hover {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}

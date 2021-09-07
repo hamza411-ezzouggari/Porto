@@ -167,9 +167,52 @@ const Home = () => {
             </li>
             <li>
               PAGES <div class="dropdown__arrow"></div>
+              <div className="menu-sub1">
+                <ul className="menu-sub">
+                  <div className="content-menu">
+                    <div className="product-left">
+                      <li className="li-2">
+                        <a href="#">ABOUT US</a>
+                      </li>
+                      <li className="li-2">
+                        <a href="#">CONTACT US</a>
+                      </li>
+                      <li className="li-2">
+                        <a href="#">BLOG</a>
+                      </li>
+                      <li className="li-2">
+                        <a href="#">POST</a>
+                      </li>
+                      <li className="li-2">
+                        <a href="#">SHOPPING CART</a>
+                      </li>
+                      <li className="li-2">
+                        <a href="#">CHECKOUT</a>
+                      </li>
+                      <li className="li-2">
+                        <a href="#">MY ACCOUNT</a>
+                      </li>
+                    </div>
+                  </div>
+                </ul>
+              </div>
             </li>
             <li>
               FEATURES <div class="dropdown__arrow"></div>
+              <div className="menu-sub1">
+                <ul className="menu-sub">
+                  <div className="content-menu">
+                    <div className="product-left">
+                      <li className="li-2">
+                        <a href="#">HEADER TYPES</a>
+                      </li>
+                      <li className="li-2">
+                        <a href="#">FOOTER TYPES</a>
+                      </li>
+                    </div>
+                  </div>
+                </ul>
+              </div>
             </li>
             <li className="BLOG">BLOG</li>
             <li className="BUY">BUY PORTO !</li>
