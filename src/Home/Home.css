@@ -11,6 +11,15 @@ a {
   position: relative;
   color: black;
 }
+a:hover::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 25%;
+  bottom: 0;
+  border: 1px solid black;
+}
 .Navbar-general {
   display: flex;
   justify-content: center;
@@ -157,4 +166,28 @@ nav li:hover .menu-sub {
   display: flex;
   justify-content: flex-start;
   font-weight: 100;
+}
+.cat-label {
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  background-color: #009e359c;
+  text-transform: uppercase;
+  font: inherit;
+  font-size: 9px;
+  padding: 2px;
+  border-radius: 0;
+  line-height: center;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+span > a {
+  color: aliceblue;
+}
+.shop1-designe {
+  display: flex;
+  width: 12rem;
+  height: 100%;
 }

@@ -4,6 +4,7 @@ import logo from "./image Navbar/logo_ecomblack_lg.png";
 import loope from "./image Navbar/loupe.png";
 import user from "./image Navbar/user.png";
 import shopping from "./image Navbar/shopping-bag.png";
+import shop1 from "./image Navbar/shop1_megamenu.jpg";
 const Home = () => {
   return (
     <div className="content-hoome">
@@ -54,31 +55,49 @@ const Home = () => {
                       </li>
                     </div>
                     <div className="product-right">
-                      <h4 className="title-product">PRODUCT PAGES</h4>
+                      <h4 className="title-product">PRODUCT LAYOUT</h4>
                       <li className="li-1">
-                        <a href="#">SIMPLE PRODUCT</a>
+                        <a href="#">DEFAULT LAYOUT</a>
                       </li>
                       <li className="li-1">
-                        <a href="#">CONFIGURABLE PRODUCT</a>
+                        <a href="#">EXTENDED LAYOUT</a>
+                        <span className="cat-label">
+                          <a>* New *</a>
+                        </span>
                       </li>
                       <li className="li-1">
-                        <a href="#">BUNDLE PRODUCT</a>
+                        <a href="#">FULL WIDTH LAYOUT</a>
+                        <span className="cat-label">
+                          <a>* New *</a>
+                        </span>
                       </li>
                       <li className="li-1">
-                        <a href="#">GROUPED PRODUCT</a>
+                        <a href="#">GRID IMAGED LAYOUT</a>
+                        <span className="cat-label">
+                          <a>* New *</a>
+                        </span>
                       </li>
                       <li className="li-1">
-                        <a href="#">DOWNLOADABLE PRODUCT</a>
+                        <a href="#">STICKY RIGHT SIDE INFO</a>
+                        <span className="cat-label">
+                          <a>* New *</a>
+                        </span>
                       </li>
                       <li className="li-1">
-                        <a href="#">ADDTOCART STICKY</a>
+                        <a href="#">VERTICAL LAYOUT</a>
+                        <span className="cat-label">
+                          <a>* New *</a>
+                        </span>
                       </li>
                       <li className="li-1">
-                        <a href="#">VERTICAL TABS</a>
+                        <a href="#">WITH SIDEBAR</a>
                       </li>
                       <li className="li-1">
-                        <a href="#">ACCORDION TABS</a>
+                        <a href="#">WITHOUT SIDEBAR</a>
                       </li>
+                    </div>
+                    <div className="image-product">
+                      <img src={shop1} className="shop1-designe" alt="images" />
                     </div>
                   </div>
                 </ul>
