@@ -6,6 +6,8 @@ import user from "./image Navbar/user.png";
 import shopping from "./image Navbar/shopping-bag.png";
 import shop1 from "./image Navbar/shop1_megamenu.jpg";
 import banner from "./image Navbar/menu-banner.jpg";
+import Slider from "react-animated-slider";
+import "react-animated-slider/build/horizontal.css";
 const Home = () => {
   return (
     <div className="content-hoome">
@@ -230,6 +232,22 @@ const Home = () => {
           </ul>
         </nav>
       </div>
+      <Slider classNames={verticalCss} direction="vertical">
+        {content.map((item, index) => (
+          <div
+            key={index}
+            style={{
+              background: `url('${item.image}') no-repeat center center`,
+            }}
+          >
+            <div className="center">
+              <h1>{item.title}</h1>
+              <p>{item.description}</p>
+              <button>{item.button}</button>
+            </div>
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };
