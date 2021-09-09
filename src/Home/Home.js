@@ -247,7 +247,7 @@ class Home extends React.Component {
         <div className="AutoplaySlider-main">
           <AutoplaySlider
             className="AutoplaySlider-secend"
-            play={true}
+            play={false}
             cancelOnInteraction={true}
             interval={10000}
             bullets={false}
