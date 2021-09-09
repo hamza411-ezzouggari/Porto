@@ -6,12 +6,7 @@ import user from "./image Navbar/user.png";
 import shopping from "./image Navbar/shopping-bag.png";
 import shop1 from "./image Navbar/shop1_megamenu.jpg";
 import banner from "./image Navbar/menu-banner.jpg";
-import Carousel from "react-simply-carousel";
-import Item from "./Item";
-
-const breakPoints = [{ width: 1 }, { width: 1 }];
 const HOME = () => {
-  const [items] = useState([1, 2]);
   return (
     <div className="content-hoome">
       <div className="Navbar-general">
@@ -235,18 +230,7 @@ const HOME = () => {
           </ul>
         </nav>
       </div>
-      <div className="Carousel">
-        <div className="App">
-          <hr className="seperator" />
-          <div className="carousel-wrapper">
-            <Carousel breakPoints={breakPoints}>
-              {items.map((item) => (
-                <Item key={item}>{item}</Item>
-              ))}
-            </Carousel>
-          </div>
-        </div>
-      </div>
+      <div></div>
     </div>
   );
 };
