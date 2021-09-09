@@ -10,6 +10,7 @@ import AwesomeSliderStyles from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import "react-awesome-slider/dist/styles.css";
 import shop3 from "./shop3_banner1.jpg";
+import chop4 from "./shop3_banner2.jpg";
 class Home extends React.Component {
   render() {
     const AutoplaySlider = withAutoplay(AwesomeSliderStyles);
@@ -256,7 +257,7 @@ class Home extends React.Component {
             <div className="chop3">
               <img src={shop3} alt="images" id="img5" />
             </div>
-            <div data-src={shop3} />
+            <div data-src={chop4} id="img5" />
           </AutoplaySlider>
         </div>
       </div>
