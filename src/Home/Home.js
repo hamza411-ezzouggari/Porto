@@ -301,7 +301,8 @@ class Home extends React.Component {
                 <div className="btn-container-h5">
                   <button calssName="btn-modern">
                     <font>
-                      Shop Now <img src={right} className="logo-right" />
+                      Shop Now{" "}
+                      <img src={right} alt="images" className="logo-right" />
                     </font>
                   </button>
                 </div>
