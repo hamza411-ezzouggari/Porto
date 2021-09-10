@@ -447,9 +447,13 @@ span > a {
 .btn-container-h5 > button > font {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-.logo-rigth {
+.btn-container-h5 > button {
+  border-color: #a0a0a0;
+}
+.logo-right {
   margin: 0px 0px 0px 1rem;
 }
