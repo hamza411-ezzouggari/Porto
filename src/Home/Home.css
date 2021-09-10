@@ -259,7 +259,7 @@ span > a {
   -webkit-text-size-adjust: 100%;
 }
 .porto-ibanner-layer > h4 {
-  font-size: 6.3em;
+  font-size: 6em;
   line-height: 1;
   text-align: left;
   margin-bottom: 1.5rem !important;
@@ -321,4 +321,90 @@ span > a {
   cursor: pointer;
   align-items: flex-start;
   -webkit-text-size-adjust: 100%;
+}
+
+.porto-ibanner-layer-2 {
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 50rem;
+  box-sizing: inherit;
+  z-index: 10;
+  text-align: left;
+  font-size: 1rem;
+}
+.porto-ibanner-layer-2 > h2 {
+  font-size: 3.4375em;
+  line-height: 1;
+  font-family: "Segoe Script", "Savoye LET";
+  text-align: left;
+  margin-bottom: 0.25rem !important;
+  letter-spacing: -0.3px;
+  color: #302e2a;
+  margin: 0 0 32px 0;
+}
+.porto-ibanner-layer-2 > h3 {
+  font-size: 7em;
+  line-height: 1;
+  position: relative;
+  padding-left: 0.3em;
+  text-transform: uppercase !important;
+  text-align: left;
+  margin-bottom: 0 !important;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+}
+.porto-ibanner-layer-2 > h3 > small {
+  font-size: 25%;
+  font-weight: 500;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: 50% 50%;
+  position: absolute;
+  left: -1em;
+  top: 50%;
+  color: inherit;
+  font-family: inherit;
+}
+.divider-small-align-left > hr {
+  background-color: #222529;
+  height: 5px;
+  background: #222529;
+  width: 50px;
+  display: flex;
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 24px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.porto-ibanner-layer-2 > h5 {
+  font-size: 1.25em;
+  text-transform: uppercase !important;
+  display: inline-block !important;
+  text-align: left;
+  margin-right: 3rem !important;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  color: #222329;
+  margin: 0 0 14px 0;
+}
+.porto-ibanner-layer-2 > h5 > em > font {
+  vertical-align: inherit;
+  box-sizing: inherit;
+  font-size: 2em;
+  font-style: normal;
+  font-family: inherit;
+  vertical-align: text-bottom;
+  text-transform: uppercase !important;
+  text-align: left;
+  font-weight: 700;
+  line-height: 20px;
+  color: #222329;
 }

@@ -272,7 +272,7 @@ class Home extends React.Component {
                 <h5>Starting at</h5>
                 <h6>
                   <sup>$</sup>
-                  "199"
+                  199
                   <sup>99</sup>
                 </h6>
                 <div className="btn-container">
@@ -280,7 +280,25 @@ class Home extends React.Component {
                 </div>
               </div>
             </div>
-            <div data-src={chop4} id="img5" />
+            <div className="porto-ibanner-layer-2" data-src={chop4} id="img5">
+              <div className="porto-ibanner-layer-2">
+                <h2>New Season Hats</h2>
+                <h3>
+                  <small>UP TO</small>
+                  20% OFF
+                </h3>
+                <div className="divider-small-align-left">
+                  <hr />
+                </div>
+                <h5>
+                  <font className="vertical-align">Starting AT $</font>
+                  <em>
+                    <font>19</font>
+                  </em>
+                  <font>99</font>
+                </h5>
+              </div>
+            </div>
           </AutoplaySlider>
         </div>
       </div>
