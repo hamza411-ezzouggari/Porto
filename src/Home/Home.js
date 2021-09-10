@@ -6,14 +6,25 @@ import user from "./image Navbar/user.png";
 import shopping from "./image Navbar/shopping-bag.png";
 import shop1 from "./image Navbar/shop1_megamenu.jpg";
 import banner from "./image Navbar/menu-banner.jpg";
-import AwesomeSliderStyles from "react-awesome-slider";
-import withAutoplay from "react-awesome-slider/dist/autoplay";
-import "react-awesome-slider/dist/styles.css";
+import AutoplaySlider from "react-awesome-slider";
+import AwesomeSliderStyles from "react-awesome-slider/dist/styles.css";
 import shop3 from "./shop3_banner1.jpg";
 import chop4 from "./shop3_banner2.jpg";
 class Home extends React.Component {
   render() {
-    const AutoplaySlider = withAutoplay(AwesomeSliderStyles);
+    const Slider = (
+      <AutoplaySlider
+        play={true}
+        cancelOnInteraction={false}
+        interval={6000}
+        cssModule={AwesomeSliderStyles}
+      >
+        <div data-src="/path/to/image-0.jpg" />
+        <div data-src="/path/to/image-1.jpg" />
+        <div data-src="/path/to/image-2.jpg" />
+        <div data-src="/path/to/image-3.jpg" />
+      </AutoplaySlider>
+    );
     return (
       <div className="content-hoome">
         <div className="Navbar-general">
@@ -248,14 +259,14 @@ class Home extends React.Component {
         <div className="AutoplaySlider-main">
           <AutoplaySlider
             className="AutoplaySlider-secend"
-            play={false}
+            play={true}
             cancelOnInteraction={true}
-            interval={10000}
+            interval={1000}
             bullets={false}
             organicArrows={true}
           >
             <div className="chop3">
-              <img src={shop3} alt="images" id="img5" />
+              <img src={shop3} alt="images" className="img5" />
             </div>
             <div data-src={chop4} id="img5" />
           </AutoplaySlider>

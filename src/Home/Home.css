@@ -27,14 +27,14 @@ a:hover::after {
   justify-content: center;
 }
 .Navbar-general > nav {
-  width: 96%;
+  width: 98%;
 }
 .img-logo {
   display: flex;
   align-items: center;
   align-content: center;
   width: 12vh;
-  margin: 1ch 2rem 0px 0px;
+  margin: 1ch 3rem 0px 1px;
 }
 .menu-bar {
   border-radius: 50px;
@@ -225,10 +225,8 @@ span > a {
 .AutoplaySlider-secend {
   position: absolute;
   z-index: 1;
-  height: 100%;
 }
-#img5 {
-  margin: 0px 0px 1px -1px;
-  height: flex !important;
-  width: flex;
+.img5 {
+  height: 100%;
+  width: 100%;
 }
