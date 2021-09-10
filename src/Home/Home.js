@@ -10,6 +10,8 @@ import AutoplaySlider from "react-awesome-slider";
 import AwesomeSliderStyles from "react-awesome-slider/dist/styles.css";
 import shop3 from "./shop3_banner1.jpg";
 import chop4 from "./shop3_banner2.jpg";
+import "semantic-ui-css/semantic.min.css";
+import right from "./right.png";
 class Home extends React.Component {
   render() {
     const Slider = (
@@ -297,6 +299,13 @@ class Home extends React.Component {
                   </em>
                   <font>99</font>
                 </h5>
+                <div className="btn-container-h5">
+                  <button calssName="btn-modern">
+                    <font>
+                      Shop Now <img src={right} className="logo-rigth" />
+                    </font>
+                  </button>
+                </div>
               </div>
             </div>
           </AutoplaySlider>
