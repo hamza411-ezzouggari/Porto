@@ -267,6 +267,17 @@ class Home extends React.Component {
           >
             <div className="chop3">
               <img src={shop3} alt="images" className="img5" />
+              <div className="porto-ibanner-layer">
+                <h2>Winter Fashion Trends</h2>
+                <h3>get up to 30% off</h3>
+                <h4>on Jackets</h4>
+                <h5>Starting at</h5>
+                <h6>
+                  <sup>$</sup>
+                  "199"
+                  <sup>99</sup>
+                </h6>
+              </div>
             </div>
             <div data-src={chop4} id="img5" />
           </AutoplaySlider>

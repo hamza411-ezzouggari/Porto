@@ -230,3 +230,69 @@ span > a {
   height: 100%;
   width: 100%;
 }
+
+.porto-ibanner-layer {
+  left: 15%;
+  top: 60%;
+  z-index: 3;
+  transform: translateY(-90%);
+  position: absolute;
+}
+.porto-ibanner-layer > h2 {
+  font-size: 2.5em;
+  color: #777777;
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Segoe Script", "Savoye LET";
+  text-align: left;
+  margin-bottom: 1rem !important;
+}
+.porto-ibanner-layer > h3 {
+  font-size: 2.5em;
+  line-height: 1;
+  text-transform: uppercase !important;
+  text-align: left;
+  letter-spacing: 0.185em;
+  margin-bottom: 0 !important;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  -webkit-text-size-adjust: 100%;
+}
+.porto-ibanner-layer > h4 {
+  font-size: 6.3em;
+  line-height: 1;
+  text-align: left;
+  margin-bottom: 1.5rem !important;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  letter-spacing: normal;
+  box-sizing: inherit;
+}
+.porto-ibanner-layer > h5 {
+  font-size: 1.4em;
+  text-transform: uppercase !important;
+  float: left !important;
+  padding-top: 10px !important;
+  text-align: left;
+  margin-right: 1rem !important;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  color: #222329;
+  margin: 0 0 14px 0;
+  letter-spacing: normal;
+}
+.porto-ibanner-layer > h6 {
+  font-size: 2.25em;
+  line-height: 1;
+  margin: 0px 0px 0px 0px;
+  position: relative;
+  display: inline-block;
+  transform: none;
+  font-weight: 800;
+  text-align: left;
+  font-family: Poppins, sans-serif;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  transform: rotate(-2deg);
+}
