@@ -21,8 +21,6 @@ class Home extends React.Component {
       >
         <div data-src="/path/to/image-0.jpg" />
         <div data-src="/path/to/image-1.jpg" />
-        <div data-src="/path/to/image-2.jpg" />
-        <div data-src="/path/to/image-3.jpg" />
       </AutoplaySlider>
     );
     return (
@@ -277,6 +275,9 @@ class Home extends React.Component {
                   "199"
                   <sup>99</sup>
                 </h6>
+                <div className="btn-container">
+                  <button className="btn-dark">Shop Now</button>
+                </div>
               </div>
             </div>
             <div data-src={chop4} id="img5" />
