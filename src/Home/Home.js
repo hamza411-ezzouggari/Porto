@@ -310,6 +310,7 @@ class Home extends React.Component {
             </div>
           </AutoplaySlider>
         </div>
+        <div className="back-up"></div>
       </div>
     );
   }
