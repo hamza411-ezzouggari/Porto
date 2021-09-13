@@ -326,7 +326,11 @@ class Home extends React.Component {
                 <a href="#">
                   <span className="thumb-info">
                     <span className="thumb-info-wrapper">
-                      <img src={product8} alt="images" />
+                      <img
+                        src={product8}
+                        alt="images"
+                        className="image-productive"
+                      />
                     </span>
                     <span className="thumb-info-title">
                       <h3>Accessories</h3>
@@ -344,7 +348,11 @@ class Home extends React.Component {
                 <a href="#">
                   <span className="thumb-info">
                     <span className="thumb-info-wrapper">
-                      <img src={product89} alt="images" />
+                      <img
+                        src={product89}
+                        alt="images"
+                        className="product-image"
+                      />
                     </span>
                     <span className="thumb-info-title">
                       <h3>BAGS</h3>
@@ -362,7 +370,11 @@ class Home extends React.Component {
                 <a href="#">
                   <span className="thumb-info">
                     <span className="thumb-info-wrapper">
-                      <img src={headphone3} alt="images" />
+                      <img
+                        src={headphone3}
+                        alt="images"
+                        className="product-image"
+                      />
                     </span>
                     <span className="thumb-info-title">
                       <h3>ELECTRONICS</h3>
@@ -380,7 +392,11 @@ class Home extends React.Component {
                 <a href="#">
                   <span className="thumb-info">
                     <span className="thumb-info-wrapper">
-                      <img src={product21} alt="images" />
+                      <img
+                        src={product21}
+                        alt="images"
+                        className="product-image"
+                      />
                     </span>
                     <span className="thumb-info-title">
                       <h3>FASHION</h3>
@@ -398,7 +414,11 @@ class Home extends React.Component {
                 <a href="#">
                   <span className="thumb-info">
                     <span className="thumb-info-wrapper">
-                      <img src={headphone1} alt="images" />
+                      <img
+                        src={headphone1}
+                        alt="images"
+                        className="product-image"
+                      />
                     </span>
                     <span className="thumb-info-title">
                       <h3>HEADPHONE</h3>
@@ -416,7 +436,11 @@ class Home extends React.Component {
                 <a href="#">
                   <span className="thumb-info">
                     <span className="thumb-info-wrapper">
-                      <img src={shoes16} alt="images" />
+                      <img
+                        src={shoes16}
+                        alt="images"
+                        className="product-image"
+                      />
                     </span>
                     <span className="thumb-info-title">
                       <h3>SHOES</h3>
