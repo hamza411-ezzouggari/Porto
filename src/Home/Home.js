@@ -12,6 +12,11 @@ import shop3 from "./shop3_banner1.jpg";
 import chop4 from "./shop3_banner2.jpg";
 import right from "./right.png";
 import product8 from "./image-product/product-20.jpg";
+import headphone1 from "./image-product/headphone-1.jpg";
+import headphone3 from "./image-product/headphone-3.jpg";
+import product21 from "./image-product/product-21.jpg";
+import product89 from "./image-product/product-89-2.jpg";
+import shoes16 from "./image-product/shoes-16-2.jpg";
 class Home extends React.Component {
   render() {
     const Slider = (
@@ -339,7 +344,7 @@ class Home extends React.Component {
                 <a href="#">
                   <span className="thumb-info">
                     <span className="thumb-info-wrapper">
-                      <img src={product8} alt="images" />
+                      <img src={product89} alt="images" />
                     </span>
                     <span className="thumb-info-title">
                       <h3>BAGS</h3>
@@ -357,7 +362,7 @@ class Home extends React.Component {
                 <a href="#">
                   <span className="thumb-info">
                     <span className="thumb-info-wrapper">
-                      <img src={product8} alt="images" />
+                      <img src={headphone3} alt="images" />
                     </span>
                     <span className="thumb-info-title">
                       <h3>ELECTRONICS</h3>
@@ -375,7 +380,7 @@ class Home extends React.Component {
                 <a href="#">
                   <span className="thumb-info">
                     <span className="thumb-info-wrapper">
-                      <img src={product8} alt="images" />
+                      <img src={product21} alt="images" />
                     </span>
                     <span className="thumb-info-title">
                       <h3>FASHION</h3>
@@ -393,7 +398,7 @@ class Home extends React.Component {
                 <a href="#">
                   <span className="thumb-info">
                     <span className="thumb-info-wrapper">
-                      <img src={product8} alt="images" />
+                      <img src={headphone1} alt="images" />
                     </span>
                     <span className="thumb-info-title">
                       <h3>HEADPHONE</h3>
@@ -411,7 +416,7 @@ class Home extends React.Component {
                 <a href="#">
                   <span className="thumb-info">
                     <span className="thumb-info-wrapper">
-                      <img src={product8} alt="images" />
+                      <img src={shoes16} alt="images" />
                     </span>
                     <span className="thumb-info-title">
                       <h3>SHOES</h3>
