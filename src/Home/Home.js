@@ -11,6 +11,7 @@ import AwesomeSliderStyles from "react-awesome-slider/dist/styles.css";
 import shop3 from "./shop3_banner1.jpg";
 import chop4 from "./shop3_banner2.jpg";
 import right from "./right.png";
+import product8 from "./image-product/product-20.jpg";
 class Home extends React.Component {
   render() {
     const Slider = (
@@ -311,10 +312,22 @@ class Home extends React.Component {
           </AutoplaySlider>
         </div>
         <div className="porto-products">
-          <div className="owl-stage-outer">
+          <div className="porto-title-product">
             <h2>SHOP BY CATEGORIES</h2>
           </div>
-          <div calssName="owl-stage-outer"></div>
+          <div calssName="owl-stage-outer">
+            <div className="owl-item-active">
+              <li className="product-col">
+                <a href="#">
+                  <span className="thumb-info">
+                    <span className="thumb-info-wrapper">
+                      <img src={product8} alt="images" />
+                    </span>
+                  </span>
+                </a>
+              </li>
+            </div>
+          </div>
         </div>
       </div>
     );
