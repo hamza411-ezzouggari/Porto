@@ -315,7 +315,7 @@ class Home extends React.Component {
           <div className="porto-title-product">
             <h2>SHOP BY CATEGORIES</h2>
           </div>
-          <div calssName="owl-stage-outer">
+          <div className="all-item-actived">
             <div className="owl-item-active">
               <lu className="product-col">
                 <a href="#">
@@ -328,7 +328,97 @@ class Home extends React.Component {
                     </span>
                     <span className="thumb-info-type">
                       <mark>8</mark>
-                      Product
+                      PRODUCTS
+                    </span>
+                  </span>
+                </a>
+              </lu>
+            </div>
+            <div className="owl-item-active">
+              <lu className="product-col">
+                <a href="#">
+                  <span className="thumb-info">
+                    <span className="thumb-info-wrapper">
+                      <img src={product8} alt="images" />
+                    </span>
+                    <span className="thumb-info-title">
+                      <h3>BAGS</h3>
+                    </span>
+                    <span className="thumb-info-type">
+                      <mark>4</mark>
+                      PRODUCTS
+                    </span>
+                  </span>
+                </a>
+              </lu>
+            </div>
+            <div className="owl-item-active">
+              <lu className="product-col">
+                <a href="#">
+                  <span className="thumb-info">
+                    <span className="thumb-info-wrapper">
+                      <img src={product8} alt="images" />
+                    </span>
+                    <span className="thumb-info-title">
+                      <h3>ELECTRONICS</h3>
+                    </span>
+                    <span className="thumb-info-type">
+                      <mark>8</mark>
+                      PRODUCTS
+                    </span>
+                  </span>
+                </a>
+              </lu>
+            </div>
+            <div className="owl-item-active">
+              <lu className="product-col">
+                <a href="#">
+                  <span className="thumb-info">
+                    <span className="thumb-info-wrapper">
+                      <img src={product8} alt="images" />
+                    </span>
+                    <span className="thumb-info-title">
+                      <h3>FASHION</h3>
+                    </span>
+                    <span className="thumb-info-type">
+                      <mark>11</mark>
+                      PRODUCTS
+                    </span>
+                  </span>
+                </a>
+              </lu>
+            </div>
+            <div className="owl-item-active">
+              <lu className="product-col">
+                <a href="#">
+                  <span className="thumb-info">
+                    <span className="thumb-info-wrapper">
+                      <img src={product8} alt="images" />
+                    </span>
+                    <span className="thumb-info-title">
+                      <h3>HEADPHONE</h3>
+                    </span>
+                    <span className="thumb-info-type">
+                      <mark>3</mark>
+                      PRODUCTS
+                    </span>
+                  </span>
+                </a>
+              </lu>
+            </div>
+            <div className="owl-item-active">
+              <lu className="product-col">
+                <a href="#">
+                  <span className="thumb-info">
+                    <span className="thumb-info-wrapper">
+                      <img src={product8} alt="images" />
+                    </span>
+                    <span className="thumb-info-title">
+                      <h3>SHOES</h3>
+                    </span>
+                    <span className="thumb-info-type">
+                      <mark>4</mark>
+                      PRODUCTS
                     </span>
                   </span>
                 </a>
