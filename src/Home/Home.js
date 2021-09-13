@@ -317,15 +317,22 @@ class Home extends React.Component {
           </div>
           <div calssName="owl-stage-outer">
             <div className="owl-item-active">
-              <li className="product-col">
+              <lu className="product-col">
                 <a href="#">
                   <span className="thumb-info">
                     <span className="thumb-info-wrapper">
                       <img src={product8} alt="images" />
                     </span>
+                    <span className="thumb-info-title">
+                      <h3>Accessories</h3>
+                    </span>
+                    <span className="thumb-info-type">
+                      <mark>8</mark>
+                      Product
+                    </span>
                   </span>
                 </a>
-              </li>
+              </lu>
             </div>
           </div>
         </div>

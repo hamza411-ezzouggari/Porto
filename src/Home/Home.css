@@ -7,13 +7,13 @@
   margin: 2vh 0px 0px 0px;
   z-index: 2;
 }
-a {
+li > a {
   text-decoration: none;
   display: block;
   position: relative;
   color: black;
 }
-a:hover::after {
+li > a:hover::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -459,10 +459,16 @@ span > a {
 }
 .porto-products {
   position: absolute;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+.product-col > a {
+  text-decoration: none;
+}
+.product-col > a:hover {
+  text-decoration: none;
 }
 .porto-title-product {
   color: #313131;
@@ -473,24 +479,6 @@ span > a {
   margin: 1.5rem 0px 0px 0px;
   width: 100%;
 }
-.owl-stage-outer {
-  display: block;
-  margin: 0 !important;
-  list-style: none outside;
-  -webkit-tap-highlight-color: transparent;
-  position: relative;
-  z-index: 1;
-  box-sizing: inherit;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-  color: #777777;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
 .thumb-info {
   min-height: 90px;
   margin-bottom: 0;
@@ -499,8 +487,7 @@ span > a {
   position: relative;
   text-decoration: none;
   max-width: 100%;
+  transform: translate3d(0, 0, 0);
   box-sizing: inherit;
-  color: #222529;
-  cursor: pointer;
-  list-style: none outside;
+  text-decoration: none;
 }
