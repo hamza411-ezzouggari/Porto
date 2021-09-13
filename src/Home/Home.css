@@ -226,11 +226,9 @@ span > a {
   position: absolute;
   z-index: 1;
 }
-.img5 {
-  height: 100%;
-  width: 100%;
+#img5 {
+  margin: 0px 0px 10px 0px;
 }
-
 .porto-ibanner-layer {
   left: 15%;
   top: 55%;

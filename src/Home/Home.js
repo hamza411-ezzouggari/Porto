@@ -271,7 +271,7 @@ class Home extends React.Component {
             organicArrows={true}
           >
             <div className="chop3">
-              <img src={shop3} alt="images" className="img5" />
+              <img src={shop3} alt="images" id="img5" />
               <div className="porto-ibanner-layer">
                 <h2>Winter Fashion Trends</h2>
                 <h3>get up to 30% off</h3>
