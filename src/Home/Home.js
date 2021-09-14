@@ -444,8 +444,14 @@ class Home extends React.Component {
               </lu>
             </div>
           </div>
+          <div className="porto-inner-container">
+            <div calssName="Container-Inner">
+              <span className="span-inner">
+                <h2>POPULAR PRODUCTS</h2>
+              </span>
+            </div>
+          </div>
         </div>
-        <div></div>
       </div>
     );
   }
