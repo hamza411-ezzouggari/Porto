@@ -450,6 +450,51 @@ class Home extends React.Component {
                 <h2>POPULAR PRODUCTS</h2>
               </span>
             </div>
+            <div className="product-wrapper-grid">
+              <div className="production-item-info-type3">
+                <span>
+                  <a href="#">
+                    <img
+                      src={shoes16}
+                      alt="images"
+                      className="product-image-type3"
+                    />
+                  </a>
+                </span>
+                <div className="product-details-items">
+                  <strong className="product-item-name">
+                    <a className="product-item-link" href="#">
+                      Girl Shoes
+                    </a>
+                  </strong>
+                  <span className="label">
+                    <div class="stars">
+                      <input type="radio" id="star1" name="rating" value="1" />
+                      <input type="radio" id="star2" name="rating" value="2" />
+                      <input type="radio" id="star3" name="rating" value="3" />
+                      <input type="radio" id="star4" name="rating" value="4" />
+                      <input type="radio" id="star5" name="rating" value="5" />
+
+                      <label for="star1" aria-label="Banana">
+                        1 star
+                      </label>
+                      <label for="star2">2 stars</label>
+                      <label for="star3">3 stars</label>
+                      <label for="star4">4 stars</label>
+                      <label for="star5">5 stars</label>
+                    </div>
+                  </span>
+                  <span
+                    id="product-price-3382"
+                    className="price-wrapper"
+                    data-price-amount="101"
+                    data-price-type="finalPrice"
+                  >
+                    <span>$101.00</span>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
