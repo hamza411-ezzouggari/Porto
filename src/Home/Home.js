@@ -19,17 +19,6 @@ import product89 from "./image-product/product-89-2.jpg";
 import shoes16 from "./image-product/shoes-16-2.jpg";
 class Home extends React.Component {
   render() {
-    const Slider = (
-      <AutoplaySlider
-        play={true}
-        cancelOnInteraction={false}
-        interval={6000}
-        cssModule={AwesomeSliderStyles}
-      >
-        <div data-src="/path/to/image-0.jpg" />
-        <div data-src="/path/to/image-1.jpg" />
-      </AutoplaySlider>
-    );
     return (
       <div className="content-hoome">
         <div className="Navbar-general">
@@ -41,7 +30,7 @@ class Home extends React.Component {
               <li className="HOME">HOME</li>
               <li className="CATEGORIES">
                 CATEGORIES
-                <div class="dropdown__arrow"></div>
+                <div className="dropdown__arrow"></div>
                 <div className="menu-sub1">
                   <ul className="menu-sub">
                     <div className="content-menu">
@@ -109,7 +98,7 @@ class Home extends React.Component {
               </li>
               <li className="nav">
                 PRODUCTS
-                <div class="dropdown__arrow"></div>
+                <div className="dropdown__arrow"></div>
                 <div className="menu-sub1">
                   <ul className="menu-sub">
                     <div className="content-menu">
@@ -197,7 +186,7 @@ class Home extends React.Component {
                 </div>
               </li>
               <li>
-                PAGES <div class="dropdown__arrow"></div>
+                PAGES <div className="dropdown__arrow"></div>
                 <div className="menu-sub1">
                   <ul className="menu-sub">
                     <div className="content-menu">
@@ -229,7 +218,7 @@ class Home extends React.Component {
                 </div>
               </li>
               <li>
-                FEATURES <div class="dropdown__arrow"></div>
+                FEATURES <div className="dropdown__arrow"></div>
                 <div className="menu-sub1">
                   <ul className="menu-sub">
                     <div className="content-menu">
@@ -266,6 +255,7 @@ class Home extends React.Component {
             className="AutoplaySlider-secend"
             play={true}
             cancelOnInteraction={true}
+            cssModule={AwesomeSliderStyles}
             interval={1000}
             bullets={false}
             organicArrows={true}
