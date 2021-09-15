@@ -467,7 +467,40 @@ class Home extends React.Component {
                       Girl Shoes
                     </a>
                   </strong>
-                  <span className="label"></span>
+                  <span className="label">
+                    <form class="rating">
+                      <label>
+                        <input type="radio" name="stars" value="1" />
+                        <span class="icon">★</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="2" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="3" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="4" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="5" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                      </label>
+                    </form>
+                  </span>
                   <span
                     id="product-price-3382"
                     className="price-wrapper"
