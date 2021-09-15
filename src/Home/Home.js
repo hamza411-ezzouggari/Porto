@@ -473,9 +473,9 @@ class Home extends React.Component {
                       alt="images"
                       className="product-image-type3"
                     />
-                    <div className="quickview">
+                    <div className="overlay">
                       <a href="#">
-                        <h5>QUICKVIEW</h5>
+                        <h5 className="text">QUICKVIEW</h5>
                       </a>
                     </div>
                   </a>

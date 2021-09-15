@@ -769,12 +769,37 @@ span > a {
   justify-content: center;
   align-items: center;
 }
-.quickview > a {
-  display: none;
+.overlay {
+  position: absolute;
+  bottom: 37px;
+  left: 50.1rem;
+  right: 0;
+  background-color: #444;
+  width: 18.8rem;
+  height: 0;
+  transition: 0.5s ease;
 }
-.popular-image-a:hover .quickview {
-  background-color: red;
-  width: 100%;
-  z-index: 2;
-  margin: -3rem 0px 0px 0px;
+
+.popular-image-a:hover .overlay {
+  height: 5%;
+}
+.overlay > a {
+  text-decoration: none;
+}
+
+a > .text {
+  color: transparent;
+}
+.popular-image-a:hover a > .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.popular-image-a:hover .overlay:hover {
+  background-color: black;
 }
