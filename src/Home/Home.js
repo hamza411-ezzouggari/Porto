@@ -17,6 +17,7 @@ import headphone3 from "./image-product/headphone-3.jpg";
 import product21 from "./image-product/product-21.jpg";
 import product89 from "./image-product/product-89-2.jpg";
 import shoes16 from "./image-product/shoes-16-2.jpg";
+import { FaBeer } from "react-icons/fa";
 class Home extends React.Component {
   render() {
     return (
@@ -459,6 +460,7 @@ class Home extends React.Component {
                       alt="images"
                       className="product-image-type3"
                     />
+                    <FaBeer />
                   </a>
                 </span>
                 <div className="product-details-items">
