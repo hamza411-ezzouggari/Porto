@@ -455,23 +455,30 @@ class Home extends React.Component {
             <div className="product-wrapper-grid">
               <div className="production-item-info-type3">
                 <span className="popular-product">
-                  <div className="icon-product">
-                    <div className="icon-bagfill">
+                  <a href="#" className="popular-image-a">
+                    <div className="icon-product">
+                      <div className="icon-bagfill">
+                        <a href="#">
+                          <BsBag />
+                        </a>
+                      </div>
+                      <div className="icon-chartfill">
+                        <a href="#">
+                          <BsBarChartFill />
+                        </a>
+                      </div>
+                    </div>
+                    <img
+                      src={shoes16}
+                      alt="images"
+                      className="product-image-type3"
+                    />
+                    <div className="QUICKVIEW">
                       <a href="#">
-                        <BsBag />
+                        <h5>QUICKVIEW</h5>
                       </a>
                     </div>
-                    <div className="icon-chartfill">
-                      <a href="#">
-                        <BsBarChartFill />
-                      </a>
-                    </div>
-                  </div>
-                  <img
-                    src={shoes16}
-                    alt="images"
-                    className="product-image-type3"
-                  />
+                  </a>
                 </span>
                 <div className="product-details-items">
                   <strong className="product-item-name">
