@@ -473,7 +473,7 @@ class Home extends React.Component {
                       alt="images"
                       className="product-image-type3"
                     />
-                    <div className="QUICKVIEW">
+                    <div className="quickview">
                       <a href="#">
                         <h5>QUICKVIEW</h5>
                       </a>

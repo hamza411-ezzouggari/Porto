@@ -769,3 +769,12 @@ span > a {
   justify-content: center;
   align-items: center;
 }
+.quickview > a {
+  display: none;
+}
+.popular-image-a:hover .quickview {
+  background-color: red;
+  width: 100%;
+  z-index: 2;
+  margin: -3rem 0px 0px 0px;
+}
