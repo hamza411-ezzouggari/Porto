@@ -613,11 +613,11 @@ span > a {
   font-style: normal;
 }
 .product-item-name > a {
-  font-size: 0.9375rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 500;
   line-height: 1.35;
   letter-spacing: -0.01em;
-  margin-bottom: 0.45rem;
+  margin-bottom: -0.1rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -628,14 +628,21 @@ span > a {
   cursor: pointer;
   list-style: none none;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: normal;
   -webkit-text-size-adjust: 100%;
 }
-
+.label {
+  margin: 0 0 0.3rem;
+  display: table;
+  color: #777777;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-text-size-adjust: 100%;
+}
 .rating {
   position: relative;
   font-size: 23px;
-  letter-spacing: 0.1em;
+  letter-spacing: -0.1em;
 }
 .rating label {
   position: absolute;
@@ -693,4 +700,23 @@ span > a {
 .rating label input:focus:not(:checked) ~ .icon:last-child {
   color: #6a6a6d;
   text-shadow: 0 0 5px #ffd802;
+}
+.price-wrapper {
+  box-sizing: inherit;
+  font-size: 1.125rem;
+  line-height: 1;
+  font-weight: 600;
+  text-align: left;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+}
+.price-premier {
+  color: #444;
+  font-weight: 600;
+  font-size: 1.125rem;
+  list-style: none none;
+  line-height: 1;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  -webkit-text-size-adjust: 100%;
 }

@@ -445,7 +445,7 @@ class Home extends React.Component {
             </div>
           </div>
           <div className="porto-inner-container">
-            <div calssName="Container-Inner">
+            <div className="Container-Inner">
               <span className="span-inner">
                 <h2>POPULAR PRODUCTS</h2>
               </span>
@@ -468,36 +468,36 @@ class Home extends React.Component {
                     </a>
                   </strong>
                   <span className="label">
-                    <form class="rating">
+                    <form className="rating">
                       <label>
                         <input type="radio" name="stars" value="1" />
-                        <span class="icon">★</span>
+                        <span className="icon">★</span>
                       </label>
                       <label>
                         <input type="radio" name="stars" value="2" />
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
+                        <span className="icon">★</span>
+                        <span className="icon">★</span>
                       </label>
                       <label>
                         <input type="radio" name="stars" value="3" />
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
+                        <span className="icon">★</span>
+                        <span className="icon">★</span>
+                        <span className="icon">★</span>
                       </label>
                       <label>
                         <input type="radio" name="stars" value="4" />
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
+                        <span className="icon">★</span>
+                        <span className="icon">★</span>
+                        <span className="icon">★</span>
+                        <span className="icon">★</span>
                       </label>
                       <label>
                         <input type="radio" name="stars" value="5" />
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
+                        <span className="icon">★</span>
+                        <span className="icon">★</span>
+                        <span className="icon">★</span>
+                        <span className="icon">★</span>
+                        <span className="icon">★</span>
                       </label>
                     </form>
                   </span>
@@ -507,7 +507,7 @@ class Home extends React.Component {
                     data-price-amount="101"
                     data-price-type="finalPrice"
                   >
-                    <span>$101.00</span>
+                    <span className="price-premier">$101.00</span>
                   </span>
                 </div>
               </div>
