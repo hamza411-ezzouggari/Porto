@@ -17,7 +17,8 @@ import headphone3 from "./image-product/headphone-3.jpg";
 import product21 from "./image-product/product-21.jpg";
 import product89 from "./image-product/product-89-2.jpg";
 import shoes16 from "./image-product/shoes-16-2.jpg";
-import { FaBeer } from "react-icons/fa";
+import { BsBarChartFill } from "react-icons/bs";
+import { BsBag } from "react-icons/bs";
 class Home extends React.Component {
   render() {
     return (
@@ -453,15 +454,24 @@ class Home extends React.Component {
             </div>
             <div className="product-wrapper-grid">
               <div className="production-item-info-type3">
-                <span>
-                  <a href="#">
-                    <img
-                      src={shoes16}
-                      alt="images"
-                      className="product-image-type3"
-                    />
-                    <FaBeer />
-                  </a>
+                <span className="popular-product">
+                  <div className="icon-product">
+                    <div className="icon-bagfill">
+                      <a href="#">
+                        <BsBag />
+                      </a>
+                    </div>
+                    <div className="icon-chartfill">
+                      <a href="#">
+                        <BsBarChartFill />
+                      </a>
+                    </div>
+                  </div>
+                  <img
+                    src={shoes16}
+                    alt="images"
+                    className="product-image-type3"
+                  />
                 </span>
                 <div className="product-details-items">
                   <strong className="product-item-name">
