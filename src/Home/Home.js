@@ -20,6 +20,11 @@ import shoes16 from "./image-product/shoes-16-2.jpg";
 import menCap from "./image-product/product-31_6.jpeg";
 import menShoes from "./image-product/shoes.jpeg";
 import dron from "./image-product/dron.jpeg";
+import product72 from "./image-product/product-79-2_1.jpeg";
+import portofull from "./image-product/product-83-2.jpeg";
+import skirt from "./image-product/product-9-grey_8.jpeg";
+import jacket from "./image-product/product-9-grey_8.jpeg";
+import time from "./image-product/product-21.jpg";
 import { BsBarChartFill } from "react-icons/bs";
 import { BsBag } from "react-icons/bs";
 class Home extends React.Component {
@@ -454,6 +459,468 @@ class Home extends React.Component {
               <span className="span-inner">
                 <h2>POPULAR PRODUCTS</h2>
               </span>
+            </div>
+            <div className="all-item-actived">
+              <div className="owl-item-active">
+                <lu className="product-col">
+                  <span className="thumb-info">
+                    <span className="thumb-info-wrapper">
+                      <a href="#" className="popular-image-a">
+                        <div className="icon-product">
+                          <div className="icon-bagfill">
+                            <a href="#">
+                              <BsBag />
+                            </a>
+                          </div>
+                          <div className="icon-chartfill">
+                            <a href="#">
+                              <BsBarChartFill />
+                            </a>
+                          </div>
+                        </div>
+                        <img
+                          src={shoes16}
+                          alt="images"
+                          className="image-productive"
+                        />
+                      </a>
+                    </span>
+                    <div className="product-details-items">
+                      <strong className="product-item-name">
+                        <a className="product-item-link" href="#">
+                          Girl Shoes
+                        </a>
+                      </strong>
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" value="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                      <span
+                        id="product-price-3382"
+                        className="price-wrapper"
+                        data-price-amount="101"
+                        data-price-type="finalPrice"
+                      >
+                        <span className="price-premier">$101.00</span>
+                      </span>
+                    </div>
+                  </span>
+                </lu>
+              </div>
+              <div className="owl-item-active">
+                <lu className="product-col">
+                  <span className="thumb-info">
+                    <span className="thumb-info-wrapper">
+                      <a href="#" className="popular-image-a">
+                        <div className="icon-product">
+                          <div className="icon-bagfill">
+                            <a href="#">
+                              <BsBag />
+                            </a>
+                          </div>
+                          <div className="icon-chartfill">
+                            <a href="#">
+                              <BsBarChartFill />
+                            </a>
+                          </div>
+                        </div>
+                        <img
+                          src={product8}
+                          alt="images"
+                          className="image-productive"
+                        />
+                      </a>
+                    </span>
+                    <div className="product-details-items">
+                      <strong className="product-item-name">
+                        <a className="product-item-link" href="#">
+                          Glasses
+                        </a>
+                      </strong>
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" value="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                      <span
+                        id="product-price-3382"
+                        className="price-wrapper"
+                        data-price-amount="101"
+                        data-price-type="finalPrice"
+                      >
+                        <span className="price-premier">$101.00</span>
+                      </span>
+                    </div>
+                  </span>
+                </lu>
+              </div>
+              <div className="owl-item-active">
+                <lu className="product-col">
+                  <span className="thumb-info">
+                    <span className="thumb-info-wrapper">
+                      <a href="#" className="popular-image-a">
+                        <div className="icon-product">
+                          <div className="icon-bagfill">
+                            <a href="#">
+                              <BsBag />
+                            </a>
+                          </div>
+                          <div className="icon-chartfill">
+                            <a href="#">
+                              <BsBarChartFill />
+                            </a>
+                          </div>
+                        </div>
+                        <img
+                          src={headphone3}
+                          alt="images"
+                          className="image-productive"
+                        />
+                        <div className="product-labels">
+                          <div className="sale-label">-20%</div>
+                        </div>
+                      </a>
+                    </span>
+                    <div className="product-details-items">
+                      <strong className="product-item-name">
+                        <a className="product-item-link" href="#">
+                          Ideapad
+                        </a>
+                      </strong>
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" value="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                      <span
+                        id="product-price-3382"
+                        className="price-wrapper"
+                        data-price-amount="101"
+                        data-price-type="finalPrice"
+                      >
+                        <span className="old-price-wrapper">$299.00</span>
+                        <span className="price-premier">$239.00</span>
+                      </span>
+                    </div>
+                  </span>
+                </lu>
+              </div>
+              <div className="owl-item-active">
+                <lu className="product-col">
+                  <span className="thumb-info">
+                    <span className="thumb-info-wrapper">
+                      <a href="#" className="popular-image-a">
+                        <div className="icon-product">
+                          <div className="icon-bagfill">
+                            <a href="#">
+                              <BsBag />
+                            </a>
+                          </div>
+                          <div className="icon-chartfill">
+                            <a href="#">
+                              <BsBarChartFill />
+                            </a>
+                          </div>
+                        </div>
+                        <img
+                          src={menCap}
+                          alt="images"
+                          className="image-productive"
+                        />
+                      </a>
+                    </span>
+                    <div className="product-details-items">
+                      <strong className="product-item-name">
+                        <a className="product-item-link" href="#">
+                          Men Cap
+                        </a>
+                      </strong>
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" value="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                      <span
+                        id="product-price-3382"
+                        className="price-wrapper"
+                        data-price-amount="101"
+                        data-price-type="finalPrice"
+                      >
+                        <span className="price-premier">$199.00</span>
+                      </span>
+                    </div>
+                  </span>
+                </lu>
+              </div>
+              <div className="owl-item-active">
+                <lu className="product-col">
+                  <span className="thumb-info">
+                    <span className="thumb-info-wrapper">
+                      <a href="#" className="popular-image-a">
+                        <div className="icon-product">
+                          <div className="icon-bagfill">
+                            <a href="#">
+                              <BsBag />
+                            </a>
+                          </div>
+                          <div className="icon-chartfill">
+                            <a href="#">
+                              <BsBarChartFill />
+                            </a>
+                          </div>
+                        </div>
+                        <img
+                          src={menShoes}
+                          alt="images"
+                          className="image-productive"
+                        />
+                      </a>
+                    </span>
+                    <div className="product-details-items">
+                      <strong className="product-item-name">
+                        <a className="product-item-link" href="#">
+                          Men Shoes
+                        </a>
+                      </strong>
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" value="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                      <span
+                        id="product-price-3382"
+                        className="price-wrapper"
+                        data-price-amount="101"
+                        data-price-type="finalPrice"
+                      >
+                        <span className="price-premier">$39.00</span>
+                      </span>
+                    </div>
+                  </span>
+                </lu>
+              </div>
+              <div className="owl-item-active">
+                <lu className="product-col">
+                  <span className="thumb-info">
+                    <span className="thumb-info-wrapper">
+                      <a href="#" className="popular-image-a">
+                        <div className="icon-product">
+                          <div className="icon-bagfill">
+                            <a href="#">
+                              <BsBag />
+                            </a>
+                          </div>
+                          <div className="icon-chartfill">
+                            <a href="#">
+                              <BsBarChartFill />
+                            </a>
+                          </div>
+                        </div>
+                        <img
+                          src={dron}
+                          alt="images"
+                          className="image-productive"
+                        />
+                      </a>
+                    </span>
+                    <div className="product-details-items">
+                      <strong className="product-item-name">
+                        <a className="product-item-link" href="#">
+                          Porto Both Sticky Info
+                        </a>
+                      </strong>
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" value="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                      <span
+                        id="product-price-3382"
+                        className="price-wrapper"
+                        data-price-amount="101"
+                        data-price-type="finalPrice"
+                      >
+                        <span className="price-premier">$79.00</span>
+                      </span>
+                    </div>
+                  </span>
+                </lu>
+              </div>
             </div>
             <div className="all-item-actived">
               <div className="owl-item-active">
