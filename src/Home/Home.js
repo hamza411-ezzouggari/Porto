@@ -22,7 +22,7 @@ import menShoes from "./image-product/shoes.jpeg";
 import dron from "./image-product/dron.jpeg";
 import product72 from "./image-product/product-79-2_1.jpeg";
 import portofull from "./image-product/product-83-2.jpeg";
-import skirt from "./image-product/product-9-grey_8.jpeg";
+import skirt from "./image-product/product-18-2-grey.jpeg";
 import jacket from "./image-product/product-9-grey_8.jpeg";
 import time from "./image-product/product-21.jpg";
 import { BsBarChartFill } from "react-icons/bs";
@@ -941,7 +941,7 @@ class Home extends React.Component {
                           </div>
                         </div>
                         <img
-                          src={shoes16}
+                          src={product72}
                           alt="images"
                           className="image-productive"
                         />
@@ -993,7 +993,7 @@ class Home extends React.Component {
                         data-price-amount="101"
                         data-price-type="finalPrice"
                       >
-                        <span className="price-premier">$101.00</span>
+                        <span className="price-premier">$69.00</span>
                       </span>
                     </div>
                   </span>
@@ -1017,7 +1017,7 @@ class Home extends React.Component {
                           </div>
                         </div>
                         <img
-                          src={product8}
+                          src={portofull}
                           alt="images"
                           className="image-productive"
                         />
@@ -1069,7 +1069,7 @@ class Home extends React.Component {
                         data-price-amount="101"
                         data-price-type="finalPrice"
                       >
-                        <span className="price-premier">$101.00</span>
+                        <span className="price-premier">$100.00</span>
                       </span>
                     </div>
                   </span>
@@ -1093,13 +1093,10 @@ class Home extends React.Component {
                           </div>
                         </div>
                         <img
-                          src={headphone3}
+                          src={jacket}
                           alt="images"
                           className="image-productive"
                         />
-                        <div className="product-labels">
-                          <div className="sale-label">-20%</div>
-                        </div>
                       </a>
                     </span>
                     <div className="product-details-items">
@@ -1148,8 +1145,7 @@ class Home extends React.Component {
                         data-price-amount="101"
                         data-price-type="finalPrice"
                       >
-                        <span className="old-price-wrapper">$299.00</span>
-                        <span className="price-premier">$239.00</span>
+                        <span className="price-premier">$259.10</span>
                       </span>
                     </div>
                   </span>
@@ -1173,10 +1169,13 @@ class Home extends React.Component {
                           </div>
                         </div>
                         <img
-                          src={menCap}
+                          src={product89}
                           alt="images"
                           className="image-productive"
                         />
+                        <div className="product-labels">
+                          <div className="sale-label">-13%</div>
+                        </div>
                       </a>
                     </span>
                     <div className="product-details-items">
@@ -1225,7 +1224,8 @@ class Home extends React.Component {
                         data-price-amount="101"
                         data-price-type="finalPrice"
                       >
-                        <span className="price-premier">$199.00</span>
+                        <span className="old-price-wrapper">$299.00</span>
+                        <span className="price-premier">$259.00</span>
                       </span>
                     </div>
                   </span>
@@ -1249,7 +1249,7 @@ class Home extends React.Component {
                           </div>
                         </div>
                         <img
-                          src={menShoes}
+                          src={skirt}
                           alt="images"
                           className="image-productive"
                         />
@@ -1301,7 +1301,7 @@ class Home extends React.Component {
                         data-price-amount="101"
                         data-price-type="finalPrice"
                       >
-                        <span className="price-premier">$39.00</span>
+                        <span className="price-premier">$49.00</span>
                       </span>
                     </div>
                   </span>
@@ -1325,10 +1325,13 @@ class Home extends React.Component {
                           </div>
                         </div>
                         <img
-                          src={dron}
+                          src={time}
                           alt="images"
                           className="image-productive"
                         />
+                        <div className="product-labels">
+                          <div className="sale-label">-13%</div>
+                        </div>
                       </a>
                     </span>
                     <div className="product-details-items">
@@ -1377,7 +1380,8 @@ class Home extends React.Component {
                         data-price-amount="101"
                         data-price-type="finalPrice"
                       >
-                        <span className="price-premier">$79.00</span>
+                        <span className="old-price-wrapper">$299.00</span>
+                        <span className="price-premier">$259.00</span>
                       </span>
                     </div>
                   </span>
