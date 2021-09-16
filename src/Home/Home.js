@@ -483,6 +483,7 @@ class Home extends React.Component {
                           alt="images"
                           className="image-productive"
                         />
+                        <div class="portfolioDisc">Quickview</div>
                       </a>
                     </span>
                     <div className="product-details-items">
@@ -559,6 +560,7 @@ class Home extends React.Component {
                           alt="images"
                           className="image-productive"
                         />
+                        <div class="portfolioDisc">Quickview</div>
                       </a>
                     </span>
                     <div className="product-details-items">
@@ -635,6 +637,7 @@ class Home extends React.Component {
                           alt="images"
                           className="image-productive"
                         />
+                        <div class="portfolioDisc">Quickview</div>
                         <div className="product-labels">
                           <div className="sale-label">-20%</div>
                         </div>
@@ -715,6 +718,7 @@ class Home extends React.Component {
                           alt="images"
                           className="image-productive"
                         />
+                        <div class="portfolioDisc">Quickview</div>
                       </a>
                     </span>
                     <div className="product-details-items">
@@ -791,6 +795,7 @@ class Home extends React.Component {
                           alt="images"
                           className="image-productive"
                         />
+                        <div class="portfolioDisc">Quickview</div>
                       </a>
                     </span>
                     <div className="product-details-items">
@@ -867,6 +872,7 @@ class Home extends React.Component {
                           alt="images"
                           className="image-productive"
                         />
+                        <div class="portfolioDisc">Quickview</div>
                       </a>
                     </span>
                     <div className="product-details-items">
@@ -945,6 +951,7 @@ class Home extends React.Component {
                           alt="images"
                           className="image-productive"
                         />
+                        <div class="portfolioDisc">Quickview</div>
                       </a>
                     </span>
                     <div className="product-details-items">
@@ -1021,6 +1028,7 @@ class Home extends React.Component {
                           alt="images"
                           className="image-productive"
                         />
+                        <div class="portfolioDisc">Quickview</div>
                       </a>
                     </span>
                     <div className="product-details-items">
@@ -1097,6 +1105,7 @@ class Home extends React.Component {
                           alt="images"
                           className="image-productive"
                         />
+                        <div class="portfolioDisc">Quickview</div>
                       </a>
                     </span>
                     <div className="product-details-items">
@@ -1173,6 +1182,7 @@ class Home extends React.Component {
                           alt="images"
                           className="image-productive"
                         />
+                        <div class="portfolioDisc">Quickview</div>
                         <div className="product-labels">
                           <div className="sale-label">-13%</div>
                         </div>
@@ -1253,6 +1263,7 @@ class Home extends React.Component {
                           alt="images"
                           className="image-productive"
                         />
+                        <div class="portfolioDisc">Quickview</div>
                       </a>
                     </span>
                     <div className="product-details-items">
@@ -1329,6 +1340,7 @@ class Home extends React.Component {
                           alt="images"
                           className="image-productive"
                         />
+                        <div class="portfolioDisc">Quickview</div>
                         <div className="product-labels">
                           <div className="sale-label">-13%</div>
                         </div>
