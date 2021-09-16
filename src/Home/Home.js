@@ -452,83 +452,192 @@ class Home extends React.Component {
                 <h2>POPULAR PRODUCTS</h2>
               </span>
             </div>
-            <div className="product-wrapper-grid">
-              <div className="production-item-info-type3">
-                <span className="popular-product">
-                  <a href="#" className="popular-image-a">
-                    <div className="icon-product">
-                      <div className="icon-bagfill">
-                        <a href="#">
-                          <BsBag />
-                        </a>
-                      </div>
-                      <div className="icon-chartfill">
-                        <a href="#">
-                          <BsBarChartFill />
-                        </a>
-                      </div>
-                    </div>
-                    <img
-                      src={shoes16}
-                      alt="images"
-                      className="product-image-type3"
-                    />
-                    <div className="overlay">
-                      <a href="#">
-                        <h5 className="text">QUICKVIEW</h5>
+            <div className="all-item-actived">
+              <div className="owl-item-active">
+                <lu className="product-col">
+                  <span className="thumb-info">
+                    <span className="thumb-info-wrapper">
+                      <a href="#" className="popular-image-a">
+                        <div className="icon-product">
+                          <div className="icon-bagfill">
+                            <a href="#">
+                              <BsBag />
+                            </a>
+                          </div>
+                          <div className="icon-chartfill">
+                            <a href="#">
+                              <BsBarChartFill />
+                            </a>
+                          </div>
+                        </div>
+                        <img
+                          src={shoes16}
+                          alt="images"
+                          className="image-productive"
+                        />
                       </a>
+                    </span>
+                    <div className="product-details-items">
+                      <strong className="product-item-name">
+                        <a className="product-item-link" href="#">
+                          Girl Shoes
+                        </a>
+                      </strong>
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" value="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                      <span
+                        id="product-price-3382"
+                        className="price-wrapper"
+                        data-price-amount="101"
+                        data-price-type="finalPrice"
+                      >
+                        <span className="price-premier">$101.00</span>
+                      </span>
                     </div>
+                  </span>
+                </lu>
+              </div>
+              <div className="owl-item-active">
+                <lu className="product-col">
+                  <a href="#">
+                    <span className="thumb-info">
+                      <span className="thumb-info-wrapper">
+                        <img
+                          src={product8}
+                          alt="images"
+                          className="product-image"
+                        />
+                      </span>
+                      <span className="thumb-info-title">
+                        <h3>BAGS</h3>
+                      </span>
+                      <span className="thumb-info-type">
+                        <mark>4</mark>
+                        PRODUCTS
+                      </span>
+                    </span>
                   </a>
-                </span>
-                <div className="product-details-items">
-                  <strong className="product-item-name">
-                    <a className="product-item-link" href="#">
-                      Girl Shoes
-                    </a>
-                  </strong>
-                  <span className="label">
-                    <form className="rating">
-                      <label>
-                        <input type="radio" name="stars" value="1" />
-                        <span className="icon">★</span>
-                      </label>
-                      <label>
-                        <input type="radio" name="stars" value="2" />
-                        <span className="icon">★</span>
-                        <span className="icon">★</span>
-                      </label>
-                      <label>
-                        <input type="radio" name="stars" value="3" />
-                        <span className="icon">★</span>
-                        <span className="icon">★</span>
-                        <span className="icon">★</span>
-                      </label>
-                      <label>
-                        <input type="radio" name="stars" value="4" />
-                        <span className="icon">★</span>
-                        <span className="icon">★</span>
-                        <span className="icon">★</span>
-                        <span className="icon">★</span>
-                      </label>
-                      <label>
-                        <input type="radio" name="stars" value="5" />
-                        <span className="icon">★</span>
-                        <span className="icon">★</span>
-                        <span className="icon">★</span>
-                        <span className="icon">★</span>
-                        <span className="icon">★</span>
-                      </label>
-                    </form>
-                  </span>
-                  <span
-                    id="product-price-3382"
-                    className="price-wrapper"
-                    data-price-amount="101"
-                    data-price-type="finalPrice"
-                  >
-                    <span className="price-premier">$101.00</span>
-                  </span>
-                </div>
+                </lu>
+              </div>
+              <div className="owl-item-active">
+                <lu className="product-col">
+                  <a href="#">
+                    <span className="thumb-info">
+                      <span className="thumb-info-wrapper">
+                        <img
+                          src={headphone3}
+                          alt="images"
+                          className="product-image"
+                        />
+                      </span>
+                      <span className="thumb-info-title">
+                        <h3>ELECTRONICS</h3>
+                      </span>
+                      <span className="thumb-info-type">
+                        <mark>8</mark>
+                        PRODUCTS
+                      </span>
+                    </span>
+                  </a>
+                </lu>
+              </div>
+              <div className="owl-item-active">
+                <lu className="product-col">
+                  <a href="#">
+                    <span className="thumb-info">
+                      <span className="thumb-info-wrapper">
+                        <img
+                          src={product21}
+                          alt="images"
+                          className="product-image"
+                        />
+                      </span>
+                      <span className="thumb-info-title">
+                        <h3>FASHION</h3>
+                      </span>
+                      <span className="thumb-info-type">
+                        <mark>11</mark>
+                        PRODUCTS
+                      </span>
+                    </span>
+                  </a>
+                </lu>
+              </div>
+              <div className="owl-item-active">
+                <lu className="product-col">
+                  <a href="#">
+                    <span className="thumb-info">
+                      <span className="thumb-info-wrapper">
+                        <img
+                          src={headphone1}
+                          alt="images"
+                          className="product-image"
+                        />
+                      </span>
+                      <span className="thumb-info-title">
+                        <h3>HEADPHONE</h3>
+                      </span>
+                      <span className="thumb-info-type">
+                        <mark>3</mark>
+                        PRODUCTS
+                      </span>
+                    </span>
+                  </a>
+                </lu>
+              </div>
+              <div className="owl-item-active">
+                <lu className="product-col">
+                  <a href="#">
+                    <span className="thumb-info">
+                      <span className="thumb-info-wrapper">
+                        <img
+                          src={shoes16}
+                          alt="images"
+                          className="product-image"
+                        />
+                      </span>
+                      <span className="thumb-info-title">
+                        <h3>SHOES</h3>
+                      </span>
+                      <span className="thumb-info-type">
+                        <mark>4</mark>
+                        PRODUCTS
+                      </span>
+                    </span>
+                  </a>
+                </lu>
               </div>
             </div>
           </div>

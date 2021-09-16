@@ -457,11 +457,12 @@ span > a {
 }
 .porto-products {
   position: absolute;
-  height: 100%;
+  height: flex;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: red;
 }
 .all-item-actived {
   display: flex;
@@ -561,39 +562,38 @@ span > a {
   transition: 0.7s ease-in-out;
 }
 .porto-inner-container {
-  margin: 5rem 0px 0px 0px;
+  width: 100%;
+  height: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0px 0px 0px;
 }
-.span-inner {
+.Container-Inner > .span-inner {
   font-family: Poppins, sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 0;
   line-height: 1.5;
   text-align: center;
   font-style: normal;
   letter-spacing: -0.3px;
-  margin: 0 0 32px 0;
+  margin-top: 1rem;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   width: 100%;
   color: #313131;
-  -webkit-text-size-adjust: 100%;
 }
 .product-wrapper-grid {
-  margin-top: 2rem;
-  box-sizing: inherit;
-  display: block;
-  color: #777777;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
-.production-item-info-type3 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 2rem 0px 0px 0px;
+  justify-content: space-between;
+  width: 98%;
+  background-color: white;
 }
 .product-details-items {
   display: flex;
@@ -768,38 +768,4 @@ span > a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.overlay {
-  position: absolute;
-  bottom: 37px;
-  left: 50.1rem;
-  right: 0;
-  background-color: #444;
-  width: 18.8rem;
-  height: 0;
-  transition: 0.5s ease;
-}
-
-.popular-image-a:hover .overlay {
-  height: 5%;
-}
-.overlay > a {
-  text-decoration: none;
-}
-
-a > .text {
-  color: transparent;
-}
-.popular-image-a:hover a > .text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.popular-image-a:hover .overlay:hover {
-  background-color: black;
 }
