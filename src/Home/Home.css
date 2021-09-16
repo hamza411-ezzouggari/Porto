@@ -842,3 +842,14 @@ span > a {
 .popular-image-a > .portfolioDisc:hover {
   background-color: black;
 }
+.porto-separator-taller {
+  margin: 44px 0 66px;
+  font-size: 14px;
+  line-height: 24px;
+  width: 98%;
+  font-weight: 400;
+  background-color: #e7e7e7;
+}
+.porto-separator-taller > hr {
+  border-top: 0.01rem solid #e7e7e7;
+}

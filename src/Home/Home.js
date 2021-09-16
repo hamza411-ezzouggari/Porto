@@ -1401,6 +1401,12 @@ class Home extends React.Component {
               </div>
             </div>
           </div>
+          <div className="porto-separator-taller">
+            <hr className="align_center-hr" />
+          </div>
+          <div className="hamza">
+            <h1>Hamza</h1>
+          </div>
         </div>
       </div>
     );
