@@ -768,3 +768,50 @@ span > a {
   justify-content: center;
   align-items: center;
 }
+.old-price-wrapper {
+  box-sizing: inherit;
+  color: #a7a7a7;
+  font-size: 0.8rem;
+  line-height: 1;
+  text-align: left;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: line-through;
+  list-style: none none;
+  margin: 0px 0.7rem 0px 0px;
+}
+.product-labels {
+  line-height: 1;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 2;
+  top: 0.8em;
+  font-size: 10px;
+  left: 0.8em;
+  text-align: center;
+  box-sizing: inherit;
+  display: block;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+}
+.product-labels > .sale-label {
+  background-color: #e27c7c;
+  padding: 5px 11px;
+  margin-bottom: 5px;
+  box-sizing: inherit;
+  line-height: 1;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 2;
+  top: 0.8em;
+  font-size: 10px;
+  left: 0.8em;
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  -webkit-text-size-adjust: 100%;
+}

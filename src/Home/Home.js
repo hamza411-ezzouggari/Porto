@@ -630,6 +630,9 @@ class Home extends React.Component {
                           alt="images"
                           className="image-productive"
                         />
+                        <div className="product-labels">
+                          <div className="sale-label">-20%</div>
+                        </div>
                       </a>
                     </span>
                     <div className="product-details-items">
@@ -678,7 +681,7 @@ class Home extends React.Component {
                         data-price-amount="101"
                         data-price-type="finalPrice"
                       >
-                        <span className="price-wrapper">$299.00</span>
+                        <span className="old-price-wrapper">$299.00</span>
                         <span className="price-premier">$239.00</span>
                       </span>
                     </div>
