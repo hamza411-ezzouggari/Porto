@@ -25,6 +25,7 @@ import portofull from "./image-product/product-83-2.jpeg";
 import skirt from "./image-product/product-18-2-grey.jpeg";
 import jacket from "./image-product/product-9-grey_8.jpeg";
 import time from "./image-product/product-21.jpg";
+import headphoneicon from "./icon-premiem page/headphones.png";
 import { BsBarChartFill } from "react-icons/bs";
 import { BsBag } from "react-icons/bs";
 class Home extends React.Component {
@@ -1405,7 +1406,15 @@ class Home extends React.Component {
             <hr className="align_center-hr" />
           </div>
           <div className="row-mb-4">
-            <div className="col-sm-6-md-3"></div>
+            <div className="col-sm-6-md-3">
+              <div className="vc_column_inner">
+                <div className="porto-sicon-icon">
+                  <i className="simple-line-icon-alt">
+                    <img src={headphoneicon} alt="images" />
+                  </i>
+                </div>
+              </div>
+            </div>
             <div className="col-sm-6-md-3"></div>
             <div className="col-sm-6-md-3"></div>
             <div className="col-sm-6-md-3"></div>
