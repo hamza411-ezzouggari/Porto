@@ -1021,7 +1021,7 @@ span > a {
   letter-spacing: 0;
   margin-bottom: 0 !important;
   display: block;
-  margin-block-start: 1em;
+  margin-block-start: 0.5em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
@@ -1032,6 +1032,7 @@ span > a {
   font-size: 1.1rem;
 }
 .block-newsletter {
+  margin: 0.6rem 0px 0px 0px;
   display: flex;
   flex-direction: row;
   margin-bottom: 0;
@@ -1075,7 +1076,7 @@ span > a {
   font-size: 0.75rem;
   color: #777;
   border: none;
-  height: 48px;
+  height: 55px;
   font-family: inherit;
   vertical-align: baseline;
   width: 100%;
@@ -1092,6 +1093,7 @@ span > a {
   letter-spacing: normal;
   word-spacing: normal;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-radius: none;
 }
 .action {
   display: table-cell;
@@ -1112,7 +1114,7 @@ span > a {
   padding: 0.533rem 0.933rem;
   line-height: 1.42857;
   border-radius: 0;
-  height: 48px;
+  height: 55px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.75rem;
