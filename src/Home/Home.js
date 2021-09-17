@@ -26,6 +26,9 @@ import skirt from "./image-product/product-18-2-grey.jpeg";
 import jacket from "./image-product/product-9-grey_8.jpeg";
 import time from "./image-product/product-21.jpg";
 import headphoneicon from "./icon-premiem page/headphones.png";
+import credit from "./icon-premiem page/credit-card.png";
+import undo from "./icon-premiem page/undo.png";
+import delevery from "./icon-premiem page/delivery-truck.png";
 import { BsBarChartFill } from "react-icons/bs";
 import { BsBag } from "react-icons/bs";
 class Home extends React.Component {
@@ -1429,9 +1432,76 @@ class Home extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6-md-3"></div>
-            <div className="col-sm-6-md-3"></div>
-            <div className="col-sm-6-md-3"></div>
+            <div className="col-sm-6-md-3">
+              <div className="vc_column_inner">
+                <div className="porto-sicon-icon">
+                  <i>
+                    <img
+                      className="simple-line-icon-alt"
+                      src={credit}
+                      alt="images"
+                    />
+                  </i>
+                </div>
+                <div className="porto-sicon-header">
+                  <h3>SECURED PAYMENT</h3>
+                  <p>Safe & Fast</p>
+                </div>
+                <div className="porto-sicon-description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis nec vestibulum magna, et dapibus lacus. Lorem ipsum
+                    dolor sit amet.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-6-md-3">
+              <div className="vc_column_inner">
+                <div className="porto-sicon-icon">
+                  <i>
+                    <img
+                      className="simple-line-icon-alt"
+                      src={undo}
+                      alt="images"
+                    />
+                  </i>
+                </div>
+                <div className="porto-sicon-header">
+                  <h3>FREE RETURNS</h3>
+                  <p>Easy & Free</p>
+                </div>
+                <div className="porto-sicon-description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis nec vestibulum magna, et dapib.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-6-md-3">
+              <div className="vc_column_inner">
+                <div className="porto-sicon-icon">
+                  <i>
+                    <img
+                      className="simple-line-icon-alt"
+                      src={delevery}
+                      alt="images"
+                    />
+                  </i>
+                </div>
+                <div className="porto-sicon-header">
+                  <h3>FREE SHIPPING</h3>
+                  <p>Orders Over $99</p>
+                </div>
+                <div className="porto-sicon-description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis nec vestibulum magna, et dapib.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

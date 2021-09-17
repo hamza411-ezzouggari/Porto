@@ -860,27 +860,14 @@ span > a {
   border-top: 0.01rem solid #e7e7e7;
 }
 .row-mb-4 {
-  margin-bottom: 1.5rem !important;
-  flex-wrap: wrap;
-  margin-right: -10px;
-  margin-left: -10px;
+  width: 100%;
   display: flex;
-  box-sizing: inherit;
-  font-size: 14px;
-  line-height: 24px;
-  color: #777777;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  -webkit-text-size-adjust: 100%;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .row-mb-4 > .col-sm-6-md-3 {
-  position: absolute;
-  width: 100%;
   min-height: 1px;
   padding-right: 10px;
-  padding-left: 10px;
-  flex: 0 0 25%;
   max-width: 25%;
 }
 .vc_column_inner {
@@ -946,7 +933,7 @@ span > a {
   display: block;
   margin: 0 auto;
   margin-top: 0;
-  width: 100%;
+  width: 70%;
   box-sizing: inherit;
   text-align: center;
   color: #777777;
