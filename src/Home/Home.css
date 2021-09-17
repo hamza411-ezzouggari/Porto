@@ -942,3 +942,14 @@ span > a {
   font-weight: 400;
   box-sizing: inherit;
 }
+.porto-separator-taller-tow {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  margin: 66px 0 66px;
+  font-size: 14px;
+  line-height: 24px;
+  width: 90%;
+  font-weight: 400;
+  background-color: #e7e7e7;
+}
