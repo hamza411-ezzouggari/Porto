@@ -1409,9 +1409,23 @@ class Home extends React.Component {
             <div className="col-sm-6-md-3">
               <div className="vc_column_inner">
                 <div className="porto-sicon-icon">
-                  <i className="simple-line-icon-alt">
-                    <img src={headphoneicon} alt="images" />
+                  <i>
+                    <img
+                      className="simple-line-icon-alt"
+                      src={headphoneicon}
+                      alt="images"
+                    />
                   </i>
+                </div>
+                <div className="porto-sicon-header">
+                  <h3>CUSTOMER SUPPORT</h3>
+                  <p>Need Assistence?</p>
+                </div>
+                <div className="porto-sicon-description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis nec vestibulum magna, et dapib.
+                  </p>
                 </div>
               </div>
             </div>
