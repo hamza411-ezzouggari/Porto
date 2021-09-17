@@ -946,10 +946,62 @@ span > a {
   display: flex;
   justify-content: center;
   align-items: center !important;
-  margin: 66px 0 66px;
+  margin: 66px 0 40px;
   font-size: 14px;
   line-height: 24px;
   width: 90%;
   font-weight: 400;
   background-color: #e7e7e7;
+}
+.col-lg-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  box-sizing: inherit;
+  display: block;
+  color: #777;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.065px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.widget_text {
+  display: flex;
+  flex-direction: row;
+  color: #777;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.065px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-text-size-adjust: 100%;
+}
+.textwidget {
+  padding-right: 3rem !important;
+  box-sizing: inherit;
+  color: #777;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.065px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.textwidget > h5 {
+  letter-spacing: 0.075em;
+  color: #22232d;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  position: relative;
+  margin-top: 0;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  text-align: left;
+  margin-bottom: 0.25rem !important;
 }

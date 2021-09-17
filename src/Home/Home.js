@@ -1506,6 +1506,36 @@ class Home extends React.Component {
           <div className="porto-separator-taller-tow">
             <hr className="align_center-hr" />
           </div>
+          <div className="col-lg-12">
+            <div className="widget_text">
+              <div className="textwidget">
+                <h5>Subscribe newsletter</h5>
+                <p>
+                  Get all the latest information on Events, Sales and Offers.
+                </p>
+              </div>
+              <div className="block-newsletter">
+                <div className="control">
+                  <input
+                    name="email"
+                    type="email"
+                    id="footer_newsleter"
+                    data-validate="{required:true,'validate-email':true}"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div className="action">
+                  <button
+                    className="action subscribe primary"
+                    title="Subscribe"
+                    type="submit"
+                  >
+                    <span>Subscribe</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
