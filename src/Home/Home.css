@@ -843,13 +843,29 @@ span > a {
   background-color: black;
 }
 .porto-separator-taller {
-  margin: 44px 0 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  margin: 8rem 0 66px;
   font-size: 14px;
   line-height: 24px;
-  width: 98%;
+  width: 90%;
   font-weight: 400;
   background-color: #e7e7e7;
 }
 .porto-separator-taller > hr {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
   border-top: 0.01rem solid #e7e7e7;
+}
+.row-mb-4 {
+  margin-bottom: 1.5rem !important;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+  display: flex;
+  box-sizing: inherit;
+  font-size: 14px;
+  line-height: 24px;
 }

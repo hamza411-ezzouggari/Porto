@@ -1404,8 +1404,11 @@ class Home extends React.Component {
           <div className="porto-separator-taller">
             <hr className="align_center-hr" />
           </div>
-          <div className="hamza">
-            <h1>Hamza</h1>
+          <div className="row-mb-4">
+            <div className="col-sm-6-md-3"></div>
+            <div className="col-sm-6-md-3"></div>
+            <div className="col-sm-6-md-3"></div>
+            <div className="col-sm-6-md-3"></div>
           </div>
         </div>
       </div>
