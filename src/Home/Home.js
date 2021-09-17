@@ -31,6 +31,9 @@ import undo from "./icon-premiem page/undo.png";
 import delevery from "./icon-premiem page/delivery-truck.png";
 import { BsBarChartFill } from "react-icons/bs";
 import { BsBag } from "react-icons/bs";
+import { ImFacebook } from "react-icons/im";
+import { ImTwitter } from "react-icons/im";
+import { ImInstagram } from "react-icons/im";
 class Home extends React.Component {
   render() {
     return (
@@ -1542,21 +1545,30 @@ class Home extends React.Component {
                   target="_blank"
                   title="facebook"
                   className="share-facebook"
-                ></a>
+                >
+                  <ImFacebook />
+                </a>
                 <a
                   href="#"
                   target="_blank"
                   title="twitter"
                   className="share-twitter"
-                ></a>
+                >
+                  <ImTwitter />
+                </a>
                 <a
                   href="#"
                   target="_blank"
                   title="Instegram"
                   className="share-Instegram"
-                ></a>
+                >
+                  <ImInstagram />
+                </a>
               </div>
             </div>
+          </div>
+          <div className="porto-separator-taller-tree">
+            <hr className="align_center-hr" />
           </div>
         </div>
       </div>
