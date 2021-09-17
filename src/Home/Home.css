@@ -954,10 +954,12 @@ span > a {
   background-color: #e7e7e7;
 }
 .col-lg-12 {
+  display: flex;
+  justify-content: space-around;
   flex: 0 0 100%;
   max-width: 100%;
   position: relative;
-  width: 100%;
+  width: 96%;
   min-height: 1px;
   box-sizing: inherit;
   display: block;
@@ -972,6 +974,7 @@ span > a {
 .widget_text {
   display: flex;
   flex-direction: row;
+  align-items: center;
   color: #777;
   font-size: 13px;
   line-height: 24px;
@@ -993,15 +996,136 @@ span > a {
   font-weight: 400;
 }
 .textwidget > h5 {
-  letter-spacing: 0.075em;
-  color: #22232d;
-  font-size: 14px;
-  line-height: 20px;
-  text-decoration: none;
   position: relative;
+  letter-spacing: 0.18em;
+  color: #22232d;
+  font-size: 1.3em;
+  line-height: 20px;
   margin-top: 0;
   text-transform: uppercase !important;
-  font-weight: 700 !important;
+  font-weight: 800 !important;
   text-align: left;
   margin-bottom: 0.25rem !important;
+  font-family: Poppins, sans-serif;
+  margin: 0 0 14px 0;
+  box-sizing: inherit;
+  display: block;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-style: normal;
+}
+.textwidget > p {
+  margin-top: 0;
+  letter-spacing: 0;
+  margin-bottom: 0 !important;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #777;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.block-newsletter {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+  color: #777;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.065px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.control {
+  text-decoration: none;
+  display: block;
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #777;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.065px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #dddddd;
+  content: "\f84c";
+  font-family: "porto-icons";
+  margin: 0 0 0 8px;
+  display: inline-block;
+  font-weight: normal;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: inherit;
+}
+.control > input {
+  background: #f4f4f4;
+  min-width: 271px;
+  padding: 8px 12px;
+  border-radius: 0;
+  font-size: 0.75rem;
+  color: #777;
+  border: none;
+  height: 48px;
+  font-family: inherit;
+  vertical-align: baseline;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 1.4;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.action {
+  display: table-cell;
+  vertical-align: top;
+  width: flex;
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #777;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.065px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.action > button {
+  padding: 0.533rem 0.933rem;
+  line-height: 1.42857;
+  border-radius: 0;
+  height: 48px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75rem;
+  background-color: #222529;
+  color: #fff;
+  letter-spacing: -0.015em;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.action > span {
+  line-height: 1.42857;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #fff;
 }
