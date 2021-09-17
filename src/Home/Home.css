@@ -1070,10 +1070,10 @@ span > a {
 }
 .control > input {
   background: #f4f4f4;
-  min-width: 271px;
+  min-width: 290px;
   padding: 8px 12px;
   border-radius: 0;
-  font-size: 0.75rem;
+  font-size: 1.1rem;
   color: #777;
   border: none;
   height: 55px;
