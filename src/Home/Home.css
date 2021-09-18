@@ -1240,6 +1240,164 @@ span > a {
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.065px;
+  background-color: red !important;
+}
+.contact-name-block {
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  height: 9rem;
+  box-sizing: inherit;
+  font-size: 13px;
+  letter-spacing: 0.065px;
+}
+.far-fa-dot-circle {
+  margin-bottom: 10px;
+  flex: 0 0 50%;
+  line-height: 1.8;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  color: #90969a;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
+.far-fa-dot-circle > strong {
+  list-style: none;
+  display: block;
+  line-height: 1.4;
+  color: #000;
+  font-weight: 400;
+  padding-left: 0;
+  text-align: -webkit-match-parent;
+  letter-spacing: 0.065px;
+  font-size: 13px;
+}
+.far-fa-dot-circle > span {
+  line-height: 1.4;
+  padding-left: 0;
+  display: block;
+  box-sizing: inherit;
+  text-align: -webkit-match-parent;
+  list-style: none;
+  color: #90969a;
+  letter-spacing: 0.065px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
+.far-fa-dot-circle > .fab-fa-whatsapp {
+  margin-bottom: 10px;
+  flex: 0 0 50%;
+  line-height: 1.8;
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  color: #90969a;
+  letter-spacing: 0.065px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  -webkit-text-size-adjust: 100%;
+  font-weight: 400;
+  font-size: 13px;
+}
+.fab-fa-whatsapp > strong {
+  list-style: none;
+  display: block;
+  line-height: 1.4;
+  color: #000;
+  font-weight: 400;
+  padding-left: 0;
+  text-align: -webkit-match-parent;
+  letter-spacing: 0.065px;
+  font-size: 13px;
+}
+.fab-fa-whatsapp > span {
+  line-height: 1.4;
+  padding-left: 0;
+  display: block;
+  box-sizing: inherit;
+  text-align: -webkit-match-parent;
+  list-style: none;
+  color: #90969a;
+  letter-spacing: 0.065px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
+.far-fa-envelope {
+  margin-bottom: 10px;
+  flex: 0 0 50%;
+  line-height: 1.8;
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style: none;
+  letter-spacing: 0.065px;
+  font-size: 13px;
+}
+.far-fa-envelope > strong {
+  list-style: none;
+  display: block;
+  line-height: 1.4;
+  color: #000;
+  font-weight: 400;
+  padding-left: 0;
+  text-align: -webkit-match-parent;
+  letter-spacing: 0.065px;
+  font-size: 13px;
+}
+.far-fa-envelope > span > a {
+  text-decoration: none;
+  line-height: 1.4;
+  padding-left: 0;
+  display: block;
+  box-sizing: inherit;
+  text-align: -webkit-match-parent;
+  list-style: none;
+  color: #90969a;
+  letter-spacing: 0.065px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
+.far-fa-clock > strong {
+  list-style: none;
+  display: block;
+  line-height: 1.4;
+  color: #000;
+  font-weight: 400;
+  padding-left: 0;
+  text-align: -webkit-match-parent;
+  letter-spacing: 0.065px;
+  font-size: 13px;
+}
+.far-fa-clock > span {
+  text-decoration: none;
+  line-height: 1.4;
+  padding-left: 0;
+  display: block;
+  box-sizing: inherit;
+  text-align: -webkit-match-parent;
+  list-style: none;
+  color: #90969a;
+  letter-spacing: 0.065px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
 }
 .porto-separator-taller-foor {
   display: flex;

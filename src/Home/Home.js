@@ -1578,7 +1578,7 @@ class Home extends React.Component {
                           <a href="mailto:mail@example.com">mail@example.com</a>
                         </span>
                       </li>
-                      <li far-fa-clock>
+                      <li className="far-fa-clock">
                         <strong>WORKING DAY/HOURS:</strong>
                         <span>Mon - Sun / 9:00 AM 8:00 PM</span>
                       </li>
