@@ -1579,7 +1579,7 @@ class Home extends React.Component {
                         </span>
                       </li>
                       <li className="far-fa-clock">
-                        <strong>WORKING DAY/HOURS:</strong>
+                        <strong>WORKING DAY/HOURS :</strong>
                         <span>Mon - Sun / 9:00 AM 8:00 PM</span>
                       </li>
                     </ul>
