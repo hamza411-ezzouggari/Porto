@@ -1159,7 +1159,7 @@ span > a {
   display: flex;
   justify-content: center;
   align-items: center !important;
-  margin: 45px 0 40px;
+  margin: 45px 0 66px;
   font-size: 14px;
   line-height: 24px;
   width: 90%;
@@ -1174,4 +1174,81 @@ span > a {
 }
 .share-Instegram:hover {
   color: #e1306c;
+}
+.footer-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  color: #90969a;
+  box-sizing: inherit;
+  display: block;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.065px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.footer-middle > .container {
+  width: 96%;
+  position: relative;
+  padding-top: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+  color: #90969a;
+  box-sizing: inherit;
+  padding-bottom: 1.55rem;
+  display: block;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.065px;
+  border-color: #e7e7e7;
+}
+.footer-middle > .container > .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: inherit;
+  font-size: 13px;
+  line-height: 24px;
+}
+.widget-contact-info {
+  margin-top: 0;
+  margin-bottom: 1.875rem;
+  box-sizing: inherit;
+  clear: both;
+  color: #90969a;
+}
+.widget-contact-info > h3 {
+  font-size: 1.1666em;
+  font-weight: 700;
+  color: #000;
+  position: relative;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 15px;
+  margin-top: 0;
+  margin: 0 0 20px 0;
+  letter-spacing: normal;
+  font-family: Poppins, sans-serif;
+}
+.contact-info-block {
+  display: block;
+  color: #90969a;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.065px;
+}
+.porto-separator-taller-foor {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  margin: 66px 0 66px;
+  font-size: 14px;
+  line-height: 24px;
+  width: 90%;
+  font-weight: 400;
+  background-color: #e7e7e7;
 }

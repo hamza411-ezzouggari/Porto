@@ -1555,6 +1555,44 @@ class Home extends React.Component {
           <div className="porto-separator-taller-tree">
             <hr className="align_center-hr" />
           </div>
+          <div className="footer-middle">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-4">
+                  <div className="widget-contact-info">
+                    <h3>CONTACT INFO</h3>
+                  </div>
+                  <div className="contact-info-block">
+                    <ul className="contact-name-block">
+                      <li className="far-fa-dot-circle">
+                        <strong>ADDRESS :</strong>
+                        <span> 123 Street name, City, England</span>
+                      </li>
+                      <li className="fab-fa-whatsapp">
+                        <strong>PHONE :</strong>
+                        <span> (123) 456-789 </span>
+                      </li>
+                      <li className="far-fa-envelope">
+                        <strong>Email :</strong>
+                        <span>
+                          <a href="mailto:mail@example.com">mail@example.com</a>
+                        </span>
+                      </li>
+                      <li far-fa-clock>
+                        <strong>WORKING DAY/HOURS:</strong>
+                        <span>Mon - Sun / 9:00 AM 8:00 PM</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col-lg-4"></div>
+                <div className="col-lg-4"></div>
+              </div>
+            </div>
+          </div>
+          <div className="porto-separator-taller-foor">
+            <hr className="align_center-hr" />
+          </div>
         </div>
       </div>
     );
