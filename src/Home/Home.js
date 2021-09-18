@@ -1585,7 +1585,38 @@ class Home extends React.Component {
                     </ul>
                   </div>
                 </div>
-                <div className="col-lg-4"></div>
+                <div className="col-lg-5">
+                  <div className="widget__text">
+                    <h3>MY ACCOUNT</h3>
+                  </div>
+                  <div className="textwidget">
+                    <div className="row-d-inline-flex">
+                      <div className="colx-xl-6">
+                        <ul>
+                          <li>
+                            <a href="#">About Us</a>
+                          </li>
+                          <li>
+                            <a href="#">Contact Us</a>
+                          </li>
+                          <li>
+                            <a href="#">My Account</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="colx-xl-6">
+                        <ul className="order-history">
+                          <li>
+                            <a>Orders history</a>
+                          </li>
+                          <li>
+                            <a>advanced Search</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div className="col-lg-4"></div>
               </div>
             </div>
