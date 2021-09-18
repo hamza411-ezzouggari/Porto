@@ -1540,29 +1540,14 @@ class Home extends React.Component {
             </div>
             <div className="widget-follow-us">
               <div className="Share-liks">
-                <a
-                  href="#"
-                  target="_blank"
-                  title="facebook"
-                  className="share-facebook"
-                >
-                  <ImFacebook />
+                <a href="#" target="_blank" title="facebook">
+                  <ImFacebook className="share-facebook" />
                 </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  title="twitter"
-                  className="share-twitter"
-                >
-                  <ImTwitter />
+                <a href="#" target="_blank" title="twitter">
+                  <ImTwitter className="share-twitter" />
                 </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  title="Instegram"
-                  className="share-Instegram"
-                >
-                  <ImInstagram />
+                <a href="#" target="_blank" title="Instegram">
+                  <ImInstagram className="share-Instegram" />
                 </a>
               </div>
             </div>

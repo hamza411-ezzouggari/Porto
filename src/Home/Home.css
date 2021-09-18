@@ -1166,3 +1166,12 @@ span > a {
   font-weight: 400;
   background-color: #e7e7e7;
 }
+.share-facebook:hover {
+  color: #4267b2;
+}
+.share-twitter:hover {
+  color: #1da1f2;
+}
+.share-Instegram:hover {
+  color: #e1306c;
+}
