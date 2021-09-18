@@ -1159,7 +1159,7 @@ span > a {
   display: flex;
   justify-content: center;
   align-items: center !important;
-  margin: 45px 0 66px;
+  margin: 45px 0 0px;
   font-size: 14px;
   line-height: 24px;
   width: 90%;
@@ -1214,6 +1214,7 @@ span > a {
   line-height: 24px;
 }
 .widget-contact-info {
+  margin: 0px 0px 0px 2.5rem;
   margin-top: 0;
   margin-bottom: 1.875rem;
   box-sizing: inherit;
@@ -1240,7 +1241,6 @@ span > a {
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.065px;
-  background-color: red !important;
 }
 .contact-name-block {
   line-height: 1.8;
@@ -1252,10 +1252,9 @@ span > a {
   height: 9rem;
   box-sizing: inherit;
   font-size: 13px;
-  letter-spacing: 0.065px;
+  letter-spacing: 0.65px;
 }
 .far-fa-dot-circle {
-  margin-bottom: 10px;
   flex: 0 0 50%;
   line-height: 1.8;
   display: list-item;
@@ -1290,6 +1289,7 @@ span > a {
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
+  margin-top: 10px;
 }
 .far-fa-dot-circle > .fab-fa-whatsapp {
   margin-bottom: 10px;
@@ -1332,6 +1332,7 @@ span > a {
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
+  margin-top: 10px;
 }
 .far-fa-envelope {
   margin-bottom: 10px;
@@ -1372,6 +1373,7 @@ span > a {
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
+  margin-top: 10px;
 }
 .far-fa-clock > strong {
   list-style: none;
@@ -1398,12 +1400,13 @@ span > a {
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
+  margin-top: 10px;
 }
 .porto-separator-taller-foor {
   display: flex;
   justify-content: center;
   align-items: center !important;
-  margin: 66px 0 66px;
+  margin: 30px 0 66px;
   font-size: 14px;
   line-height: 24px;
   width: 90%;
