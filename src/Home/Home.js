@@ -1586,7 +1586,7 @@ class Home extends React.Component {
                   </div>
                 </div>
                 <div className="col-lg-5">
-                  <div className="widget__text">
+                  <div className="widgete__text">
                     <h3>MY ACCOUNT</h3>
                   </div>
                   <div className="textwidget">
@@ -1607,17 +1607,48 @@ class Home extends React.Component {
                       <div className="colx-xl-6">
                         <ul className="order-history">
                           <li>
-                            <a>Orders history</a>
+                            <a href="#">Orders history</a>
                           </li>
                           <li>
-                            <a>advanced Search</a>
+                            <a href="#">advanced Search</a>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4"></div>
+                <div className="col-lg-6">
+                  <div className="widget__text__6">
+                    <h3>Main Features</h3>
+                    <div className="textwidget_6">
+                      <div className="row-d-inline-flex_7">
+                        <div className="colx-xl-7">
+                          <ul>
+                            <li>
+                              <a href="#">Super Fast WordPress Theme</a>
+                            </li>
+                            <li>
+                              <a href="#">1st Fully working Ajaz Them</a>
+                            </li>
+                            <li>
+                              <a href="#">36 unique Shop Layouts </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div className="colx-xl-7">
+                        <ul className="order-history_7">
+                          <li>
+                            <a href="#">Powerful Admin Panel</a>
+                          </li>
+                          <li>
+                            <a href="#">Mobile & Ratina Optimized</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
