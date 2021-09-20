@@ -1,11 +1,15 @@
 .Navbar-general {
-  position: absolute;
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2vh 0px 0px 0px;
   z-index: 2;
+}
+.Navbar-general.active {
+  margin: 0vh 0px 0px 0px;
+  background-color: #e6e6e6 !important;
 }
 li > a {
   text-decoration: none;
