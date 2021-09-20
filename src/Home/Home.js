@@ -29,6 +29,7 @@ import headphoneicon from "./icon-premiem page/headphones.png";
 import credit from "./icon-premiem page/credit-card.png";
 import undo from "./icon-premiem page/undo.png";
 import delevery from "./icon-premiem page/delivery-truck.png";
+import payment from "./image Navbar/shop2_payment_logo.png";
 import { BsBarChartFill } from "react-icons/bs";
 import { BsBag } from "react-icons/bs";
 import { ImFacebook } from "react-icons/im";
@@ -1654,6 +1655,18 @@ class Home extends React.Component {
           </div>
           <div className="porto-separator-taller-foor">
             <hr className="align_center-hr" />
+          </div>
+          <div className="footer-middle">
+            <div className="container-footer">
+              <address>©Copyright 2021 by PORTO. All Rights Reserved.</address>
+              <div className="custom-block-right">
+                <img
+                  className="bottom-payment-icon"
+                  src={payment}
+                  alt="imges"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1637,10 +1637,35 @@ ul > li > a {
   display: flex;
   justify-content: center;
   align-items: center !important;
-  margin: 20px 0 66px;
+  margin: 20px 0 0px 0px;
   font-size: 14px;
   line-height: 24px;
   width: 90%;
   font-weight: 400;
   background-color: #e7e7e7;
+}
+.footer-middle {
+  padding: 1.5rem 0 2rem;
+  font-size: 1em;
+  color: #90969a;
+  background-color: #ffffff;
+  line-height: 24px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.065px;
+}
+.container-footer {
+  max-width: 94%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  font-size: 1em;
+  color: #90969a;
 }
