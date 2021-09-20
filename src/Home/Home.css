@@ -9,7 +9,8 @@
 }
 .Navbar-general.active {
   margin: 0vh 0px 0px 0px;
-  background-color: #e6e6e6 !important;
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #5e6263 0%, #d3d3d3 74%);
 }
 li > a {
   text-decoration: none;
