@@ -1179,6 +1179,7 @@ span > a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 100%;
   color: #90969a;
   box-sizing: inherit;
@@ -1213,6 +1214,7 @@ span > a {
   box-sizing: inherit;
   font-size: 13px;
   line-height: 24px;
+  margin: 0px 0px 0px 3rem;
 }
 .widget-contact-info {
   margin: 0px 0px 0px 2.5rem;
@@ -1464,7 +1466,7 @@ span > a {
   flex: 1;
   padding-left: 3vw;
   padding-right: 3vw;
-  max-width: 30%;
+  max-width: 20%;
   position: relative;
   min-height: 1px;
   white-space: nowrap;
@@ -1635,7 +1637,7 @@ ul > li > a {
   display: flex;
   justify-content: center;
   align-items: center !important;
-  margin: 30px 0 66px;
+  margin: 20px 0 66px;
   font-size: 14px;
   line-height: 24px;
   width: 90%;

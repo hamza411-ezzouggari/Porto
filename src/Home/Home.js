@@ -1559,7 +1559,7 @@ class Home extends React.Component {
             <div className="container">
               <div className="row">
                 <div className="col-lg-4">
-                  <div className="widget-contact-info">
+                  <div className="widgete__text">
                     <h3>CONTACT INFO</h3>
                   </div>
                   <div className="contact-info-block">
@@ -1618,7 +1618,7 @@ class Home extends React.Component {
                   </div>
                 </div>
                 <div className="col-lg-6">
-                  <div className="widget__text__6">
+                  <div className="widgete__text">
                     <h3>Main Features</h3>
                     <div className="textwidget_6">
                       <div className="row-d-inline-flex_7">
