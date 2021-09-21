@@ -1706,7 +1706,6 @@ function Home() {
               contentLabel="Example Modal"
             >
               <button onClick={closeModal}>close</button>
-
               <section className="gallery">
                 <div className="gallery__item">
                   <input
