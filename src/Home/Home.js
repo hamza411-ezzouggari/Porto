@@ -36,6 +36,14 @@ import { ImFacebook } from "react-icons/im";
 import { ImTwitter } from "react-icons/im";
 import { ImInstagram } from "react-icons/im";
 import Modal from "react-modal";
+import shoes00 from "./girl Shoes/shoes-16-2_9.jpeg";
+import shoes000 from "./girl Shoes/shoes-16-2_9-1.jpeg";
+import shoes11 from "./girl Shoes/shoes-2_1.jpeg";
+import shoes111 from "./girl Shoes/shoes-2_1-2.jpeg";
+import shoes12 from "./girl Shoes/shoes-13.jpeg";
+import shoes122 from "./girl Shoes/shoes-13-1.jpeg";
+import shoes13 from "./girl Shoes/shoes-8-2_1.jpeg";
+import shoes133 from "./girl Shoes/shoes-8-2_1-1.jpeg";
 const customStyles = {
   content: {
     top: "50%",
@@ -69,10 +77,10 @@ function Home() {
 
   function afterOpenModal() {}
 
-  function closeModal(e) {
-    e.preventDefault();
+  function closeModal() {
     setIsOpen(false);
   }
+
   return (
     <div className="content-hoome">
       <div className={Navbar ? "Navbar-general active" : "Navbar-general"}>
@@ -1697,11 +1705,62 @@ function Home() {
               style={customStyles}
               contentLabel="Example Modal"
             >
-              <div className="column main">
-                <div className="product-media">
-                  <a id="gallery-prev-area" tabIndex="-1"></a>
+              <button onClick={closeModal}>close</button>
+
+              <section className="gallery">
+                <div className="gallery__item">
+                  <input
+                    type="radio"
+                    id="img-1"
+                    checked
+                    name="gallery"
+                    className="gallery__selector"
+                  />
+                  <img className="gallery__img" src={shoes00} alt="" />
+                  <label for="img-1" className="gallery__thumb">
+                    <img src={shoes000} alt="" />
+                  </label>
                 </div>
-              </div>
+                <div className="gallery__item">
+                  <input
+                    type="radio"
+                    id="img-2"
+                    checked
+                    name="gallery"
+                    className="gallery__selector"
+                  />
+                  <img className="gallery__img" src={shoes11} alt="" />
+                  <label for="img-2" className="gallery__thumb">
+                    <img src={shoes111} alt="" />
+                  </label>
+                </div>
+                <div cclassName="gallery__item">
+                  <input
+                    type="radio"
+                    id="img-3"
+                    checked
+                    name="gallery"
+                    className="gallery__selector"
+                  />
+                  <img className="gallery__img" src={shoes12} alt="" />
+                  <label for="img-3" className="gallery__thumb">
+                    <img src={shoes122} alt="" />
+                  </label>
+                </div>
+                <div className="gallery__item">
+                  <input
+                    type="radio"
+                    checked
+                    id="img-4"
+                    name="gallery"
+                    className="gallery__selector"
+                  />
+                  <img className="gallery__img" src={shoes13} alt="" />
+                  <label for="img-4" className="gallery__thumb">
+                    <img src={shoes133} alt="" />
+                  </label>
+                </div>
+              </section>
             </Modal>
           </div>
         </div>
