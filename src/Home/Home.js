@@ -45,6 +45,8 @@ import shoes122 from "./girl Shoes/shoes-13-1.jpeg";
 import shoes13 from "./girl Shoes/shoes-8-2_1.jpeg";
 import shoes133 from "./girl Shoes/shoes-8-2_1-1.jpeg";
 import { BsX } from "react-icons/bs";
+import { BsPlus } from "react-icons/bs";
+import { BsDash } from "react-icons/bs";
 const customStyles = {
   content: {
     top: "50%",
@@ -1843,7 +1845,27 @@ function Home() {
                       </div>
                     </div>
                     <hr className="align_center-hr_1" />
-                    <div className="product-add-from"></div>
+                    <div className="product-add-from">
+                      <div className="control">
+                        <input
+                          type="number"
+                          name="qty"
+                          id="qty"
+                          maxlength="12"
+                          value="1"
+                          title="qty"
+                          className="input-text-qty"
+                        />
+                        <div className="qty-changer">
+                          <a className="qty-dec">
+                            <BsDash className="BsDash" />
+                          </a>
+                          <a className="qty-inc">
+                            <BsPlus />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
