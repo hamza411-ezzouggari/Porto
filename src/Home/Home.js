@@ -1710,7 +1710,7 @@ function Home() {
                 <div className="bsx">
                   <BsX className="Bsk" onClick={closeModal} />
                 </div>
-                <div className="column main">
+                <div className="column-main">
                   <section className="gallery">
                     <div className="gallery__item">
                       <input
@@ -1766,11 +1766,79 @@ function Home() {
                     </div>
                   </section>
                   <div className="product-main-info">
-                    <div className="page-title-wrapper"></div>
-                    <div className="product-reviews-summary"></div>
-                    <div className="product-info-price"></div>
-                    <div className="product-attribute"></div>
-                    <div className="product-info-stock"></div>
+                    <div className="page-title-wrapper">
+                      <h1 className="base" itemProp="name">
+                        Girl Shoes
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" value="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          $101.00
+                        </span>
+                      </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability:</span>
+                        <span>In stock</span>
+                      </div>
+                      <div className="product-attribute-sku"></div>
+                    </div>
                     <div className="product-add-from"></div>
                   </div>
                 </div>

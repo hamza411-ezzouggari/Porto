@@ -1676,6 +1676,7 @@ ul > li > a {
 }
 
 .ReactModal__Overlay {
+  z-index: 2;
   opacity: 0;
   transform: translateX(-100px);
   transition: all 800ms ease-in-out;
@@ -1766,4 +1767,117 @@ ul > li > a {
   -moz-transform: rotate(270deg);
   transform: rotate(270deg);
   opacity: 1;
+}
+.column-main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+  max-width: 100%;
+  order: 1;
+  box-sizing: border-box;
+  clear: both;
+}
+.product-main-info {
+  width: 48% !important;
+  margin-bottom: 0;
+  float: right;
+  box-sizing: inherit;
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.page-title-wrapper > .base {
+  font-size: 1.875rem;
+  line-height: 1.2;
+  color: #222529;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+  margin-top: 0rem;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  display: block;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+}
+.product-reviews-summary-madel {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: inherit;
+  font-size: 0.9286em;
+  color: #999;
+  line-height: 24px;
+  content: "\f844""\f844""\f844""\f844""\f844";
+  display: inline-block;
+  vertical-align: middle;
+  font-family: porto-icons;
+  color: #c3c5c9;
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  line-height: 13px;
+}
+.align_hr {
+  content: "";
+  display: block;
+  width: 40px;
+  border-top: 2px solid #e7e7e7;
+  margin: 1rem 0 1.25rem;
+  color: #e7e7e7;
+  background-color: #e7e7e7;
+}
+.product-info-price {
+  display: table-cell;
+  vertical-align: top;
+  box-sizing: inherit;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #222529;
+}
+.price-box-final-price {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #222529;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  margin-bottom: 1.25rem;
+}
+.price-wrapper {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #222529;
+}
+.product-attribute {
+  font-size: 1.1428em;
+  line-height: 1.6875;
+  letter-spacing: -0.015em;
+  box-sizing: inherit;
+  display: block;
+}
+.product-attribute > .value {
+  box-sizing: inherit;
+  font-size: 1.1428em;
+  line-height: 1.6875;
+  letter-spacing: -0.015em;
+  color: #777777;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-text-size-adjust: 100%;
 }
