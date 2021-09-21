@@ -1834,11 +1834,15 @@ function Home() {
                     </div>
                     <div className="product-info-stock">
                       <div className="stock-available">
-                        <span className="label">Availability:</span>
-                        <span>In stock</span>
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
                       </div>
-                      <div className="product-attribute-sku"></div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 4234623 </div>
+                      </div>
                     </div>
+                    <hr className="align_center-hr_1" />
                     <div className="product-add-from"></div>
                   </div>
                 </div>

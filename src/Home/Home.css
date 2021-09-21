@@ -1781,6 +1781,7 @@ ul > li > a {
 .product-main-info {
   width: 48% !important;
   margin-bottom: 0;
+  margin-left: 2rem;
   float: right;
   box-sizing: inherit;
   display: block;
@@ -1826,7 +1827,7 @@ ul > li > a {
 .align_hr {
   content: "";
   display: block;
-  width: 40px;
+  width: 85px;
   border-top: 2px solid #e7e7e7;
   margin: 1rem 0 1.25rem;
   color: #e7e7e7;
@@ -1880,4 +1881,71 @@ ul > li > a {
   font-style: normal;
   font-weight: 400;
   -webkit-text-size-adjust: 100%;
+}
+.product-info-stock {
+  clear: both;
+  font-size: 0.999em;
+  text-transform: uppercase;
+  margin: 1.2143em 0;
+  box-sizing: inherit;
+  line-height: 24px;
+  color: #777777;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.stock-available {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.25rem;
+  font-size: 0.999em;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.stock-available > .label {
+  margin: 0px 10px 0px 0px;
+  color: #777777;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
+.stock-available > .stoker {
+  box-sizing: inherit;
+  line-height: 24px;
+  font-size: 0.999em;
+  text-transform: uppercase;
+  color: #222529;
+  font-weight: 700;
+}
+.product-attribute-sku {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.25rem;
+  font-size: 0.999em;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.product-attribute-sku > .type {
+  margin: 0px 10px 0px 0px;
+  color: #777777;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
+.product-attribute-sku > .value {
+  box-sizing: inherit;
+  line-height: 24px;
+  font-size: 0.999em;
+  text-transform: uppercase;
+  color: #222529;
+  font-weight: 700;
+}
+.align_center-hr_1 {
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 1px solid #e7e7e7;
+  margin: 1rem 0 1.25rem;
+  color: #e7e7e7;
+  background-color: #e7e7e7;
 }
