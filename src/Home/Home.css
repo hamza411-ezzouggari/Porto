@@ -1674,3 +1674,20 @@ ul > li > a {
   font-size: 1em;
   color: #90969a;
 }
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 800ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  background-color: #90969ad8 !important;
+  opacity: 9;
+  transform: translateX(0px);
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: translateX(-100px);
+}

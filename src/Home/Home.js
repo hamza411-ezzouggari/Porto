@@ -67,11 +67,10 @@ function Home() {
     setIsOpen(true);
   }
 
-  function afterOpenModal() {
-    subtitle.style.color = "#f00";
-  }
+  function afterOpenModal() {}
 
-  function closeModal() {
+  function closeModal(e) {
+    e.preventDefault();
     setIsOpen(false);
   }
   return (
@@ -1698,16 +1697,11 @@ function Home() {
               style={customStyles}
               contentLabel="Example Modal"
             >
-              <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-              <button onClick={closeModal}>close</button>
-              <div>I am a modal</div>
-              <form>
-                <input />
-                <button>tab navigation</button>
-                <button>stays</button>
-                <button>inside</button>
-                <button>the modal</button>
-              </form>
+              <div className="column main">
+                <div className="product-media">
+                  <a id="gallery-prev-area" tabIndex="-1"></a>
+                </div>
+              </div>
             </Modal>
           </div>
         </div>
