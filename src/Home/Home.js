@@ -44,6 +44,7 @@ import shoes12 from "./girl Shoes/shoes-13.jpeg";
 import shoes122 from "./girl Shoes/shoes-13-1.jpeg";
 import shoes13 from "./girl Shoes/shoes-8-2_1.jpeg";
 import shoes133 from "./girl Shoes/shoes-8-2_1-1.jpeg";
+import { BsX } from "react-icons/bs";
 const customStyles = {
   content: {
     top: "50%",
@@ -1705,61 +1706,75 @@ function Home() {
               style={customStyles}
               contentLabel="Example Modal"
             >
-              <button onClick={closeModal}>close</button>
-              <section className="gallery">
-                <div className="gallery__item">
-                  <input
-                    type="radio"
-                    id="img-1"
-                    checked
-                    name="gallery"
-                    className="gallery__selector"
-                  />
-                  <img className="gallery__img" src={shoes00} alt="" />
-                  <label for="img-1" className="gallery__thumb">
-                    <img src={shoes000} alt="" />
-                  </label>
+              <div className="mfp-content">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closeModal} />
                 </div>
-                <div className="gallery__item">
-                  <input
-                    type="radio"
-                    id="img-2"
-                    checked
-                    name="gallery"
-                    className="gallery__selector"
-                  />
-                  <img className="gallery__img" src={shoes11} alt="" />
-                  <label for="img-2" className="gallery__thumb">
-                    <img src={shoes111} alt="" />
-                  </label>
+                <div className="column main">
+                  <section className="gallery">
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-1"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={shoes00} alt="" />
+                      <label for="img-1" className="gallery__thumb">
+                        <img src={shoes000} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={shoes11} alt="" />
+                      <label for="img-2" className="gallery__thumb">
+                        <img src={shoes111} alt="" />
+                      </label>
+                    </div>
+                    <div cclassName="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-3"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={shoes12} alt="" />
+                      <label for="img-3" className="gallery__thumb">
+                        <img src={shoes122} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        checked
+                        id="img-4"
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={shoes13} alt="" />
+                      <label for="img-4" className="gallery__thumb">
+                        <img src={shoes133} alt="" />
+                      </label>
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper"></div>
+                    <div className="product-reviews-summary"></div>
+                    <div className="product-info-price"></div>
+                    <div className="product-attribute"></div>
+                    <div className="product-info-stock"></div>
+                    <div className="product-add-from"></div>
+                  </div>
                 </div>
-                <div cclassName="gallery__item">
-                  <input
-                    type="radio"
-                    id="img-3"
-                    checked
-                    name="gallery"
-                    className="gallery__selector"
-                  />
-                  <img className="gallery__img" src={shoes12} alt="" />
-                  <label for="img-3" className="gallery__thumb">
-                    <img src={shoes122} alt="" />
-                  </label>
-                </div>
-                <div className="gallery__item">
-                  <input
-                    type="radio"
-                    checked
-                    id="img-4"
-                    name="gallery"
-                    className="gallery__selector"
-                  />
-                  <img className="gallery__img" src={shoes13} alt="" />
-                  <label for="img-4" className="gallery__thumb">
-                    <img src={shoes133} alt="" />
-                  </label>
-                </div>
-              </section>
+              </div>
             </Modal>
           </div>
         </div>
