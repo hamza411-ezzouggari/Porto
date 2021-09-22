@@ -2070,6 +2070,9 @@ ul > li > a {
   vertical-align: middle;
   display: inline-block;
 }
+.action > button:hover {
+  background-color: black;
+}
 .bs-bag-modal {
   display: inline-block;
   content: "\e8ba";
@@ -2087,4 +2090,45 @@ ul > li > a {
   font-weight: 700;
   margin: 0px 0px 0px 10px;
   line-height: 3rem;
+}
+.fieldset {
+  margin-bottom: 0;
+  border: 0;
+  margin: 0 0 2em;
+  padding: 0;
+  letter-spacing: -0.31em;
+  box-sizing: inherit;
+  font-size: 14px;
+  line-height: 24px;
+}
+.action2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  box-sizing: inherit;
+  color: #777777;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  letter-spacing: normal;
+}
+.action2 > a {
+  text-decoration: none;
+}
+.action2 > .action-primary {
+  background: none;
+  color: #000000;
+  border: none;
+  height: auto;
+  display: inline-block;
+  min-width: auto;
+  padding: 0;
+  font-family: Poppins;
+  font-weight: 900;
+  line-height: 1.42857;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  vertical-align: middle;
+  letter-spacing: -0.015em;
 }

@@ -1880,6 +1880,19 @@ function Home() {
                       </div>
                     </div>
                     <hr className="align_center-hr_1" />
+                    <div className="fieldset">
+                      <div className="action2">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
