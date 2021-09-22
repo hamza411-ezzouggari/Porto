@@ -1879,6 +1879,7 @@ function Home() {
                         </div>
                       </div>
                     </div>
+                    <hr className="align_center-hr_1" />
                   </div>
                 </div>
               </div>
