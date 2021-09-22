@@ -60,7 +60,7 @@ const customStyles = {
 
 function Home() {
   const [Navbar, setNav] = useState(false);
-
+  const [Count, setCount] = useState(0);
   const changeBackground = () => {
     if (window.scrollY >= 80) {
       setNav(true);
@@ -82,6 +82,21 @@ function Home() {
 
   function closeModal() {
     setIsOpen(false);
+  }
+  function AddNumber(e) {
+    if (Count > 11) {
+      e.stopPropagation(setCount);
+      alert(" out of stock ");
+    } else {
+      setCount(Count + 1);
+    }
+  }
+  function subtract(e) {
+    if (Count < 2) {
+      e.stopPropagation(setCount);
+    } else {
+      setCount(Count - 1);
+    }
   }
 
   return (
@@ -1853,15 +1868,15 @@ function Home() {
                             name="qty"
                             id="qty"
                             maxlength="12"
-                            value="1"
+                            value={Count}
                             title="qty"
                             className="input-text-qty"
                           />
                           <div className="qty-changer">
                             <a className="qty-inc">
-                              <BsPlus className="plus" />
+                              <BsPlus className="plus" onClick={AddNumber} />
                             </a>
-                            <a className="qty-dec">
+                            <a className="qty-dec" onClick={subtract}>
                               <BsDash className="BsDash" />
                             </a>
                           </div>
