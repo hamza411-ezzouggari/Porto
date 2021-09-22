@@ -1846,23 +1846,36 @@ function Home() {
                     </div>
                     <hr className="align_center-hr_1" />
                     <div className="product-add-from">
-                      <div className="control">
-                        <input
-                          type="number"
-                          name="qty"
-                          id="qty"
-                          maxlength="12"
-                          value="1"
-                          title="qty"
-                          className="input-text-qty"
-                        />
-                        <div className="qty-changer">
-                          <a className="qty-dec">
-                            <BsDash className="BsDash" />
-                          </a>
-                          <a className="qty-inc">
-                            <BsPlus />
-                          </a>
+                      <div className="fieldset">
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            value="1"
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc">
+                              <BsPlus className="plus" />
+                            </a>
+                            <a className="qty-dec">
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span>Add to Cart</span>
+                          </button>
                         </div>
                       </div>
                     </div>

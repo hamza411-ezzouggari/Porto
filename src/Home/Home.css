@@ -1949,3 +1949,142 @@ ul > li > a {
   color: #e7e7e7;
   background-color: #e7e7e7;
 }
+.control {
+  position: relative;
+  width: 104px;
+  display: flex;
+  justify-content: center;
+  box-sizing: inherit;
+  font-size: 1em;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  line-height: 24px;
+  letter-spacing: normal;
+}
+.control > .input-text-qty {
+  margin: 0px 0px 0px 1rem !important;
+  text-align: center;
+  align-content: center;
+  display: flex !important;
+  width: 44px;
+  height: 3.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 14px;
+  border-radius: 0;
+  border-width: 1px 0 1px 0;
+  border-color: #e7e7e7;
+  padding: 0 5px;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  vertical-align: baseline;
+  border: 1px solid #cccccc;
+  color: #222529;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-rendering: auto;
+  text-indent: 0px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: none;
+}
+.qty-changer > a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.qty-changer > .qty-inc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  left: auto;
+  border-radius: 0;
+  margin-top: 0;
+  position: absolute;
+  height: 3rem;
+  text-align: center;
+  justify-content: center;
+  width: 30px;
+  font-weight: 900;
+  border: solid 1px #e7e7e7;
+  color: #000000 !important;
+  font-size: large;
+}
+.qty-changer > .qty-inc:hover {
+  background-color: #d3d3d380;
+}
+.qty-changer > .qty-dec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  margin-top: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  line-height: 3rem;
+  width: 30px;
+  font-weight: 900;
+  border: solid 1px #e7e7e7;
+  color: #000000 !important;
+  font-size: large;
+}
+.qty-changer > .qty-dec:hover {
+  background-color: #d3d3d380;
+}
+.fieldset {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.action {
+  margin: 0 4px 5px 0;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: normal;
+  box-sizing: inherit;
+  font-size: 1em;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.action > button {
+  margin: 0px 0px 0px 1.5rem;
+  width: 90%;
+  margin-bottom: 0;
+  min-width: 150px;
+  height: 3.2rem;
+  padding: 0 2em;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+  line-height: 3rem;
+  border: none;
+  background: #222529;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  vertical-align: middle;
+  display: inline-block;
+}
+.bs-bag-modal {
+  display: inline-block;
+  content: "\e8ba";
+  font-family: "porto-icons";
+  margin-right: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+.action > button > span {
+  text-transform: uppercase;
+  font-family: Poppins;
+  color: #fff;
+  font-size: 1em;
+  letter-spacing: -0.001em;
+  font-weight: 700;
+  margin: 0px 0px 0px 10px;
+  line-height: 3rem;
+}
