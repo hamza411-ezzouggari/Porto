@@ -44,6 +44,12 @@ import shoes12 from "./girl Shoes/shoes-13.jpeg";
 import shoes122 from "./girl Shoes/shoes-13-1.jpeg";
 import shoes13 from "./girl Shoes/shoes-8-2_1.jpeg";
 import shoes133 from "./girl Shoes/shoes-8-2_1-1.jpeg";
+import product205 from "./image glass/product-20_5.jpeg";
+import product2055 from "./image glass/product-20_5-1.jpeg";
+import product48 from "./image glass/product-48.jpeg";
+import product488 from "./image glass/product-48-1.jpeg";
+import product888 from "./image glass/product-48-2.jpeg";
+import product8888 from "./image glass/product-48-2-1.jpeg";
 import { BsX } from "react-icons/bs";
 import { BsPlus } from "react-icons/bs";
 import { BsDash } from "react-icons/bs";
@@ -72,6 +78,16 @@ function Home() {
 
   let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [glassmodal, setGlassmodal] = React.useState(false);
+
+  function openglassmodal(e) {
+    e.preventDefault();
+    setGlassmodal(true);
+  }
+  function closeglassmodal(e) {
+    e.preventDefault();
+    setGlassmodal(false);
+  }
 
   function openModal(e) {
     e.preventDefault();
@@ -620,7 +636,9 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc">Quickview</div>
+                      <div class="portfolioDisc" onClick={openglassmodal}>
+                        Quickview
+                      </div>
                     </a>
                   </span>
                   <div className="product-details-items">
@@ -1858,6 +1876,191 @@ function Home() {
                       <div className="product-attribute-sku">
                         <strong className="type"> SKU : </strong>
                         <div className="value"> 4234623 </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
+                      <div className="fieldset">
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span>Add to Cart</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="fieldset">
+                      <div className="action2">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
+              isOpen={glassmodal}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closeglassmodal} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery">
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-1"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={product205} alt="" />
+                      <label for="img-1" className="gallery__thumb">
+                        <img src={product2055} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={product48} alt="" />
+                      <label for="img-2" className="gallery__thumb">
+                        <img src={product488} alt="" />
+                      </label>
+                    </div>
+                    <div cclassName="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-3"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={product888} alt="" />
+                      <label for="img-3" className="gallery__thumb">
+                        <img src={product8888} alt="" />
+                      </label>
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base" itemProp="name">
+                        Glasses
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" value="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          $101.00
+                        </span>
+                      </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 42346423 </div>
                       </div>
                     </div>
                     <hr className="align_center-hr_1" />
