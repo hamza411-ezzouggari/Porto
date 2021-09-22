@@ -60,7 +60,7 @@ const customStyles = {
 
 function Home() {
   const [Navbar, setNav] = useState(false);
-  const [Count, setCount] = useState(0);
+  const [Count, setCount] = useState(1);
   const changeBackground = () => {
     if (window.scrollY >= 80) {
       setNav(true);
