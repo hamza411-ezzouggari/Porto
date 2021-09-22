@@ -1949,6 +1949,45 @@ ul > li > a {
   color: #e7e7e7;
   background-color: #e7e7e7;
 }
+.add55 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: inherit;
+  font-size: 1em;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  line-height: 24px;
+  letter-spacing: normal;
+}
+.add55 > .input-add55 {
+  text-align: center;
+  align-content: center;
+  display: flex !important;
+  height: 3.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 14px;
+  border-radius: 0;
+  border-width: 1px 0 1px 0;
+  padding: 0 5px;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  vertical-align: baseline;
+  border: 1px solid #cccccc;
+  color: #222529;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-rendering: auto;
+  text-indent: 0px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: none;
+}
+
 .control {
   position: relative;
   width: 104px;
@@ -1972,7 +2011,6 @@ ul > li > a {
   line-height: 14px;
   border-radius: 0;
   border-width: 1px 0 1px 0;
-  border-color: #e7e7e7;
   padding: 0 5px;
   background-color: #ffffff;
   background-clip: padding-box;
@@ -2040,6 +2078,38 @@ ul > li > a {
   flex-direction: row;
   width: 100%;
 }
+.action34 {
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: normal;
+  box-sizing: inherit;
+  font-size: 1em;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.action34 > button {
+  margin: 0px 0px 0px 0rem;
+  width: 100%;
+  margin-bottom: 0;
+  min-width: 150px;
+  height: 3.33rem;
+  padding: 0 2em;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+  line-height: 3rem;
+  border: none;
+  background: #222529;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  vertical-align: middle;
+  display: inline-block;
+}
+.action34 > button:hover {
+  background-color: black;
+}
 .action {
   margin: 0 4px 5px 0;
   display: inline-block;
@@ -2050,8 +2120,8 @@ ul > li > a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .action > button {
-  margin: 0px 0px 0px 2rem;
-  width: 90%;
+  margin: 0px 0px 0px 1.6rem;
+  width: 100%;
   margin-bottom: 0;
   min-width: 150px;
   height: 3.2rem;
@@ -2099,7 +2169,7 @@ ul > li > a {
   letter-spacing: -0.31em;
   box-sizing: inherit;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 20px;
 }
 .action2 {
   display: inline-block;
@@ -2116,7 +2186,7 @@ ul > li > a {
 }
 .action2 > .action-primary {
   background: none;
-  color: #000000;
+  color: #222529;
   border: none;
   height: auto;
   display: inline-block;
@@ -2124,11 +2194,8 @@ ul > li > a {
   padding: 0;
   font-family: Poppins;
   font-weight: 900;
-  line-height: 1.42857;
   overflow: hidden;
   text-transform: uppercase;
-  font-size: 1.2em;
-  box-sizing: border-box;
-  vertical-align: middle;
+  font-size: 1.4em;
   letter-spacing: -0.015em;
 }

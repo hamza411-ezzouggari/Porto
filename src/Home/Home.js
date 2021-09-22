@@ -1569,8 +1569,9 @@ function Home() {
               <p>Get all the latest information on Events, Sales and Offers.</p>
             </div>
             <div className="block-newsletter">
-              <div className="control">
+              <div className="add55">
                 <input
+                  className="input-add55"
                   name="email"
                   type="email"
                   id="footer_newsleter"
@@ -1578,9 +1579,9 @@ function Home() {
                   placeholder="Email Address"
                 />
               </div>
-              <div className="action">
+              <div className="action34">
                 <button
-                  className="action subscribe primary"
+                  className="action34 subscribe primary"
                   title="Subscribe"
                   type="submit"
                 >
