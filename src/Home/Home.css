@@ -2223,17 +2223,66 @@ ul > li > a {
   text-align: left;
   z-index: 1045;
 }
-.product-main-info-3 {
-  width: 48% !important;
+.product-main-info-7 {
+  margin: -20px 0px 0px 0px;
+  width: 47% !important;
+  height: flex;
   margin-bottom: 0;
   margin-left: 2rem;
   float: right;
   box-sizing: inherit;
   display: block;
   font-size: 14px;
-  line-height: 10px;
+  line-height: 24px;
   color: #777777;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
+}
+.base-1 {
+  font-size: 1.875rem;
+  line-height: 1.2;
+  color: #222529;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+  margin-top: 0rem;
+  margin-block-start: 0.12em;
+  margin-block-end: 0.3em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  display: block;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+}
+.action22 > a {
+  text-decoration: none;
+}
+.action22 {
+  margin: 1rem 0px 0px 0px !important;
+  background: none;
+  color: #222529;
+  border: none;
+  height: auto;
+  display: inline-block;
+  min-width: auto;
+  padding: 0;
+  font-family: Poppins;
+  font-weight: 900;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  letter-spacing: -0.015em;
+}
+.action22 > a > span {
+  color: #000;
+}
+.align_center-hr_1__2 {
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 1px solid #e7e7e7;
+  margin: 0rem 0 0rem !important;
+  color: #e7e7e7;
+  background-color: #e7e7e7;
 }

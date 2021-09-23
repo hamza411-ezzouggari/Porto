@@ -2137,7 +2137,7 @@ function Home() {
               style={customStyles}
               contentLabel="Example Modal"
             >
-              <div className="mfp-content-3">
+              <div className="mfp-content">
                 <div className="bsx">
                   <BsX className="Bsk" onClick={closeIdeapadmodal} />
                 </div>
@@ -2148,7 +2148,7 @@ function Home() {
                         type="radio"
                         id="img-2"
                         checked
-                        name="gallery"
+                        name="gallery-9"
                         className="gallery__selector"
                       />
                       <img
@@ -2159,9 +2159,9 @@ function Home() {
                       />{" "}
                     </div>
                   </section>
-                  <div className="product-main-info-3">
+                  <div className="product-main-info-7">
                     <div className="page-title-wrapper">
-                      <h1 className="base" itemProp="name">
+                      <h1 className="base-1" itemProp="name">
                         Ideapad
                       </h1>
                     </div>
@@ -2273,14 +2273,14 @@ function Home() {
                         </div>
                       </div>
                     </div>
-                    <hr className="align_center-hr_1" />
+                    <hr className="align_center-hr_1__2" />
                     <div className="fieldset">
-                      <div className="action2">
+                      <div className="action22">
                         <a
                           target="_parent"
                           href="#"
                           title="Go To Product"
-                          className="action-primary"
+                          className="action-primary2"
                           id="product-gotoproduct"
                         >
                           <span>Go To Product</span>
