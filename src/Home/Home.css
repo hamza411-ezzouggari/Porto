@@ -2223,22 +2223,6 @@ ul > li > a {
   text-align: left;
   z-index: 1045;
 }
-.product-main-info-7 {
-  margin: -20px 0px 0px 0px;
-  width: 47% !important;
-  height: flex;
-  margin-bottom: 0;
-  margin-left: 2rem;
-  float: right;
-  box-sizing: inherit;
-  display: block;
-  font-size: 14px;
-  line-height: 24px;
-  color: #777777;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
 .base-1 {
   font-size: 1.875rem;
   line-height: 1.2;
@@ -2285,4 +2269,16 @@ ul > li > a {
   margin: 0rem 0 0rem !important;
   color: #e7e7e7;
   background-color: #e7e7e7;
+}
+.old-price-wrapper-09 {
+  box-sizing: inherit;
+  color: #a7a7a7;
+  font-size: 0.8rem;
+  line-height: 1;
+  text-align: left;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: line-through;
+  list-style: none none;
+  margin: 0px 0.7rem 0px 0px;
 }

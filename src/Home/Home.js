@@ -2159,7 +2159,7 @@ function Home() {
                       />{" "}
                     </div>
                   </section>
-                  <div className="product-main-info-7">
+                  <div className="product-main-info">
                     <div className="page-title-wrapper">
                       <h1 className="base-1" itemProp="name">
                         Ideapad
@@ -2213,8 +2213,8 @@ function Home() {
                           data-price-type="finalPrice"
                           className="price-wrapper "
                         >
-                          <span className="old-price-wrapper">$299.00</span>
-                          <span className="price-premier">$259.00</span>
+                          <span className="old-price-wrapper-09">$299.00</span>
+                          <span className="price-premier-09">$259.00</span>
                         </span>
                       </div>
                     </div>
