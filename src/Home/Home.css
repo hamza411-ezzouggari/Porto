@@ -1698,10 +1698,10 @@ ul > li > a {
 }
 .gallery {
   display: flex;
+  align-items: center;
   margin: 10px auto;
   max-width: 600px;
   position: relative;
-  padding-top: 66.6666666667%;
 }
 @media screen and (min-width: 600px) {
   .gallery {
@@ -1721,6 +1721,7 @@ ul > li > a {
   display: block;
 }
 .gallery__selector {
+  background-color: black !important;
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -2198,4 +2199,41 @@ ul > li > a {
   text-transform: uppercase;
   font-size: 1.4em;
   letter-spacing: -0.015em;
+}
+.gallery-9 {
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  max-width: 100%;
+}
+.gallery__img__ideapad {
+  position: relative;
+  height: 100% !important;
+  width: 100% !important;
+}
+.mfp-content-3 {
+  width: flex;
+  height: flex;
+  line-height: 0;
+  max-width: 900px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 1045;
+}
+.product-main-info-3 {
+  width: 48% !important;
+  margin-bottom: 0;
+  margin-left: 2rem;
+  float: right;
+  box-sizing: inherit;
+  display: block;
+  font-size: 14px;
+  line-height: 10px;
+  color: #777777;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
