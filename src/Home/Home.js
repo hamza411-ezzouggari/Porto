@@ -99,6 +99,61 @@ function Home() {
   const [menCapmodal, setMenCapmodal] = React.useState(false);
   const [MenSHose, setMenSHose] = React.useState(false);
   const [portoBoth, setPortoBoth] = React.useState(false);
+  const [ExtendedLayout, setExtendedLayout] = React.useState(false);
+  const [Portowidth, setPortowidth] = React.useState(false);
+  const [leftSlidebar, setleftSlidebar] = React.useState(false);
+  const [RightSidebar, setRightSidebar] = React.useState(false);
+  const [Transparentimage, setTransparentimage] = React.useState(false);
+  const [SportsWatch, setSportsWatch] = React.useState(false);
+
+  function openTransparentimage(e) {
+    e.preventDefault();
+    setTransparentimage(true);
+  }
+  function closeTransparentimage(e) {
+    e.preventDefault();
+    setTransparentimage(false);
+  }
+  function openSportsWatch(e) {
+    e.preventDefault();
+    setSportsWatch(true);
+  }
+  function closeSportsWatch(e) {
+    e.preventDefault();
+    setSportsWatch(false);
+  }
+  function openRightSidebar(e) {
+    e.preventDefault();
+    setRightSidebar(true);
+  }
+  function closeRightSidebar(e) {
+    e.preventDefault();
+    setRightSidebar(false);
+  }
+  function openleftSlidebar(e) {
+    e.preventDefault();
+    setleftSlidebar(true);
+  }
+  function closeleftSlidebar(e) {
+    e.preventDefault();
+    setleftSlidebar(false);
+  }
+  function openPortowidth(e) {
+    e.preventDefault();
+    setPortowidth(true);
+  }
+  function closePortowidth(e) {
+    e.preventDefault();
+    setPortowidth(false);
+  }
+  function openExtendedLayout(e) {
+    e.preventDefault();
+    setExtendedLayout(true);
+  }
+  function closeExtendedLayout(e) {
+    e.preventDefault();
+    setExtendedLayout(false);
+  }
   function openglassmodal(e) {
     e.preventDefault();
     setGlassmodal(true);
@@ -1087,13 +1142,18 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div className="portfolioDisc">Quickview</div>
+                      <div
+                        className="portfolioDisc"
+                        onClick={openExtendedLayout}
+                      >
+                        Quickview
+                      </div>
                     </a>
                   </span>
                   <div className="product-details-items">
                     <strong className="product-item-name">
                       <a className="product-item-link" href="#">
-                        Girl Shoes
+                        Porto Extended Layout
                       </a>
                     </strong>
                     <span className="label">
@@ -1164,13 +1224,15 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc">Quickview</div>
+                      <div class="portfolioDisc" onClick={openPortowidth}>
+                        Quickview
+                      </div>
                     </a>
                   </span>
                   <div className="product-details-items">
                     <strong className="product-item-name">
                       <a className="product-item-link" href="#">
-                        Glasses
+                        Porto Full-Width
                       </a>
                     </strong>
                     <span className="label">
@@ -1241,13 +1303,15 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc">Quickview</div>
+                      <div class="portfolioDisc" onClick={openleftSlidebar}>
+                        Quickview
+                      </div>
                     </a>
                   </span>
                   <div className="product-details-items">
                     <strong className="product-item-name">
                       <a className="product-item-link" href="#">
-                        Ideapad
+                        Porto Left Sidebar
                       </a>
                     </strong>
                     <span className="label">
@@ -1318,7 +1382,9 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc">Quickview</div>
+                      <div class="portfolioDisc" onClick={openRightSidebar}>
+                        Quickview
+                      </div>
                       <div className="product-labels">
                         <div className="sale-label">-13%</div>
                       </div>
@@ -1327,7 +1393,7 @@ function Home() {
                   <div className="product-details-items">
                     <strong className="product-item-name">
                       <a className="product-item-link" href="#">
-                        Men Cap
+                        Porto Right Sidebar
                       </a>
                     </strong>
                     <span className="label">
@@ -1399,13 +1465,15 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc">Quickview</div>
+                      <div class="portfolioDisc" onClick={openTransparentimage}>
+                        Quickview
+                      </div>
                     </a>
                   </span>
                   <div className="product-details-items">
                     <strong className="product-item-name">
                       <a className="product-item-link" href="#">
-                        Men Shoes
+                        1 Porto Transparent Images
                       </a>
                     </strong>
                     <span className="label">
@@ -1476,7 +1544,9 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc">Quickview</div>
+                      <div class="portfolioDisc" onClick={openSportsWatch}>
+                        Quickview
+                      </div>
                       <div className="product-labels">
                         <div className="sale-label">-13%</div>
                       </div>
@@ -1485,7 +1555,7 @@ function Home() {
                   <div className="product-details-items">
                     <strong className="product-item-name">
                       <a className="product-item-link" href="#">
-                        Porto Both Sticky Info
+                        Sport Watch
                       </a>
                     </strong>
                     <span className="label">
