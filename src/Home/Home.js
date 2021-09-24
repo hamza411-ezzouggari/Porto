@@ -83,6 +83,7 @@ function Home() {
   const [glassmodal, setGlassmodal] = React.useState(false);
   const [ideapadmodal, setIdeapadmodal] = React.useState(false);
   const [menCapmodal, setMenCapmodal] = React.useState(false);
+  const [MenSHose, setMenSHose] = React.useState(false);
   function openglassmodal(e) {
     e.preventDefault();
     setGlassmodal(true);
@@ -116,6 +117,14 @@ function Home() {
   function closeMencap(e) {
     e.preventDefault();
     setMenCapmodal(false);
+  }
+  function openMenShouse(e) {
+    e.preventDefault();
+    setMenSHose(true);
+  }
+  function clouseMenShouse(e) {
+    e.preventDefault();
+    setMenSHose(false);
   }
   function AddNumber(e) {
     if (Count > 11) {
@@ -895,7 +904,9 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc">Quickview</div>
+                      <div class="portfolioDisc" onClick={openMenShouse}>
+                        Quickview
+                      </div>
                     </a>
                   </span>
                   <div className="product-details-items">
@@ -1916,11 +1927,11 @@ function Home() {
                             tabindex="0"
                             option-type="0"
                             option-id="166"
-                            option-label="XS"
-                            aria-label="XS"
+                            option-label="37"
+                            aria-label="37"
                             value="1"
                             option-tooltip-thumb=""
-                            option-tooltip-value="XS"
+                            option-tooltip-value="37"
                             role="option"
                             thumb-width="110"
                             thumb-height="90"
@@ -1936,8 +1947,8 @@ function Home() {
                             tabindex="0"
                             option-type="0"
                             option-id="167"
-                            option-label="XS"
-                            aria-label="XS"
+                            option-label="38"
+                            aria-label="38"
                             value="2"
                             option-tooltip-thumb=""
                             option-tooltip-value="XS"
@@ -1976,10 +1987,10 @@ function Home() {
                             tabindex="0"
                             option-type="0"
                             option-id="169"
-                            option-label="XS"
-                            aria-label="XS"
+                            option-label="40"
+                            aria-label="40"
                             option-tooltip-thumb=""
-                            option-tooltip-value="XS"
+                            option-tooltip-value="40"
                             role="option"
                             thumb-width="110"
                             value="4"
@@ -2499,10 +2510,6 @@ function Home() {
                         <strong className="type"> SKU : </strong>
                         <div className="value"> 42346423 </div>
                       </div>
-                      <div className="product-attribute-sku">
-                        <strong className="type"> SKU : </strong>
-                        <div className="value"> 4234623 </div>
-                      </div>
                       <div className="switch-attribute-size">
                         <span id="option-label-size-137">Size : </span>
                         <div
@@ -2637,6 +2644,312 @@ function Home() {
                           href="#"
                           title="Go To Product"
                           className="action-primary2"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
+              isOpen={MenSHose}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={clouseMenShouse} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery">
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-1"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={shoes00} alt="" />
+                      <label for="img-1" className="gallery__thumb">
+                        <img src={shoes000} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={shoes11} alt="" />
+                      <label for="img-2" className="gallery__thumb">
+                        <img src={shoes111} alt="" />
+                      </label>
+                    </div>
+                    <div cclassName="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-3"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={shoes12} alt="" />
+                      <label for="img-3" className="gallery__thumb">
+                        <img src={shoes122} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        checked
+                        id="img-4"
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={shoes13} alt="" />
+                      <label for="img-4" className="gallery__thumb">
+                        <img src={shoes133} alt="" />
+                      </label>
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base" itemProp="name">
+                        Men Shoes
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" value="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          $39.00
+                        </span>
+                      </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non.
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 4234623 </div>
+                      </div>
+                      <div className="switch-attribute-size">
+                        <span id="option-label-size-137">Size : </span>
+                        <div
+                          className="switch-option-text"
+                          index="0"
+                          value="0"
+                          aria-invalid="true"
+                        >
+                          <div
+                            className="swatch-option-text"
+                            id="option-label-size-136-item-166"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="166"
+                            option-label="38"
+                            aria-label="38"
+                            value="1"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="38"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                          >
+                            <h3>38</h3>
+                          </div>
+                          <div
+                            className="swatch-option-text"
+                            id="option-label-size-137-item-167"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="167"
+                            option-label="39"
+                            aria-label="39"
+                            value="2"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="XS"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                          >
+                            <h3>39</h3>
+                          </div>
+                          <div
+                            className="swatch-option-text"
+                            id="option-label-size-138-item-168"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="168"
+                            option-label="40"
+                            aria-label="40"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="40"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            value="3"
+                          >
+                            <h3>40</h3>
+                          </div>
+                          <div
+                            className="swatch-option-text"
+                            id="option-label-size-139-item-169"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="169"
+                            option-label="41"
+                            aria-label="41"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="41"
+                            role="option"
+                            thumb-width="110"
+                            value="4"
+                            thumb-height="90"
+                          >
+                            <h3>41</h3>
+                          </div>
+                          <div
+                            className="swatch-option-text"
+                            id="option-label-size-139-item-169"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="169"
+                            option-label="42"
+                            aria-label="42"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="42"
+                            role="option"
+                            thumb-width="110"
+                            value="5"
+                            thumb-height="90"
+                          >
+                            <h3>42</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
+                      <div className="fieldset">
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span>Add to Cart</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="fieldset">
+                      <div className="action2">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary"
                           id="product-gotoproduct"
                         >
                           <span>Go To Product</span>
