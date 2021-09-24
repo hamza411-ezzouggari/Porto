@@ -51,6 +51,7 @@ import product488 from "./image glass/product-48-1.jpeg";
 import product888 from "./image glass/product-48-2.jpeg";
 import product8888 from "./image glass/product-48-2-1.jpeg";
 import ideapad from "./img ideapad/ideapad-modal.jpeg";
+import menCap3 from "./men cap/cap-cap.jpeg";
 import { BsX } from "react-icons/bs";
 import { BsPlus } from "react-icons/bs";
 import { BsDash } from "react-icons/bs";
@@ -81,7 +82,7 @@ function Home() {
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [glassmodal, setGlassmodal] = React.useState(false);
   const [ideapadmodal, setIdeapadmodal] = React.useState(false);
-
+  const [menCapmodal, setMenCapmodal] = React.useState(false);
   function openglassmodal(e) {
     e.preventDefault();
     setGlassmodal(true);
@@ -108,7 +109,14 @@ function Home() {
     e.preventDefault();
     setIdeapadmodal(false);
   }
-
+  function openMencap(e) {
+    e.preventDefault();
+    setMenCapmodal(true);
+  }
+  function closeMencap(e) {
+    e.preventDefault();
+    setMenCapmodal(false);
+  }
   function AddNumber(e) {
     if (Count > 11) {
       e.stopPropagation(setCount);
@@ -808,7 +816,9 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc">Quickview</div>
+                      <div class="portfolioDisc" onClick={openMencap}>
+                        Quickview
+                      </div>
                     </a>
                   </span>
                   <div className="product-details-items">
@@ -1894,59 +1904,88 @@ function Home() {
                         <div
                           className="switch-option-text"
                           index="0"
-                          aria-invalid="false"
+                          value="0"
+                          aria-invalid="true"
                         >
                           <div
                             className="swatch-option-text"
-                            option-id="167"
-                            option-label="XS"
-                            aria-label="XS"
-                            role="option"
+                            id="option-label-size-136-item-166"
                             index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="166"
+                            option-label="XS"
+                            aria-label="XS"
+                            value="1"
+                            option-tooltip-thumb=""
                             option-tooltip-value="XS"
+                            role="option"
                             thumb-width="110"
                             thumb-height="90"
                           >
-                            37
+                            <h3>37</h3>
                           </div>
                           <div
                             className="swatch-option-text"
+                            id="option-label-size-137-item-167"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
                             option-id="167"
                             option-label="XS"
                             aria-label="XS"
+                            value="2"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="XS"
                             role="option"
-                            index="1"
-                            option-tooltip-value="S"
                             thumb-width="110"
                             thumb-height="90"
                           >
-                            38
+                            <h3>38</h3>
                           </div>
                           <div
                             className="swatch-option-text"
-                            option-id="167"
-                            option-label="XS"
-                            aria-label="XS"
+                            id="option-label-size-138-item-168"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="168"
+                            option-label="39"
+                            aria-label="39"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="39"
                             role="option"
-                            index="2"
-                            option-tooltip-value="M"
                             thumb-width="110"
                             thumb-height="90"
+                            value="3"
                           >
-                            39
+                            <h3>39</h3>
                           </div>
                           <div
                             className="swatch-option-text"
-                            option-id="167"
+                            id="option-label-size-139-item-169"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="169"
                             option-label="XS"
                             aria-label="XS"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="XS"
                             role="option"
-                            index="3"
-                            option-tooltip-value="M"
                             thumb-width="110"
+                            value="4"
                             thumb-height="90"
                           >
-                            40
+                            <h3>40</h3>
                           </div>
                         </div>
                       </div>
@@ -2297,6 +2336,262 @@ function Home() {
                       <div className="product-attribute-sku">
                         <strong className="type"> SKU : </strong>
                         <div className="value"> 42346423 </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
+                      <div className="fieldset">
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span>Add to Cart</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1__2" />
+                    <div className="fieldset">
+                      <div className="action22">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary2"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
+              isOpen={menCapmodal}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content-9">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closeMencap} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery-9">
+                    <div className="gallery__item-5">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery-9"
+                        className="gallery__selector"
+                      />
+                      <img
+                        for="img-2"
+                        className="gallery__img__ideapad"
+                        src={menCap3}
+                        alt=""
+                      />{" "}
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base-1" itemProp="name">
+                        Men Cap
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" value="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          $199.00
+                        </span>
+                      </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada fames ac turpis egestas. Vestibulum tortor
+                        quam, feugiat vitae, ultricies eget, tempor sit amet,
+                        ante. Donec eu libero sit amet quam egestas semper.
+                        Aenean ultricies mi vitae est. Mauris placerat eleifend
+                        leo.
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 42346423 </div>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 4234623 </div>
+                      </div>
+                      <div className="switch-attribute-size">
+                        <span id="option-label-size-137">Size : </span>
+                        <div
+                          className="switch-option-text"
+                          index="0"
+                          value="0"
+                          aria-invalid="true"
+                        >
+                          <div
+                            className="swatch-option-text"
+                            id="option-label-size-136-item-166"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="166"
+                            option-label="XS"
+                            aria-label="XS"
+                            value="1"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="XS"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                          >
+                            <h3>XS</h3>
+                          </div>
+                          <div
+                            className="swatch-option-text"
+                            id="option-label-size-137-item-167"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="167"
+                            option-label="S"
+                            aria-label="S"
+                            value="2"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="S"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                          >
+                            <h3>S</h3>
+                          </div>
+                          <div
+                            className="swatch-option-text"
+                            id="option-label-size-138-item-168"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="168"
+                            option-label="M"
+                            aria-label="M"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="M"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            value="3"
+                          >
+                            <h3>M</h3>
+                          </div>
+                          <div
+                            className="swatch-option-text"
+                            id="option-label-size-138-item-168"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="168"
+                            option-label="L"
+                            aria-label="L"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="L"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            value="4"
+                          >
+                            <h3>L</h3>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <hr className="align_center-hr_1" />
