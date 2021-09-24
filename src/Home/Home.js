@@ -52,6 +52,20 @@ import product888 from "./image glass/product-48-2.jpeg";
 import product8888 from "./image glass/product-48-2-1.jpeg";
 import ideapad from "./img ideapad/ideapad-modal.jpeg";
 import menCap3 from "./men cap/cap-cap.jpeg";
+import menshoes1 from "./Men Shoes/menshoes1.jpeg";
+import menshoes1_1 from "./Men Shoes/menshoes1_1.jpeg";
+import menshoes2 from "./Men Shoes/menshoes2.jpeg";
+import menshoes2_2 from "./Men Shoes/menshoes2_2.jpeg";
+import menshoes3 from "./Men Shoes/menshoes3.jpeg";
+import menshoes3_3 from "./Men Shoes/menshoes3_3.jpeg";
+import menshoes4 from "./Men Shoes/menshoes4.jpeg";
+import menshoes4_4 from "./Men Shoes/menshoes4_4.jpeg";
+import dron11 from "./Porto both/dron11.jpeg";
+import dron111 from "./Porto both/dron111.jpeg";
+import dron2 from "./Porto both/dron2.jpeg";
+import dron22 from "./Porto both/dron22.jpeg";
+import dron33 from "./Porto both/dron33.jpeg";
+import dron333 from "./Porto both/dron333.jpeg";
 import { BsX } from "react-icons/bs";
 import { BsPlus } from "react-icons/bs";
 import { BsDash } from "react-icons/bs";
@@ -84,6 +98,7 @@ function Home() {
   const [ideapadmodal, setIdeapadmodal] = React.useState(false);
   const [menCapmodal, setMenCapmodal] = React.useState(false);
   const [MenSHose, setMenSHose] = React.useState(false);
+  const [portoBoth, setPortoBoth] = React.useState(false);
   function openglassmodal(e) {
     e.preventDefault();
     setGlassmodal(true);
@@ -125,6 +140,14 @@ function Home() {
   function clouseMenShouse(e) {
     e.preventDefault();
     setMenSHose(false);
+  }
+  function openportoboth(e) {
+    e.preventDefault();
+    setPortoBoth(true);
+  }
+  function closeportoboth(e) {
+    e.preventDefault();
+    setPortoBoth(false);
   }
   function AddNumber(e) {
     if (Count > 11) {
@@ -983,7 +1006,9 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc">Quickview</div>
+                      <div class="portfolioDisc" onClick={openportoboth}>
+                        Quickview
+                      </div>
                     </a>
                   </span>
                   <div className="product-details-items">
@@ -2677,9 +2702,9 @@ function Home() {
                         name="gallery"
                         className="gallery__selector"
                       />
-                      <img className="gallery__img" src={shoes00} alt="" />
+                      <img className="gallery__img" src={menshoes1} alt="" />
                       <label for="img-1" className="gallery__thumb">
-                        <img src={shoes000} alt="" />
+                        <img src={menshoes1_1} alt="" />
                       </label>
                     </div>
                     <div className="gallery__item">
@@ -2690,9 +2715,9 @@ function Home() {
                         name="gallery"
                         className="gallery__selector"
                       />
-                      <img className="gallery__img" src={shoes11} alt="" />
+                      <img className="gallery__img" src={menshoes2} alt="" />
                       <label for="img-2" className="gallery__thumb">
-                        <img src={shoes111} alt="" />
+                        <img src={menshoes2_2} alt="" />
                       </label>
                     </div>
                     <div cclassName="gallery__item">
@@ -2703,9 +2728,9 @@ function Home() {
                         name="gallery"
                         className="gallery__selector"
                       />
-                      <img className="gallery__img" src={shoes12} alt="" />
+                      <img className="gallery__img" src={menshoes3} alt="" />
                       <label for="img-3" className="gallery__thumb">
-                        <img src={shoes122} alt="" />
+                        <img src={menshoes3_3} alt="" />
                       </label>
                     </div>
                     <div className="gallery__item">
@@ -2716,9 +2741,9 @@ function Home() {
                         name="gallery"
                         className="gallery__selector"
                       />
-                      <img className="gallery__img" src={shoes13} alt="" />
+                      <img className="gallery__img" src={menshoes4} alt="" />
                       <label for="img-4" className="gallery__thumb">
-                        <img src={shoes133} alt="" />
+                        <img src={menshoes4_4} alt="" />
                       </label>
                     </div>
                   </section>
@@ -2905,6 +2930,196 @@ function Home() {
                             <h3>42</h3>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
+                      <div className="fieldset">
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span>Add to Cart</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="fieldset">
+                      <div className="action2">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
+              isOpen={portoBoth}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content-dron">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closeportoboth} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery">
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-1"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={dron11} alt="" />
+                      <label for="img-1" className="gallery__thumb">
+                        <img src={dron111} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={dron2} alt="" />
+                      <label for="img-2" className="gallery__thumb">
+                        <img src={dron22} alt="" />
+                      </label>
+                    </div>
+                    <div cclassName="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-3"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img
+                        className="gallery__img"
+                        id="imges0933"
+                        src={dron33}
+                        alt=""
+                      />
+                      <label for="img-3" className="gallery__thumb">
+                        <img src={dron333} alt="" />
+                      </label>
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base" itemProp="name">
+                        Men Shoes
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" value="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" value="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          $890.00
+                        </span>
+                      </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 4234623 </div>
                       </div>
                     </div>
                     <hr className="align_center-hr_1" />

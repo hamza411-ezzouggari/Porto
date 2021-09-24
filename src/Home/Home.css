@@ -1730,7 +1730,7 @@ ul > li > a {
   opacity: 1;
 }
 .gallery__selector:checked ~ .gallery__thumb > img {
-  box-shadow: 0 0 0 3px #000000;
+  box-shadow: 0 0 0 9px #000000;
 }
 .mfp-content {
   width: flex;
@@ -2364,6 +2364,19 @@ ul > li > a {
   height: flex;
   line-height: 0;
   max-width: 70rem;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 1045;
+}
+.mfp-content-dron {
+  width: flex;
+  height: flex;
+  line-height: 0;
+  max-width: 60rem;
+  max-height: 38rem;
   position: relative;
   display: inline-block;
   vertical-align: middle;
