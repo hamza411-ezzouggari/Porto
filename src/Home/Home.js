@@ -1889,6 +1889,67 @@ function Home() {
                         <strong className="type"> SKU : </strong>
                         <div className="value"> 4234623 </div>
                       </div>
+                      <div className="switch-attribute-size">
+                        <span id="option-label-size-137">Size : </span>
+                        <div
+                          className="switch-option-text"
+                          index="0"
+                          aria-invalid="false"
+                        >
+                          <div
+                            className="swatch-option-text"
+                            option-id="167"
+                            option-label="XS"
+                            aria-label="XS"
+                            role="option"
+                            index="0"
+                            option-tooltip-value="XS"
+                            thumb-width="110"
+                            thumb-height="90"
+                          >
+                            37
+                          </div>
+                          <div
+                            className="swatch-option-text"
+                            option-id="167"
+                            option-label="XS"
+                            aria-label="XS"
+                            role="option"
+                            index="1"
+                            option-tooltip-value="S"
+                            thumb-width="110"
+                            thumb-height="90"
+                          >
+                            38
+                          </div>
+                          <div
+                            className="swatch-option-text"
+                            option-id="167"
+                            option-label="XS"
+                            aria-label="XS"
+                            role="option"
+                            index="2"
+                            option-tooltip-value="M"
+                            thumb-width="110"
+                            thumb-height="90"
+                          >
+                            39
+                          </div>
+                          <div
+                            className="swatch-option-text"
+                            option-id="167"
+                            option-label="XS"
+                            aria-label="XS"
+                            role="option"
+                            index="3"
+                            option-tooltip-value="M"
+                            thumb-width="110"
+                            thumb-height="90"
+                          >
+                            40
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <hr className="align_center-hr_1" />
                     <div className="product-add-from">
