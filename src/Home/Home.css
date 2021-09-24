@@ -2375,8 +2375,8 @@ ul > li > a {
   width: flex;
   height: flex;
   line-height: 0;
-  max-width: 60rem;
-  max-height: 38rem;
+  max-width: 55rem;
+  max-height: 40rem;
   position: relative;
   display: inline-block;
   vertical-align: middle;

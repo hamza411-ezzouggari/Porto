@@ -3048,7 +3048,7 @@ function Home() {
                   <div className="product-main-info">
                     <div className="page-title-wrapper">
                       <h1 className="base" itemProp="name">
-                        Men Shoes
+                        Porto Both Sticky Info
                       </h1>
                     </div>
                     <div className="product-reviews-summary-madel">
