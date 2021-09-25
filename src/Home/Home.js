@@ -4405,7 +4405,7 @@ function Home() {
             >
               <div className="mfp-content-9">
                 <div className="bsx">
-                  <BsX className="Bsk" onClick={closeSportsWatch} />
+                  <BsX className="Bsk" onClick={closeTransparentimage} />
                 </div>
                 <div className="column-main">
                   <section className="gallery-9">
