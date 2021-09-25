@@ -66,7 +66,7 @@ import dron2 from "./Porto both/dron2.jpeg";
 import dron22 from "./Porto both/dron22.jpeg";
 import dron33 from "./Porto both/dron33.jpeg";
 import dron333 from "./Porto both/dron333.jpeg";
-import shoesclassy11 from "./Porto-Ectanded-Layout/shoes-classy.jpeg";
+import shoesclassy11 from "./Porto-Ectanded-Layout/shoeslassy11.jpeg";
 import shoesclassy111 from "./Porto-Ectanded-Layout/shoesclassy111.jpeg";
 import shoesclassy22 from "./Porto-Ectanded-Layout/shoes-classy22.jpg";
 import shoesclassy222 from "./Porto-Ectanded-Layout/shoesclassy222.jpg";
@@ -3276,9 +3276,13 @@ function Home() {
                         name="gallery"
                         className="gallery__selector"
                       />
-                      <img className="gallery__img" src={shoes00} alt="" />
+                      <img
+                        className="gallery__img"
+                        src={shoesclassy11}
+                        alt=""
+                      />
                       <label for="img-1" className="gallery__thumb">
-                        <img src={shoes000} alt="" />
+                        <img src={shoesclassy111} alt="" />
                       </label>
                     </div>
                     <div className="gallery__item">
@@ -3289,9 +3293,13 @@ function Home() {
                         name="gallery"
                         className="gallery__selector"
                       />
-                      <img className="gallery__img" src={shoes11} alt="" />
+                      <img
+                        className="gallery__img"
+                        src={shoesclassy22}
+                        alt=""
+                      />
                       <label for="img-2" className="gallery__thumb">
-                        <img src={shoes111} alt="" />
+                        <img src={shoesclassy222} alt="" />
                       </label>
                     </div>
                     <div cclassName="gallery__item">
@@ -3302,9 +3310,14 @@ function Home() {
                         name="gallery"
                         className="gallery__selector"
                       />
-                      <img className="gallery__img" src={shoes12} alt="" />
+                      <img
+                        className="gallery__img"
+                        src={shoesclassy33}
+                        alt=""
+                      />
+                      3{" "}
                       <label for="img-3" className="gallery__thumb">
-                        <img src={shoes122} alt="" />
+                        <img src={shoesclassy333} alt="" />
                       </label>
                     </div>
                     <div className="gallery__item">
@@ -3315,16 +3328,20 @@ function Home() {
                         name="gallery"
                         className="gallery__selector"
                       />
-                      <img className="gallery__img" src={shoes13} alt="" />
+                      <img
+                        className="gallery__img"
+                        src={shoesclassy44}
+                        alt=""
+                      />
                       <label for="img-4" className="gallery__thumb">
-                        <img src={shoes133} alt="" />
+                        <img src={shoesclassy444} alt="" />
                       </label>
                     </div>
                   </section>
                   <div className="product-main-info">
                     <div className="page-title-wrapper">
                       <h1 className="base" itemProp="name">
-                        Girl Shoes
+                        Porto Extended Layout
                       </h1>
                     </div>
                     <div className="product-reviews-summary-madel">
@@ -3375,7 +3392,7 @@ function Home() {
                           data-price-type="finalPrice"
                           className="price-wrapper "
                         >
-                          $101.00
+                          $69.00
                         </span>
                       </div>
                     </div>
@@ -3385,7 +3402,7 @@ function Home() {
                         velit esse cillum dolore eu fugiat nulla pariatur.
                         Excepteur sint occaecat cupidatat non. Duis aute irure
                         dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur.
+                        dolore eu fugiat nulla pariatur
                       </div>
                     </div>
                     <div className="product-info-stock">
