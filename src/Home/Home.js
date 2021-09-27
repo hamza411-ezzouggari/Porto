@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import logo from "./image Navbar/logo_ecomblack_lg.png";
 import loope from "./image Navbar/loupe.png";
@@ -105,7 +105,6 @@ function Home() {
   };
   window.addEventListener("scroll", changeBackground);
 
-  let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [glassmodal, setGlassmodal] = React.useState(false);
   const [ideapadmodal, setIdeapadmodal] = React.useState(false);
@@ -501,7 +500,7 @@ function Home() {
                 <font>99</font>
               </h5>
               <div className="btn-container-h5">
-                <button calssName="btn-modern">
+                <button className="btn-modern">
                   <font>
                     Shop Now{" "}
                     <img src={right} alt="images" className="logo-right" />
@@ -675,7 +674,7 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc" onClick={openModal}>
+                      <div className="portfolioDisc" onClick={openModal}>
                         Quickview
                       </div>
                     </a>
@@ -689,29 +688,29 @@ function Home() {
                     <span className="label">
                       <form className="rating">
                         <label>
-                          <input type="radio" name="stars" value="1" />
+                          <input type="radio" name="stars" defaultValue="1" />
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="2" />
-                          <span className="icon">★</span>
-                          <span className="icon">★</span>
-                        </label>
-                        <label>
-                          <input type="radio" name="stars" value="3" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="2" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="4" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="3" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="5" />
+                          <input type="radio" name="stars" defaultValue="4" />
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" defaultValue="5" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
@@ -754,7 +753,7 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc" onClick={openglassmodal}>
+                      <div className="portfolioDisc" onClick={openglassmodal}>
                         Quickview
                       </div>
                     </a>
@@ -768,29 +767,29 @@ function Home() {
                     <span className="label">
                       <form className="rating">
                         <label>
-                          <input type="radio" name="stars" value="1" />
+                          <input type="radio" name="stars" defaultValue="1" />
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="2" />
-                          <span className="icon">★</span>
-                          <span className="icon">★</span>
-                        </label>
-                        <label>
-                          <input type="radio" name="stars" value="3" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="2" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="4" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="3" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="5" />
+                          <input type="radio" name="stars" defaultValue="4" />
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" defaultValue="5" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
@@ -833,7 +832,7 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc" onClick={openIdeapadmodal}>
+                      <div className="portfolioDisc" onClick={openIdeapadmodal}>
                         Quickview
                       </div>
                       <div className="product-labels">
@@ -850,29 +849,29 @@ function Home() {
                     <span className="label">
                       <form className="rating">
                         <label>
-                          <input type="radio" name="stars" value="1" />
+                          <input type="radio" name="stars" defaultValue="1" />
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="2" />
-                          <span className="icon">★</span>
-                          <span className="icon">★</span>
-                        </label>
-                        <label>
-                          <input type="radio" name="stars" value="3" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="2" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="4" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="3" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="5" />
+                          <input type="radio" name="stars" defaultValue="4" />
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" defaultValue="5" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
@@ -916,7 +915,7 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc" onClick={openMencap}>
+                      <div className="portfolioDisc" onClick={openMencap}>
                         Quickview
                       </div>
                     </a>
@@ -930,29 +929,29 @@ function Home() {
                     <span className="label">
                       <form className="rating">
                         <label>
-                          <input type="radio" name="stars" value="1" />
+                          <input type="radio" name="stars" defaultValue="1" />
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="2" />
-                          <span className="icon">★</span>
-                          <span className="icon">★</span>
-                        </label>
-                        <label>
-                          <input type="radio" name="stars" value="3" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="2" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="4" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="3" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="5" />
+                          <input type="radio" name="stars" defaultValue="4" />
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" defaultValue="5" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
@@ -995,7 +994,7 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc" onClick={openMenShouse}>
+                      <div className="portfolioDisc" onClick={openMenShouse}>
                         Quickview
                       </div>
                     </a>
@@ -1009,29 +1008,29 @@ function Home() {
                     <span className="label">
                       <form className="rating">
                         <label>
-                          <input type="radio" name="stars" value="1" />
+                          <input type="radio" name="stars" defaultValue="1" />
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="2" />
-                          <span className="icon">★</span>
-                          <span className="icon">★</span>
-                        </label>
-                        <label>
-                          <input type="radio" name="stars" value="3" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="2" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="4" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="3" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="5" />
+                          <input type="radio" name="stars" defaultValue="4" />
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" defaultValue="5" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
@@ -1074,7 +1073,7 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc" onClick={openportoboth}>
+                      <div className="portfolioDisc" onClick={openportoboth}>
                         Quickview
                       </div>
                     </a>
@@ -1088,29 +1087,29 @@ function Home() {
                     <span className="label">
                       <form className="rating">
                         <label>
-                          <input type="radio" name="stars" value="1" />
+                          <input type="radio" name="stars" defaultValue="1" />
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="2" />
-                          <span className="icon">★</span>
-                          <span className="icon">★</span>
-                        </label>
-                        <label>
-                          <input type="radio" name="stars" value="3" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="2" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="4" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="3" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="5" />
+                          <input type="radio" name="stars" defaultValue="4" />
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" defaultValue="5" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
@@ -1172,29 +1171,29 @@ function Home() {
                     <span className="label">
                       <form className="rating">
                         <label>
-                          <input type="radio" name="stars" value="1" />
+                          <input type="radio" name="stars" defaultValue="1" />
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="2" />
-                          <span className="icon">★</span>
-                          <span className="icon">★</span>
-                        </label>
-                        <label>
-                          <input type="radio" name="stars" value="3" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="2" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="4" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="3" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="5" />
+                          <input type="radio" name="stars" defaultValue="4" />
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" defaultValue="5" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
@@ -1237,7 +1236,7 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc" onClick={openPortowidth}>
+                      <div className="portfolioDisc" onClick={openPortowidth}>
                         Quickview
                       </div>
                     </a>
@@ -1251,29 +1250,29 @@ function Home() {
                     <span className="label">
                       <form className="rating">
                         <label>
-                          <input type="radio" name="stars" value="1" />
+                          <input type="radio" name="stars" defaultValue="1" />
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="2" />
-                          <span className="icon">★</span>
-                          <span className="icon">★</span>
-                        </label>
-                        <label>
-                          <input type="radio" name="stars" value="3" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="2" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="4" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="3" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="5" />
+                          <input type="radio" name="stars" defaultValue="4" />
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" defaultValue="5" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
@@ -1316,7 +1315,7 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc" onClick={openleftSlidebar}>
+                      <div className="portfolioDisc" onClick={openleftSlidebar}>
                         Quickview
                       </div>
                     </a>
@@ -1330,29 +1329,29 @@ function Home() {
                     <span className="label">
                       <form className="rating">
                         <label>
-                          <input type="radio" name="stars" value="1" />
+                          <input type="radio" name="stars" defaultValue="1" />
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="2" />
-                          <span className="icon">★</span>
-                          <span className="icon">★</span>
-                        </label>
-                        <label>
-                          <input type="radio" name="stars" value="3" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="2" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="4" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="3" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="5" />
+                          <input type="radio" name="stars" defaultValue="4" />
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" defaultValue="5" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
@@ -1395,7 +1394,7 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc" onClick={openRightSidebar}>
+                      <div className="portfolioDisc" onClick={openRightSidebar}>
                         Quickview
                       </div>
                       <div className="product-labels">
@@ -1412,29 +1411,29 @@ function Home() {
                     <span className="label">
                       <form className="rating">
                         <label>
-                          <input type="radio" name="stars" value="1" />
+                          <input type="radio" name="stars" defaultValue="1" />
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="2" />
-                          <span className="icon">★</span>
-                          <span className="icon">★</span>
-                        </label>
-                        <label>
-                          <input type="radio" name="stars" value="3" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="2" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="4" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="3" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="5" />
+                          <input type="radio" name="stars" defaultValue="4" />
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" defaultValue="5" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
@@ -1478,7 +1477,10 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc" onClick={openTransparentimage}>
+                      <div
+                        className="portfolioDisc"
+                        onClick={openTransparentimage}
+                      >
                         Quickview
                       </div>
                     </a>
@@ -1492,29 +1494,29 @@ function Home() {
                     <span className="label">
                       <form className="rating">
                         <label>
-                          <input type="radio" name="stars" value="1" />
+                          <input type="radio" name="stars" defaultValue="1" />
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="2" />
-                          <span className="icon">★</span>
-                          <span className="icon">★</span>
-                        </label>
-                        <label>
-                          <input type="radio" name="stars" value="3" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="2" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="4" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="3" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="5" />
+                          <input type="radio" name="stars" defaultValue="4" />
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" defaultValue="5" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
@@ -1557,7 +1559,7 @@ function Home() {
                         alt="images"
                         className="image-productive"
                       />
-                      <div class="portfolioDisc" onClick={openSportsWatch}>
+                      <div className="portfolioDisc" onClick={openSportsWatch}>
                         Quickview
                       </div>
                       <div className="product-labels">
@@ -1574,29 +1576,29 @@ function Home() {
                     <span className="label">
                       <form className="rating">
                         <label>
-                          <input type="radio" name="stars" value="1" />
+                          <input type="radio" name="stars" defaultValue="1" />
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="2" />
-                          <span className="icon">★</span>
-                          <span className="icon">★</span>
-                        </label>
-                        <label>
-                          <input type="radio" name="stars" value="3" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="2" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="4" />
-                          <span className="icon">★</span>
+                          <input type="radio" name="stars" defaultValue="3" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                         </label>
                         <label>
-                          <input type="radio" name="stars" value="5" />
+                          <input type="radio" name="stars" defaultValue="4" />
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                          <span className="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" defaultValue="5" />
                           <span className="icon">★</span>
                           <span className="icon">★</span>
                           <span className="icon">★</span>
@@ -1915,7 +1917,7 @@ function Home() {
                         <img src={shoes111} alt="" />
                       </label>
                     </div>
-                    <div cclassName="gallery__item">
+                    <div className="gallery__item">
                       <input
                         type="radio"
                         id="img-3"
@@ -1952,29 +1954,29 @@ function Home() {
                       <span className="label">
                         <form className="rating">
                           <label>
-                            <input type="radio" name="stars" value="1" />
+                            <input type="radio" name="stars" defaultValue="1" />
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="2" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" value="3" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="2" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="4" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="3" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="5" />
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
@@ -2037,6 +2039,7 @@ function Home() {
                             option-id="166"
                             option-label="37"
                             aria-label="37"
+                            aria-selected="true"
                             value="1"
                             option-tooltip-thumb=""
                             option-tooltip-value="37"
@@ -2053,6 +2056,7 @@ function Home() {
                             aria-checked="false"
                             aria-describedby="option-label-size-137"
                             tabindex="0"
+                            aria-selected="true"
                             option-type="0"
                             option-id="167"
                             option-label="38"
@@ -2080,6 +2084,7 @@ function Home() {
                             option-tooltip-thumb=""
                             option-tooltip-value="39"
                             role="option"
+                            aria-selected="true"
                             thumb-width="110"
                             thumb-height="90"
                             value="3"
@@ -2097,6 +2102,7 @@ function Home() {
                             option-id="169"
                             option-label="40"
                             aria-label="40"
+                            aria-selected="true"
                             option-tooltip-thumb=""
                             option-tooltip-value="40"
                             role="option"
@@ -2117,7 +2123,7 @@ function Home() {
                             type="number"
                             name="qty"
                             id="qty"
-                            maxlength="12"
+                            maxLength="12"
                             value={Count}
                             title="qty"
                             className="input-text-qty"
@@ -2203,7 +2209,7 @@ function Home() {
                         <img src={product488} alt="" />
                       </label>
                     </div>
-                    <div cclassName="gallery__item">
+                    <div className="gallery__item">
                       <input
                         type="radio"
                         id="img-3"
@@ -2227,29 +2233,29 @@ function Home() {
                       <span className="label">
                         <form className="rating">
                           <label>
-                            <input type="radio" name="stars" value="1" />
+                            <input type="radio" name="stars" defaultValue="1" />
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="2" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" value="3" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="2" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="4" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="3" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="5" />
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
@@ -2388,29 +2394,29 @@ function Home() {
                       <span className="label">
                         <form className="rating">
                           <label>
-                            <input type="radio" name="stars" value="1" />
+                            <input type="radio" name="stars" defaultValue="1" />
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="2" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" value="3" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="2" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="4" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="3" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="5" />
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
@@ -2551,29 +2557,29 @@ function Home() {
                       <span className="label">
                         <form className="rating">
                           <label>
-                            <input type="radio" name="stars" value="1" />
+                            <input type="radio" name="stars" defaultValue="1" />
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="2" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" value="3" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="2" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="4" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="3" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="5" />
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
@@ -2803,7 +2809,7 @@ function Home() {
                         <img src={menshoes2_2} alt="" />
                       </label>
                     </div>
-                    <div cclassName="gallery__item">
+                    <div className="gallery__item">
                       <input
                         type="radio"
                         id="img-3"
@@ -2840,29 +2846,29 @@ function Home() {
                       <span className="label">
                         <form className="rating">
                           <label>
-                            <input type="radio" name="stars" value="1" />
+                            <input type="radio" name="stars" defaultValue="1" />
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="2" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" value="3" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="2" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="4" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="3" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="5" />
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
@@ -2928,6 +2934,7 @@ function Home() {
                             option-tooltip-value="38"
                             role="option"
                             thumb-width="110"
+                            aria-selected="true"
                             thumb-height="90"
                           >
                             <h3>38</h3>
@@ -2946,6 +2953,7 @@ function Home() {
                             value="2"
                             option-tooltip-thumb=""
                             option-tooltip-value="XS"
+                            aria-selected="true"
                             role="option"
                             thumb-width="110"
                             thumb-height="90"
@@ -2967,6 +2975,7 @@ function Home() {
                             option-tooltip-value="40"
                             role="option"
                             thumb-width="110"
+                            aria-selected="true"
                             thumb-height="90"
                             value="3"
                           >
@@ -2987,6 +2996,7 @@ function Home() {
                             option-tooltip-value="41"
                             role="option"
                             thumb-width="110"
+                            aria-selected="true"
                             value="4"
                             thumb-height="90"
                           >
@@ -3007,6 +3017,7 @@ function Home() {
                             option-tooltip-value="42"
                             role="option"
                             thumb-width="110"
+                            aria-selected="true"
                             value="5"
                             thumb-height="90"
                           >
@@ -3109,7 +3120,7 @@ function Home() {
                         <img src={dron22} alt="" />
                       </label>
                     </div>
-                    <div cclassName="gallery__item">
+                    <div className="gallery__item">
                       <input
                         type="radio"
                         id="img-3"
@@ -3138,29 +3149,29 @@ function Home() {
                       <span className="label">
                         <form className="rating">
                           <label>
-                            <input type="radio" name="stars" value="1" />
+                            <input type="radio" name="stars" defaultValue="1" />
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="2" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" value="3" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="2" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="4" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="3" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="5" />
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
@@ -3307,7 +3318,7 @@ function Home() {
                         <img src={shoesclassy222} alt="" />
                       </label>
                     </div>
-                    <div cclassName="gallery__item">
+                    <div className="gallery__item">
                       <input
                         type="radio"
                         id="img-3"
@@ -3353,29 +3364,29 @@ function Home() {
                       <span className="label">
                         <form className="rating">
                           <label>
-                            <input type="radio" name="stars" value="1" />
+                            <input type="radio" name="stars" defaultValue="1" />
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="2" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" value="3" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="2" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="4" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="3" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="5" />
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
@@ -3442,6 +3453,7 @@ function Home() {
                             option-tooltip-thumb=""
                             option-tooltip-value="37"
                             role="option"
+                            aria-selected="true"
                             thumb-width="110"
                             thumb-height="90"
                           >
@@ -3463,6 +3475,7 @@ function Home() {
                             option-tooltip-value="XS"
                             role="option"
                             thumb-width="110"
+                            aria-selected="true"
                             thumb-height="90"
                           >
                             <h3>38</h3>
@@ -3481,6 +3494,7 @@ function Home() {
                             option-tooltip-thumb=""
                             option-tooltip-value="39"
                             role="option"
+                            aria-selected="true"
                             thumb-width="110"
                             thumb-height="90"
                             value="3"
@@ -3500,6 +3514,7 @@ function Home() {
                             aria-label="40"
                             option-tooltip-thumb=""
                             option-tooltip-value="40"
+                            aria-selected="true"
                             role="option"
                             thumb-width="110"
                             value="4"
@@ -3604,29 +3619,29 @@ function Home() {
                       <span className="label">
                         <form className="rating">
                           <label>
-                            <input type="radio" name="stars" value="1" />
+                            <input type="radio" name="stars" defaultValue="1" />
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="2" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" value="3" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="2" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="4" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="3" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="5" />
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
@@ -3694,6 +3709,7 @@ function Home() {
                             option-tooltip-value="XS"
                             role="option"
                             thumb-width="110"
+                            aria-selected="true"
                             thumb-height="90"
                           >
                             <h3>XS</h3>
@@ -3715,6 +3731,7 @@ function Home() {
                             role="option"
                             thumb-width="110"
                             thumb-height="90"
+                            aria-selected="true"
                           >
                             <h3>S</h3>
                           </div>
@@ -3734,6 +3751,7 @@ function Home() {
                             role="option"
                             thumb-width="110"
                             thumb-height="90"
+                            aria-selected="true"
                             value="3"
                           >
                             <h3>M</h3>
@@ -3754,6 +3772,7 @@ function Home() {
                             role="option"
                             thumb-width="110"
                             thumb-height="90"
+                            aria-selected="true"
                             value="4"
                           >
                             <h3>L</h3>
@@ -3855,29 +3874,29 @@ function Home() {
                       <span className="label">
                         <form className="rating">
                           <label>
-                            <input type="radio" name="stars" value="1" />
+                            <input type="radio" name="stars" defaultValue="1" />
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="2" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" value="3" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="2" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="4" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="3" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="5" />
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
@@ -3948,6 +3967,7 @@ function Home() {
                             role="option"
                             thumb-width="110"
                             thumb-height="90"
+                            aria-selected="true"
                           >
                             <h3>XS</h3>
                           </div>
@@ -3967,6 +3987,7 @@ function Home() {
                             option-tooltip-value="S"
                             role="option"
                             thumb-width="110"
+                            aria-selected="true"
                             thumb-height="90"
                           >
                             <h3>S</h3>
@@ -3984,6 +4005,7 @@ function Home() {
                             aria-label="M"
                             option-tooltip-thumb=""
                             option-tooltip-value="M"
+                            aria-selected="true"
                             role="option"
                             thumb-width="110"
                             thumb-height="90"
@@ -4004,6 +4026,7 @@ function Home() {
                             aria-label="L"
                             option-tooltip-thumb=""
                             option-tooltip-value="L"
+                            aria-selected="true"
                             role="option"
                             thumb-width="110"
                             thumb-height="90"
@@ -4108,29 +4131,29 @@ function Home() {
                       <span className="label">
                         <form className="rating">
                           <label>
-                            <input type="radio" name="stars" value="1" />
+                            <input type="radio" name="stars" defaultValue="1" />
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="2" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" value="3" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="2" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="4" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="3" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="5" />
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
@@ -4271,29 +4294,29 @@ function Home() {
                       <span className="label">
                         <form className="rating">
                           <label>
-                            <input type="radio" name="stars" value="1" />
+                            <input type="radio" name="stars" defaultValue="1" />
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="2" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" value="3" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="2" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="4" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="3" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="5" />
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
@@ -4435,29 +4458,29 @@ function Home() {
                       <span className="label">
                         <form className="rating">
                           <label>
-                            <input type="radio" name="stars" value="1" />
+                            <input type="radio" name="stars" defaultValue="1" />
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="2" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" value="3" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="2" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="4" />
-                            <span className="icon">★</span>
+                            <input type="radio" name="stars" defaultValue="3" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                           </label>
                           <label>
-                            <input type="radio" name="stars" value="5" />
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
                             <span className="icon">★</span>
                             <span className="icon">★</span>
                             <span className="icon">★</span>
