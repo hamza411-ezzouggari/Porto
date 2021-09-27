@@ -78,7 +78,6 @@ li > a:hover::after {
 }
 .menu-bar li:hover::before {
   background: linear-gradient(to bottom, #ffffff, #ffffff);
-  box-shadow: 0px 3px 20px 0px black;
   transform: scale(1.2);
 }
 .element-left {
@@ -131,14 +130,13 @@ li > a:hover::after {
   position: absolute;
   display: flex;
   flex-direction: row;
-  top: 2.8rem;
+  top: 2.73rem;
   width: flex;
   height: flex;
   display: none;
   border-radius: 10px;
   left: 0px;
   background: linear-gradient(to bottom, #ffffff, #ffffff);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.67);
 }
 .content-menu {
   display: flex;
