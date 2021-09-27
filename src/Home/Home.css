@@ -2420,3 +2420,13 @@ ul > li > a {
 .price {
   margin: 0px 10px 0px 0px;
 }
+.lengthBasket {
+  background-color: red;
+  position: absolute;
+  z-index: 4;
+  height: 10%;
+  width: 20%;
+}
+.lengthofbasket {
+  font-size: 1rem;
+}
