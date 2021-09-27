@@ -30,11 +30,7 @@ import credit from "./icon-premiem page/credit-card.png";
 import undo from "./icon-premiem page/undo.png";
 import delevery from "./icon-premiem page/delivery-truck.png";
 import payment from "./image Navbar/shop2_payment_logo.png";
-import {
-  BsBarChartFill,
-  BsFileEarmarkSpreadsheet,
-  BsFileEarmarkText,
-} from "react-icons/bs";
+import { BsBarChartFill } from "react-icons/bs";
 import { BsBag } from "react-icons/bs";
 import { ImFacebook } from "react-icons/im";
 import { ImTwitter } from "react-icons/im";
@@ -121,7 +117,7 @@ function Home() {
   const [RightSidebar, setRightSidebar] = React.useState(false);
   const [Transparentimage, setTransparentimage] = React.useState(false);
   const [SportsWatch, setSportsWatch] = React.useState(false);
-
+  const [{ basket }, dispatch] = useStateValue();
   function openTransparentimage(e) {
     e.preventDefault();
     setTransparentimage(true);
@@ -454,7 +450,7 @@ function Home() {
               </li>
               <li className="img-user">
                 <img src={shopping} alt="images" />
-                <span className="lengthofbasket">0</span>
+                <span className="lengthofbasket">{basket.length}</span>
               </li>
             </div>
           </ul>
