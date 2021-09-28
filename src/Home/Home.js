@@ -124,6 +124,7 @@ function Home() {
   function closeTransparentimage(e) {
     e.preventDefault();
     setTransparentimage(false);
+    setCount(1);
   }
   function openSportsWatch(e) {
     e.preventDefault();
@@ -132,6 +133,7 @@ function Home() {
   function closeSportsWatch(e) {
     e.preventDefault();
     setSportsWatch(false);
+    setCount(1);
   }
   function openRightSidebar(e) {
     e.preventDefault();
@@ -140,6 +142,7 @@ function Home() {
   function closeRightSidebar(e) {
     e.preventDefault();
     setRightSidebar(false);
+    setCount(1);
   }
   function openleftSlidebar(e) {
     e.preventDefault();
@@ -148,6 +151,7 @@ function Home() {
   function closeleftSlidebar(e) {
     e.preventDefault();
     setleftSlidebar(false);
+    setCount(1);
   }
   function openPortowidth(e) {
     e.preventDefault();
@@ -156,6 +160,7 @@ function Home() {
   function closePortowidth(e) {
     e.preventDefault();
     setPortowidth(false);
+    setCount(1);
   }
   function openExtendedLayout(e) {
     e.preventDefault();
@@ -164,6 +169,7 @@ function Home() {
   function closeExtendedLayout(e) {
     e.preventDefault();
     setExtendedLayout(false);
+    setCount(1);
   }
   function openglassmodal(e) {
     e.preventDefault();
@@ -172,6 +178,7 @@ function Home() {
   function closeglassmodal(e) {
     e.preventDefault();
     setGlassmodal(false);
+    setCount(1);
   }
 
   function openModal(e) {
@@ -182,6 +189,7 @@ function Home() {
 
   function closeModal() {
     setIsOpen(false);
+    setCount(1);
   }
   function openIdeapadmodal(e) {
     e.preventDefault();
@@ -190,6 +198,7 @@ function Home() {
   function closeIdeapadmodal(e) {
     e.preventDefault();
     setIdeapadmodal(false);
+    setCount(1);
   }
   function openMencap(e) {
     e.preventDefault();
@@ -198,6 +207,7 @@ function Home() {
   function closeMencap(e) {
     e.preventDefault();
     setMenCapmodal(false);
+    setCount(1);
   }
   function openMenShouse(e) {
     e.preventDefault();
@@ -206,6 +216,7 @@ function Home() {
   function clouseMenShouse(e) {
     e.preventDefault();
     setMenSHose(false);
+    setCount(1);
   }
   function openportoboth(e) {
     e.preventDefault();
@@ -214,6 +225,7 @@ function Home() {
   function closeportoboth(e) {
     e.preventDefault();
     setPortoBoth(false);
+    setCount(1);
   }
   function AddNumber(e) {
     if (Count > 11) {
