@@ -116,6 +116,10 @@ function Home() {
   const [RightSidebar, setRightSidebar] = React.useState(false);
   const [Transparentimage, setTransparentimage] = React.useState(false);
   const [SportsWatch, setSportsWatch] = React.useState(false);
+  const [Size, setSize] = useState(37);
+  const [Size2, setSize2] = useState(38);
+  const [Size3, setSize3] = useState(39);
+  const [Size4, setSize4] = useState(40);
   function openTransparentimage(e) {
     e.preventDefault();
     setTransparentimage(true);
@@ -228,7 +232,7 @@ function Home() {
   }
   function ADDTOCARTSHOESGIRL(e) {
     e.preventDefault();
-    alert(Count, "hamza");
+    alert([Count, "hamza", Size]);
   }
   function AddNumber(e) {
     if (Count > 11) {
@@ -245,7 +249,6 @@ function Home() {
       setCount(Count - 1);
     }
   }
-
   return (
     <div className="content-hoome">
       <div className={Navbar ? "Navbar-general active" : "Navbar-general"}>
@@ -2060,14 +2063,14 @@ function Home() {
                             option-label="37"
                             aria-label="37"
                             aria-selected="true"
-                            value="1"
+                            value={37}
                             option-tooltip-thumb=""
                             option-tooltip-value="37"
                             role="option"
                             thumb-width="110"
                             thumb-height="90"
                           >
-                            <h3>37</h3>
+                            {Size}
                           </div>
                           <div
                             className="swatch-option-text"
@@ -2088,7 +2091,7 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                           >
-                            <h3>38</h3>
+                            {Size2}
                           </div>
                           <div
                             className="swatch-option-text"
@@ -2107,9 +2110,9 @@ function Home() {
                             aria-selected="true"
                             thumb-width="110"
                             thumb-height="90"
-                            value="3"
+                            value={39}
                           >
-                            <h3>39</h3>
+                            {Size3}
                           </div>
                           <div
                             className="swatch-option-text"
@@ -2127,10 +2130,10 @@ function Home() {
                             option-tooltip-value="40"
                             role="option"
                             thumb-width="110"
-                            value="4"
+                            value={40}
                             thumb-height="90"
                           >
-                            <h3>40</h3>
+                            {Size4}
                           </div>
                         </div>
                       </div>
