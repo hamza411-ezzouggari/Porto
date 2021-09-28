@@ -2428,5 +2428,7 @@ ul > li > a {
   width: 20%;
 }
 .lengthofbasket {
+  color: rgb(129, 113, 113);
   font-size: 1rem;
+  margin: -0.5rem 0px 0px 0rem;
 }

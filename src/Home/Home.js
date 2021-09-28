@@ -117,7 +117,6 @@ function Home() {
   const [RightSidebar, setRightSidebar] = React.useState(false);
   const [Transparentimage, setTransparentimage] = React.useState(false);
   const [SportsWatch, setSportsWatch] = React.useState(false);
-  const [{ basket }, dispatch] = useStateValue();
   function openTransparentimage(e) {
     e.preventDefault();
     setTransparentimage(true);
@@ -450,7 +449,7 @@ function Home() {
               </li>
               <li className="img-user">
                 <img src={shopping} alt="images" />
-                <span className="lengthofbasket">{basket.length}</span>
+                <span className="lengthofbasket">0</span>
               </li>
             </div>
           </ul>
