@@ -120,6 +120,8 @@ function Home() {
   const [Size2, setSize2] = useState(38);
   const [Size3, setSize3] = useState(39);
   const [Size4, setSize4] = useState(40);
+  const [Size5, setSize5] = useState(41);
+  const [Size6, setSize6] = useState(42);
   function openTransparentimage(e) {
     e.preventDefault();
     setTransparentimage(true);
@@ -2961,7 +2963,7 @@ function Home() {
                             aria-selected="true"
                             thumb-height="90"
                           >
-                            <h3>38</h3>
+                            {Size2}
                           </div>
                           <div
                             className="swatch-option-text"
@@ -2982,7 +2984,7 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                           >
-                            <h3>39</h3>
+                            {Size3}
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3003,7 +3005,7 @@ function Home() {
                             thumb-height="90"
                             value="3"
                           >
-                            <h3>40</h3>
+                            {Size4}
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3024,7 +3026,7 @@ function Home() {
                             value="4"
                             thumb-height="90"
                           >
-                            <h3>41</h3>
+                            {Size5}
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3045,7 +3047,7 @@ function Home() {
                             value="5"
                             thumb-height="90"
                           >
-                            <h3>42</h3>
+                            {Size6}
                           </div>
                         </div>
                       </div>
