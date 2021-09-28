@@ -92,7 +92,6 @@ const customStyles = {
     transform: "translate(-50%, -50%)",
   },
 };
-
 function Home() {
   const [Navbar, setNav] = useState(false);
   const [Count, setCount] = useState(1);
@@ -226,6 +225,10 @@ function Home() {
     e.preventDefault();
     setPortoBoth(false);
     setCount(1);
+  }
+  function ADDTOCARTSHOESGIRL(e) {
+    e.preventDefault();
+    alert(Count, "hamza");
   }
   function AddNumber(e) {
     if (Count > 11) {
@@ -2160,6 +2163,7 @@ function Home() {
                             title="Add to Cart"
                             className="action-primary-tocart"
                             id="add-tocart"
+                            onClick={ADDTOCARTSHOESGIRL}
                           >
                             <BsBag className="bs-bag-modal" />
                             <span>Add to Cart</span>
