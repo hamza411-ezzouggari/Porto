@@ -95,7 +95,7 @@ const customStyles = {
 };
 function Home() {
   const [Navbar, setNav] = useState(false);
-  const [Count, setCount] = useState(1);
+  const [Count, setCount] = useState(0);
   const changeBackground = () => {
     if (window.scrollY >= 80) {
       setNav(true);
@@ -119,6 +119,7 @@ function Home() {
   const [SportsWatch, setSportsWatch] = React.useState(false);
   const [Size, setSize] = useState(37);
   const [Sizeclothes, setSizeclothes] = useState("XS");
+  const [Basket, setBasket] = useState(0);
   function openTransparentimage(e) {
     e.preventDefault();
     setTransparentimage(true);
@@ -126,7 +127,7 @@ function Home() {
   function closeTransparentimage(e) {
     e.preventDefault();
     setTransparentimage(false);
-    setCount(1);
+    setCount(0);
   }
   function openSportsWatch(e) {
     e.preventDefault();
@@ -135,7 +136,7 @@ function Home() {
   function closeSportsWatch(e) {
     e.preventDefault();
     setSportsWatch(false);
-    setCount(1);
+    setCount(0);
   }
   function openRightSidebar(e) {
     e.preventDefault();
@@ -144,7 +145,7 @@ function Home() {
   function closeRightSidebar(e) {
     e.preventDefault();
     setRightSidebar(false);
-    setCount(1);
+    setCount(0);
   }
   function openleftSlidebar(e) {
     e.preventDefault();
@@ -153,7 +154,7 @@ function Home() {
   function closeleftSlidebar(e) {
     e.preventDefault();
     setleftSlidebar(false);
-    setCount(1);
+    setCount(0);
   }
   function openPortowidth(e) {
     e.preventDefault();
@@ -162,7 +163,7 @@ function Home() {
   function closePortowidth(e) {
     e.preventDefault();
     setPortowidth(false);
-    setCount(1);
+    setCount(0);
   }
   function openExtendedLayout(e) {
     e.preventDefault();
@@ -171,7 +172,7 @@ function Home() {
   function closeExtendedLayout(e) {
     e.preventDefault();
     setExtendedLayout(false);
-    setCount(1);
+    setCount(0);
   }
   function openglassmodal(e) {
     e.preventDefault();
@@ -180,7 +181,7 @@ function Home() {
   function closeglassmodal(e) {
     e.preventDefault();
     setGlassmodal(false);
-    setCount(1);
+    setCount(0);
   }
 
   function openModal(e) {
@@ -191,7 +192,7 @@ function Home() {
 
   function closeModal() {
     setIsOpen(false);
-    setCount(1);
+    setCount(0);
   }
   function openIdeapadmodal(e) {
     e.preventDefault();
@@ -200,7 +201,7 @@ function Home() {
   function closeIdeapadmodal(e) {
     e.preventDefault();
     setIdeapadmodal(false);
-    setCount(1);
+    setCount(0);
   }
   function openMencap(e) {
     e.preventDefault();
@@ -209,7 +210,7 @@ function Home() {
   function closeMencap(e) {
     e.preventDefault();
     setMenCapmodal(false);
-    setCount(1);
+    setCount(0);
   }
   function openMenShouse(e) {
     e.preventDefault();
@@ -218,7 +219,7 @@ function Home() {
   function clouseMenShouse(e) {
     e.preventDefault();
     setMenSHose(false);
-    setCount(1);
+    setCount(0);
   }
   function openportoboth(e) {
     e.preventDefault();
@@ -227,7 +228,7 @@ function Home() {
   function closeportoboth(e) {
     e.preventDefault();
     setPortoBoth(false);
-    setCount(1);
+    setCount(0);
   }
   function ADDTOCARTSHOESGIRL(e) {
     e.preventDefault();
@@ -239,13 +240,15 @@ function Home() {
       alert(" out of stock ");
     } else {
       setCount(Count + 1);
+      setBasket(Basket + 1);
     }
   }
   function subtract(e) {
-    if (Count < 2) {
+    if (Count < 1) {
       e.stopPropagation(setCount);
     } else {
       setCount(Count - 1);
+      setBasket(Basket - 1);
     }
   }
   return (
@@ -466,7 +469,7 @@ function Home() {
               </li>
               <li className="img-user">
                 <img src={shopping} alt="images" />
-                <span className="lengthofbasket">0</span>
+                <span className="lengthofbasket">{Basket}</span>
               </li>
             </div>
           </ul>
@@ -2498,7 +2501,7 @@ function Home() {
                             type="number"
                             name="qty"
                             id="qty"
-                            maxlength="12"
+                            maxlength="11"
                             value={Count}
                             title="qty"
                             className="input-text-qty"
