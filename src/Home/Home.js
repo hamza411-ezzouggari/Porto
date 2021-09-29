@@ -122,6 +122,10 @@ function Home() {
   const [Size4, setSize4] = useState(40);
   const [Size5, setSize5] = useState(41);
   const [Size6, setSize6] = useState(42);
+  const [Sizeclothes, setSizeclothes] = useState("XS");
+  const [Sizeclothes2, setSizeclothes2] = useState("S");
+  const [Sizeclothes3, setSizeclothes3] = useState("M");
+  const [Sizeclothes4, setSizeclothes4] = useState("L");
   function openTransparentimage(e) {
     e.preventDefault();
     setTransparentimage(true);
@@ -2072,7 +2076,7 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                           >
-                            {Size}
+                            <h3>{Size}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -2093,7 +2097,7 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                           >
-                            {Size2}
+                            <h3>{Size2}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -2114,7 +2118,7 @@ function Home() {
                             thumb-height="90"
                             value={39}
                           >
-                            {Size3}
+                            <h3>{Size3}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -2135,7 +2139,7 @@ function Home() {
                             value={40}
                             thumb-height="90"
                           >
-                            {Size4}
+                            <h3>{Size4}</h3>
                           </div>
                         </div>
                       </div>
@@ -2676,7 +2680,7 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                           >
-                            <h3>XS</h3>
+                            <h3>{Sizeclothes}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -2696,7 +2700,7 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                           >
-                            <h3>S</h3>
+                            <h3>{Sizeclothes2}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -2716,7 +2720,7 @@ function Home() {
                             thumb-height="90"
                             value="3"
                           >
-                            <h3>M</h3>
+                            <h3>{Sizeclothes3}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -2736,7 +2740,7 @@ function Home() {
                             thumb-height="90"
                             value="4"
                           >
-                            <h3>L</h3>
+                            <h3>{Sizeclothes4}</h3>
                           </div>
                         </div>
                       </div>
@@ -2963,7 +2967,7 @@ function Home() {
                             aria-selected="true"
                             thumb-height="90"
                           >
-                            {Size2}
+                            <h3>{Size2}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -2984,7 +2988,7 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                           >
-                            {Size3}
+                            <h3>{Size3}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3005,7 +3009,7 @@ function Home() {
                             thumb-height="90"
                             value="3"
                           >
-                            {Size4}
+                            <h3>{Size4}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3026,7 +3030,7 @@ function Home() {
                             value="4"
                             thumb-height="90"
                           >
-                            {Size5}
+                            <h3>{Size5}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3047,7 +3051,7 @@ function Home() {
                             value="5"
                             thumb-height="90"
                           >
-                            {Size6}
+                            <h3>{Size6}</h3>
                           </div>
                         </div>
                       </div>
@@ -3483,7 +3487,7 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                           >
-                            <h3>37</h3>
+                            <h3>{Size}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3504,7 +3508,7 @@ function Home() {
                             aria-selected="true"
                             thumb-height="90"
                           >
-                            <h3>38</h3>
+                            <h3>{Size2}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3525,7 +3529,7 @@ function Home() {
                             thumb-height="90"
                             value="3"
                           >
-                            <h3>39</h3>
+                            <h3>{Size3}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3546,7 +3550,7 @@ function Home() {
                             value="4"
                             thumb-height="90"
                           >
-                            <h3>40</h3>
+                            <h3>{Size4}</h3>
                           </div>
                         </div>
                       </div>
@@ -3738,7 +3742,7 @@ function Home() {
                             aria-selected="true"
                             thumb-height="90"
                           >
-                            <h3>XS</h3>
+                            <h3>{Sizeclothes}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3759,7 +3763,7 @@ function Home() {
                             thumb-height="90"
                             aria-selected="true"
                           >
-                            <h3>S</h3>
+                            <h3>{Sizeclothes2}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3780,7 +3784,7 @@ function Home() {
                             aria-selected="true"
                             value="3"
                           >
-                            <h3>M</h3>
+                            <h3>{Sizeclothes3}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3801,7 +3805,7 @@ function Home() {
                             aria-selected="true"
                             value="4"
                           >
-                            <h3>L</h3>
+                            <h3>{Sizeclothes4}</h3>
                           </div>
                         </div>
                       </div>
@@ -3995,7 +3999,7 @@ function Home() {
                             thumb-height="90"
                             aria-selected="true"
                           >
-                            <h3>XS</h3>
+                            <h3>{Sizeclothes}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -4016,7 +4020,7 @@ function Home() {
                             aria-selected="true"
                             thumb-height="90"
                           >
-                            <h3>S</h3>
+                            <h3>{Sizeclothes2}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -4037,7 +4041,7 @@ function Home() {
                             thumb-height="90"
                             value="3"
                           >
-                            <h3>M</h3>
+                            <h3>{Sizeclothes3}</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -4058,7 +4062,7 @@ function Home() {
                             thumb-height="90"
                             value="4"
                           >
-                            <h3>L</h3>
+                            <h3>{Sizeclothes4}</h3>
                           </div>
                         </div>
                       </div>
@@ -4282,6 +4286,168 @@ function Home() {
           </div>
           <div>
             <Modal
+              isOpen={Transparentimage}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content-9">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closeTransparentimage} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery-9">
+                    <div className="gallery__item-5">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery-9"
+                        className="gallery__selector"
+                      />
+                      <img
+                        for="img-2"
+                        className="gallery__img__ideapad"
+                        src={transparentimages}
+                        alt=""
+                      />{" "}
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base-1" itemProp="name">
+                        1 Porto Transparent Images
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" defaultValue="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          {" "}
+                          <span>$49.00</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 42346423 </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
+                      <div className="fieldset">
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc-1">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec-1" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span>Add to Cart</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1__2" />
+                    <div className="fieldset">
+                      <div className="action22">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary2"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
               isOpen={SportsWatch}
               onAfterOpen={afterOpenModal}
               onRequestClose={closeModal}
@@ -4378,168 +4544,6 @@ function Home() {
                         ante. Donec eu libero sit amet quam egestas semper.
                         Aenean ultricies mi vitae est. Mauris placerat eleifend
                         leo.
-                      </div>
-                    </div>
-                    <div className="product-info-stock">
-                      <div className="stock-available">
-                        <span className="label">Availability : </span>
-                        <span className="stoker">In stock</span>
-                      </div>
-                      <div className="product-attribute-sku">
-                        <strong className="type"> SKU : </strong>
-                        <div className="value"> 42346423 </div>
-                      </div>
-                    </div>
-                    <hr className="align_center-hr_1" />
-                    <div className="product-add-from">
-                      <div className="fieldset">
-                        <div className="control">
-                          <input
-                            type="number"
-                            name="qty"
-                            id="qty"
-                            maxlength="12"
-                            value={Count}
-                            title="qty"
-                            className="input-text-qty"
-                          />
-                          <div className="qty-changer">
-                            <a className="qty-inc-1">
-                              <BsPlus className="plus" onClick={AddNumber} />
-                            </a>
-                            <a className="qty-dec-1" onClick={subtract}>
-                              <BsDash className="BsDash" />
-                            </a>
-                          </div>
-                        </div>
-                        <div className="action">
-                          <button
-                            type="submit"
-                            title="Add to Cart"
-                            className="action-primary-tocart"
-                            id="add-tocart"
-                          >
-                            <BsBag className="bs-bag-modal" />
-                            <span>Add to Cart</span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <hr className="align_center-hr_1__2" />
-                    <div className="fieldset">
-                      <div className="action22">
-                        <a
-                          target="_parent"
-                          href="#"
-                          title="Go To Product"
-                          className="action-primary2"
-                          id="product-gotoproduct"
-                        >
-                          <span>Go To Product</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Modal>
-          </div>
-          <div>
-            <Modal
-              isOpen={Transparentimage}
-              onAfterOpen={afterOpenModal}
-              onRequestClose={closeModal}
-              style={customStyles}
-              contentLabel="Example Modal"
-            >
-              <div className="mfp-content-9">
-                <div className="bsx">
-                  <BsX className="Bsk" onClick={closeTransparentimage} />
-                </div>
-                <div className="column-main">
-                  <section className="gallery-9">
-                    <div className="gallery__item-5">
-                      <input
-                        type="radio"
-                        id="img-2"
-                        checked
-                        name="gallery-9"
-                        className="gallery__selector"
-                      />
-                      <img
-                        for="img-2"
-                        className="gallery__img__ideapad"
-                        src={transparentimages}
-                        alt=""
-                      />{" "}
-                    </div>
-                  </section>
-                  <div className="product-main-info">
-                    <div className="page-title-wrapper">
-                      <h1 className="base-1" itemProp="name">
-                        1 Porto Transparent Images
-                      </h1>
-                    </div>
-                    <div className="product-reviews-summary-madel">
-                      <span className="label">
-                        <form className="rating">
-                          <label>
-                            <input type="radio" name="stars" defaultValue="1" />
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" defaultValue="2" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" defaultValue="3" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" defaultValue="4" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="stars" defaultValue="5" />
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                            <span className="icon">★</span>
-                          </label>
-                        </form>
-                      </span>
-                    </div>
-                    <hr className="align_hr" />
-                    <div className="product-info-price">
-                      <div
-                        className="price-box-final-price"
-                        data-role="priceBox"
-                      >
-                        <span
-                          id="product-price-3382"
-                          data-price-amount="101"
-                          data-price-type="finalPrice"
-                          className="price-wrapper "
-                        >
-                          {" "}
-                          <span>$49.00</span>
-                        </span>
-                      </div>
-                    </div>
-                    <div className="product-attribute">
-                      <div className="value" itemProp="description">
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non. Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur.
                       </div>
                     </div>
                     <div className="product-info-stock">
