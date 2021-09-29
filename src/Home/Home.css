@@ -2351,7 +2351,7 @@ ul > li > a {
   background-color: #a7a7a7;
   color: rgb(255, 255, 255);
 }
-.swatch-option-text:focus {
+.swatch-option-text.action {
   box-shadow: 0 0 3px 1.3px rgb(0, 0, 0);
   background-color: black;
   border-color: transparent;

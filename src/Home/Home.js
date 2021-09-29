@@ -117,9 +117,30 @@ function Home() {
   const [RightSidebar, setRightSidebar] = React.useState(false);
   const [Transparentimage, setTransparentimage] = React.useState(false);
   const [SportsWatch, setSportsWatch] = React.useState(false);
-  const [Size, setSize] = useState(37);
+  const [Size, setSize] = useState();
+  const [ClickSize, setClickSize] = useState(false);
   const [Sizeclothes, setSizeclothes] = useState("XS");
   const [Basket, setBasket] = useState(0);
+
+  function Clicker(e) {
+    e.preventDefault();
+    if (ClickSize) {
+      setClickSize(false);
+    } else {
+      setClickSize(true);
+    }
+    Clicker = !Clicker;
+  }
+  function SizeClick(e) {
+    e.preventDefault();
+    if (Size) {
+      setSize();
+    } else {
+      setSize(37);
+    }
+    SizeClick = !SizeClick;
+  }
+
   function openTransparentimage(e) {
     e.preventDefault();
     setTransparentimage(true);
@@ -2054,7 +2075,11 @@ function Home() {
                           aria-invalid="true"
                         >
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-136-item-166"
                             index="0"
                             aria-checked="false"
@@ -2071,9 +2096,9 @@ function Home() {
                             role="option"
                             thumb-width="110"
                             thumb-height="90"
-                            onClick={() => setSize(37)}
+                            onClick={SizeClick}
                           >
-                            <h3>37</h3>
+                            <h3 onClick={Clicker}>37</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -2970,7 +2995,7 @@ function Home() {
                             thumb-width="110"
                             aria-selected="true"
                             thumb-height="90"
-                            onClick={() => setSize(37)}
+                            onClick={ClickSize}
                           >
                             <h3>37</h3>
                           </div>
