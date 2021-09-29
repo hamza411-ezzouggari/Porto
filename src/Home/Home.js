@@ -118,9 +118,6 @@ function Home() {
   const [SportsWatch, setSportsWatch] = React.useState(false);
   const [Size, setSize] = useState(37);
   const [Sizeclothes, setSizeclothes] = useState("XS");
-  const [Sizeclothes2, setSizeclothes2] = useState("S");
-  const [Sizeclothes3, setSizeclothes3] = useState("M");
-  const [Sizeclothes4, setSizeclothes4] = useState("L");
   function openTransparentimage(e) {
     e.preventDefault();
     setTransparentimage(true);
@@ -2678,8 +2675,9 @@ function Home() {
                             role="option"
                             thumb-width="110"
                             thumb-height="90"
+                            onClick={() => setSizeclothes("XS")}
                           >
-                            <h3>{Sizeclothes}</h3>
+                            <h3>XS</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -2698,8 +2696,9 @@ function Home() {
                             role="option"
                             thumb-width="110"
                             thumb-height="90"
+                            onClick={() => setSizeclothes("S")}
                           >
-                            <h3>{Sizeclothes2}</h3>
+                            <h3>S</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -2718,8 +2717,9 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                             value="3"
+                            onClick={() => setSizeclothes("M")}
                           >
-                            <h3>{Sizeclothes3}</h3>
+                            <h3>M</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -2738,8 +2738,9 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                             value="4"
+                            onClick={() => setSizeclothes("L")}
                           >
-                            <h3>{Sizeclothes4}</h3>
+                            <h3>L</h3>
                           </div>
                         </div>
                       </div>
@@ -3492,7 +3493,7 @@ function Home() {
                             thumb-height="90"
                             onClick={() => setSize(37)}
                           >
-                            <h3>37}</h3>
+                            <h3>37</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3749,8 +3750,9 @@ function Home() {
                             thumb-width="110"
                             aria-selected="true"
                             thumb-height="90"
+                            onClick={() => setSizeclothes("XS")}
                           >
-                            <h3>{Sizeclothes}</h3>
+                            <h3>XS</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3770,8 +3772,9 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                             aria-selected="true"
+                            onClick={() => setSizeclothes("S")}
                           >
-                            <h3>{Sizeclothes2}</h3>
+                            <h3>S</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3790,9 +3793,10 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                             aria-selected="true"
+                            onClick={() => setSizeclothes("M")}
                             value="3"
                           >
-                            <h3>{Sizeclothes3}</h3>
+                            <h3>M</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -3812,8 +3816,9 @@ function Home() {
                             thumb-height="90"
                             aria-selected="true"
                             value="4"
+                            onClick={() => setSizeclothes("L")}
                           >
-                            <h3>{Sizeclothes4}</h3>
+                            <h3>L</h3>
                           </div>
                         </div>
                       </div>
@@ -4006,8 +4011,9 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                             aria-selected="true"
+                            onClick={() => setSizeclothes("XS")}
                           >
-                            <h3>{Sizeclothes}</h3>
+                            <h3>XS</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -4027,8 +4033,9 @@ function Home() {
                             thumb-width="110"
                             aria-selected="true"
                             thumb-height="90"
+                            onClick={() => setSizeclothes("S")}
                           >
-                            <h3>{Sizeclothes2}</h3>
+                            <h3>S</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -4048,8 +4055,9 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                             value="3"
+                            onClick={() => setSizeclothes("M")}
                           >
-                            <h3>{Sizeclothes3}</h3>
+                            <h3>M</h3>
                           </div>
                           <div
                             className="swatch-option-text"
@@ -4069,8 +4077,9 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                             value="4"
+                            onClick={() => setSizeclothes("L")}
                           >
-                            <h3>{Sizeclothes4}</h3>
+                            <h3>L</h3>
                           </div>
                         </div>
                       </div>
