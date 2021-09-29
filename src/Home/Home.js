@@ -82,6 +82,7 @@ import watch from "./sport watch/product-21.jpeg";
 import { BsX } from "react-icons/bs";
 import { BsPlus } from "react-icons/bs";
 import { BsDash } from "react-icons/bs";
+import src from "gsap/src";
 const customStyles = {
   content: {
     top: "50%",
@@ -230,7 +231,7 @@ function Home() {
   }
   function ADDTOCARTSHOESGIRL(e) {
     e.preventDefault();
-    alert([Count, "hamza", Size]);
+    console.log([Count, "hamza", Size, shoes000]);
   }
   function AddNumber(e) {
     if (Count > 11) {
