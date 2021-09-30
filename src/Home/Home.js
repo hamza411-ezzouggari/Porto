@@ -125,6 +125,8 @@ function Home() {
   const [ClickSize3, setClickSize3] = useState(false);
   const [ClickSize4, setClickSize4] = useState(false);
   const [price, setPrice] = useState(101.01);
+  const [priceMenshouse, setpriceMenshouse] = useState(39.99);
+  const [priceExtandlayout, setPriceExtandlayout] = useState(69.0);
   const [Sizeclothes, setSizeclothes] = useState("XS");
   const [Basket, setBasket] = useState(0);
 
@@ -359,10 +361,6 @@ function Home() {
     setClickSize3(false);
     setClickSize4(false);
   }
-  function ADDTOCARTSHOESGIRL(e) {
-    e.preventDefault();
-    console.log([Count, "hamza", [Size4, Size3, Size2, Size], price]);
-  }
   function AddNumber(e) {
     if (Count > 11) {
       e.stopPropagation(setCount);
@@ -379,6 +377,14 @@ function Home() {
       setCount(Count - 1);
       setBasket(Basket - 1);
     }
+  }
+  function ADDTOCARTSHOESGIRL(e) {
+    e.preventDefault();
+    console.log([Count, "hamza", [Size4, Size3, Size2, Size], price]);
+  }
+  function ADDTOCARTSHOESGIRL(e) {
+    e.preventDefault();
+    console.log([Count, "hamza", [Size4, Size3, Size2, Size], price]);
   }
   return (
     <div className="content-hoome">
@@ -1194,7 +1200,7 @@ function Home() {
                       data-price-amount="101"
                       data-price-type="finalPrice"
                     >
-                      <span className="price-premier">$39.00</span>
+                      <span className="price-premier">$39.99</span>
                     </span>
                   </div>
                 </span>
@@ -2152,7 +2158,7 @@ function Home() {
                           data-price-type="finalPrice"
                           className="price-wrapper "
                         >
-                          <h3>${price}</h3>
+                          <h4>${price}</h4>
                         </span>
                       </div>
                     </div>
@@ -3069,7 +3075,7 @@ function Home() {
                           data-price-type="finalPrice"
                           className="price-wrapper "
                         >
-                          $39.00
+                          <h4>${priceMenshouse}</h4>
                         </span>
                       </div>
                     </div>
@@ -3124,7 +3130,11 @@ function Home() {
                             <h3 onClick={Clicker}>37</h3>
                           </div>
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize2
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-137-item-167"
                             index="0"
                             aria-checked="false"
@@ -3141,12 +3151,16 @@ function Home() {
                             role="option"
                             thumb-width="110"
                             thumb-height="90"
-                            onClick={() => setSize(38)}
+                            onClick={SizeClick2}
                           >
-                            <h3>38</h3>
+                            <h3 onClick={Clicker2}>38</h3>
                           </div>
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize3
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-138-item-168"
                             index="0"
                             aria-checked="false"
@@ -3163,12 +3177,16 @@ function Home() {
                             aria-selected="true"
                             thumb-height="90"
                             value="3"
-                            onClick={() => setSize(39)}
+                            onClick={SizeClick3}
                           >
-                            <h3>39</h3>
+                            <h3 onClick={Clicker3}>39</h3>
                           </div>
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize4
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-139-item-169"
                             index="0"
                             aria-checked="false"
@@ -3185,31 +3203,9 @@ function Home() {
                             aria-selected="true"
                             value="4"
                             thumb-height="90"
-                            onClick={() => setSize(40)}
+                            onClick={SizeClick4}
                           >
-                            <h3>40</h3>
-                          </div>
-                          <div
-                            className="swatch-option-text"
-                            id="option-label-size-139-item-169"
-                            index="0"
-                            aria-checked="false"
-                            aria-describedby="option-label-size-137"
-                            tabindex="0"
-                            option-type="0"
-                            option-id="169"
-                            option-label="42"
-                            aria-label="42"
-                            option-tooltip-thumb=""
-                            option-tooltip-value="42"
-                            role="option"
-                            thumb-width="110"
-                            aria-selected="true"
-                            value="5"
-                            thumb-height="90"
-                            onClick={() => setSize(41)}
-                          >
-                            <h3>41</h3>
+                            <h3 onClick={Clicker4}>40</h3>
                           </div>
                         </div>
                       </div>
@@ -3596,7 +3592,7 @@ function Home() {
                           data-price-type="finalPrice"
                           className="price-wrapper "
                         >
-                          $69.00
+                          <h4>$ {priceExtandlayout}.00</h4>
                         </span>
                       </div>
                     </div>
@@ -3627,7 +3623,11 @@ function Home() {
                           aria-invalid="true"
                         >
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-136-item-166"
                             index="0"
                             aria-checked="false"
@@ -3644,12 +3644,16 @@ function Home() {
                             aria-selected="true"
                             thumb-width="110"
                             thumb-height="90"
-                            onClick={() => setSize(37)}
+                            onClick={SizeClick}
                           >
-                            <h3>37</h3>
+                            <h3 onClick={Clicker}>37</h3>
                           </div>
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize2
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-137-item-167"
                             index="0"
                             aria-checked="false"
@@ -3666,12 +3670,16 @@ function Home() {
                             thumb-width="110"
                             aria-selected="true"
                             thumb-height="90"
-                            onClick={() => setSize(38)}
+                            onClick={SizeClick2}
                           >
-                            <h3>38</h3>
+                            <h3 onClick={Clicker2}>38</h3>
                           </div>
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize3
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-138-item-168"
                             index="0"
                             aria-checked="false"
@@ -3688,12 +3696,16 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                             value="3"
-                            onClick={() => setSize(39)}
+                            onClick={SizeClick2}
                           >
-                            <h3>39</h3>
+                            <h3 onClick={Clicker3}>39</h3>
                           </div>
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize3
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-139-item-169"
                             index="0"
                             aria-checked="false"
@@ -3710,9 +3722,9 @@ function Home() {
                             thumb-width="110"
                             value="4"
                             thumb-height="90"
-                            onClick={() => setSize(40)}
+                            onClick={SizeClick4}
                           >
-                            <h3>40</h3>
+                            <h3 onClick={Clicker4}>40</h3>
                           </div>
                         </div>
                       </div>
