@@ -455,6 +455,15 @@ function Home() {
       priceExtandlayout,
     ]);
   }
+  function ADDTOCARTPORTOWIDTH(e) {
+    e.preventDefault();
+    console.log([
+      Count,
+      "hamza",
+      [Sizeclothes, Sizeclothes2, Sizeclothes3, Sizeclothes4],
+      priceExtandlayout,
+    ]);
+  }
   return (
     <div className="content-hoome">
       <div className={Navbar ? "Navbar-general active" : "Navbar-general"}>
@@ -3983,7 +3992,11 @@ function Home() {
                           aria-invalid="true"
                         >
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-136-item-166"
                             index="0"
                             aria-checked="false"
@@ -4000,12 +4013,16 @@ function Home() {
                             thumb-width="110"
                             aria-selected="true"
                             thumb-height="90"
-                            onClick={() => setSizeclothes("XS")}
+                            onClick={ClickSizeclothes}
                           >
-                            <h3>XS</h3>
+                            <h3 onClick={Clicker}>XS</h3>
                           </div>
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize2
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-137-item-167"
                             index="0"
                             aria-checked="false"
@@ -4022,12 +4039,16 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                             aria-selected="true"
-                            onClick={() => setSizeclothes("S")}
+                            onClick={ClickSizeclothes2}
                           >
-                            <h3>S</h3>
+                            <h3 onClick={Clicker2}>S</h3>
                           </div>
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize3
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-138-item-168"
                             index="0"
                             aria-checked="false"
@@ -4043,13 +4064,17 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                             aria-selected="true"
-                            onClick={() => setSizeclothes("M")}
+                            onClick={ClickSizeclothes3}
                             value="3"
                           >
-                            <h3>M</h3>
+                            <h3 onClick={Clicker3}>M</h3>
                           </div>
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize4
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-138-item-168"
                             index="0"
                             aria-checked="false"
@@ -4066,9 +4091,9 @@ function Home() {
                             thumb-height="90"
                             aria-selected="true"
                             value="4"
-                            onClick={() => setSizeclothes("L")}
+                            onClick={ClickSizeclothes4}
                           >
-                            <h3>L</h3>
+                            <h3 onClick={Clicker4}>L</h3>
                           </div>
                         </div>
                       </div>
@@ -4103,7 +4128,9 @@ function Home() {
                             id="add-tocart"
                           >
                             <BsBag className="bs-bag-modal" />
-                            <span>Add to Cart</span>
+                            <span onClick={ADDTOCARTPORTOWIDTH}>
+                              Add to Cart
+                            </span>
                           </button>
                         </div>
                       </div>
