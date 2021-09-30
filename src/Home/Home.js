@@ -124,6 +124,7 @@ function Home() {
   const [ClickSize2, setClickSize2] = useState(false);
   const [ClickSize3, setClickSize3] = useState(false);
   const [ClickSize4, setClickSize4] = useState(false);
+  const [price, setPrice] = useState(101.01);
   const [Sizeclothes, setSizeclothes] = useState("XS");
   const [Basket, setBasket] = useState(0);
 
@@ -312,7 +313,7 @@ function Home() {
   }
   function ADDTOCARTSHOESGIRL(e) {
     e.preventDefault();
-    console.log([Count, "hamza", [Size4, Size3, Size2, Size]]);
+    console.log([Count, "hamza", [Size4, Size3, Size2, Size], price]);
   }
   function AddNumber(e) {
     if (Count > 11) {
@@ -825,7 +826,7 @@ function Home() {
                       data-price-amount="101"
                       data-price-type="finalPrice"
                     >
-                      <span className="price-premier">$101.00</span>
+                      <span className="price-premier">$101.01</span>
                     </span>
                   </div>
                 </span>
@@ -2103,7 +2104,7 @@ function Home() {
                           data-price-type="finalPrice"
                           className="price-wrapper "
                         >
-                          $101.00
+                          <h3>${price}</h3>
                         </span>
                       </div>
                     </div>
