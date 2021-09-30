@@ -82,7 +82,6 @@ import watch from "./sport watch/product-21.jpeg";
 import { BsX } from "react-icons/bs";
 import { BsPlus } from "react-icons/bs";
 import { BsDash } from "react-icons/bs";
-import src from "gsap/src";
 const customStyles = {
   content: {
     top: "50%",
@@ -118,6 +117,9 @@ function Home() {
   const [Transparentimage, setTransparentimage] = React.useState(false);
   const [SportsWatch, setSportsWatch] = React.useState(false);
   const [Size, setSize] = useState();
+  const [Size2, setSize2] = useState();
+  const [Size3, setSize3] = useState();
+  const [Size4, setSize4] = useState();
   const [ClickSize, setClickSize] = useState(false);
   const [ClickSize2, setClickSize2] = useState(false);
   const [ClickSize3, setClickSize3] = useState(false);
@@ -154,10 +156,10 @@ function Home() {
   }
   function SizeClick2(e) {
     e.preventDefault();
-    if (Size) {
+    if (Size2) {
       setSize();
     } else {
-      setSize(38);
+      setSize2(38);
     }
     SizeClick2 = !SizeClick2;
   }
@@ -172,10 +174,10 @@ function Home() {
   }
   function SizeClick3(e) {
     e.preventDefault();
-    if (Size) {
-      setSize();
+    if (Size3) {
+      setSize3();
     } else {
-      setSize(39);
+      setSize3(39);
     }
     SizeClick3 = !SizeClick3;
   }
@@ -190,10 +192,10 @@ function Home() {
   }
   function SizeClick4(e) {
     e.preventDefault();
-    if (Size) {
-      setSize();
+    if (Size4) {
+      setSize4();
     } else {
-      setSize(40);
+      setSize4(40);
     }
     SizeClick3 = !SizeClick3;
   }
@@ -310,7 +312,7 @@ function Home() {
   }
   function ADDTOCARTSHOESGIRL(e) {
     e.preventDefault();
-    console.log([Count, "hamza", Size, shoes000]);
+    console.log([Count, "hamza", [Size4, Size3, Size2, Size]]);
   }
   function AddNumber(e) {
     if (Count > 11) {
