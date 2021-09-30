@@ -119,6 +119,9 @@ function Home() {
   const [SportsWatch, setSportsWatch] = React.useState(false);
   const [Size, setSize] = useState();
   const [ClickSize, setClickSize] = useState(false);
+  const [ClickSize2, setClickSize2] = useState(false);
+  const [ClickSize3, setClickSize3] = useState(false);
+  const [ClickSize4, setClickSize4] = useState(false);
   const [Sizeclothes, setSizeclothes] = useState("XS");
   const [Basket, setBasket] = useState(0);
 
@@ -139,6 +142,60 @@ function Home() {
       setSize(37);
     }
     SizeClick = !SizeClick;
+  }
+  function Clicker2(e) {
+    e.preventDefault();
+    if (ClickSize2) {
+      setClickSize2(false);
+    } else {
+      setClickSize2(true);
+    }
+    Clicker2 = !Clicker2;
+  }
+  function SizeClick2(e) {
+    e.preventDefault();
+    if (Size) {
+      setSize();
+    } else {
+      setSize(38);
+    }
+    SizeClick2 = !SizeClick2;
+  }
+  function Clicker3(e) {
+    e.preventDefault();
+    if (ClickSize3) {
+      setClickSize3(false);
+    } else {
+      setClickSize3(true);
+    }
+    Clicker3 = !Clicker3;
+  }
+  function SizeClick3(e) {
+    e.preventDefault();
+    if (Size) {
+      setSize();
+    } else {
+      setSize(39);
+    }
+    SizeClick3 = !SizeClick3;
+  }
+  function Clicker4(e) {
+    e.preventDefault();
+    if (ClickSize4) {
+      setClickSize4(false);
+    } else {
+      setClickSize4(true);
+    }
+    Clicker3 = !Clicker3;
+  }
+  function SizeClick4(e) {
+    e.preventDefault();
+    if (Size) {
+      setSize();
+    } else {
+      setSize(40);
+    }
+    SizeClick3 = !SizeClick3;
   }
 
   function openTransparentimage(e) {
@@ -2101,7 +2158,11 @@ function Home() {
                             <h3 onClick={Clicker}>37</h3>
                           </div>
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize2
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-137-item-167"
                             index="0"
                             aria-checked="false"
@@ -2118,12 +2179,16 @@ function Home() {
                             role="option"
                             thumb-width="110"
                             thumb-height="90"
-                            onClick={() => setSize(38)}
+                            onClick={SizeClick2}
                           >
-                            <h3>38</h3>
+                            <h3 onClick={Clicker2}>38</h3>
                           </div>
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize3
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-138-item-168"
                             index="0"
                             aria-checked="false"
@@ -2140,12 +2205,16 @@ function Home() {
                             thumb-width="110"
                             thumb-height="90"
                             value={39}
-                            onClick={() => setSize(39)}
+                            onClick={SizeClick3}
                           >
-                            <h3>39</h3>
+                            <h3 onClick={Clicker3}>39</h3>
                           </div>
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize4
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-139-item-169"
                             index="0"
                             aria-checked="false"
@@ -2161,10 +2230,10 @@ function Home() {
                             role="option"
                             thumb-width="110"
                             value={40}
-                            onClick={() => setSize(40)}
                             thumb-height="90"
+                            onClick={SizeClick4}
                           >
-                            <h3>40</h3>
+                            <h3 onClick={Clicker4}>40</h3>
                           </div>
                         </div>
                       </div>
