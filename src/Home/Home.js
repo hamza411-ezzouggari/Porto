@@ -209,6 +209,10 @@ function Home() {
     e.preventDefault();
     setTransparentimage(false);
     setCount(0);
+    setClickSize(false);
+    setClickSize2(false);
+    setClickSize3(false);
+    setClickSize4(false);
   }
   function openSportsWatch(e) {
     e.preventDefault();
@@ -218,6 +222,10 @@ function Home() {
     e.preventDefault();
     setSportsWatch(false);
     setCount(0);
+    setClickSize(false);
+    setClickSize2(false);
+    setClickSize3(false);
+    setClickSize4(false);
   }
   function openRightSidebar(e) {
     e.preventDefault();
@@ -227,6 +235,10 @@ function Home() {
     e.preventDefault();
     setRightSidebar(false);
     setCount(0);
+    setClickSize(false);
+    setClickSize2(false);
+    setClickSize3(false);
+    setClickSize4(false);
   }
   function openleftSlidebar(e) {
     e.preventDefault();
@@ -236,6 +248,10 @@ function Home() {
     e.preventDefault();
     setleftSlidebar(false);
     setCount(0);
+    setClickSize(false);
+    setClickSize2(false);
+    setClickSize3(false);
+    setClickSize4(false);
   }
   function openPortowidth(e) {
     e.preventDefault();
@@ -245,6 +261,10 @@ function Home() {
     e.preventDefault();
     setPortowidth(false);
     setCount(0);
+    setClickSize(false);
+    setClickSize2(false);
+    setClickSize3(false);
+    setClickSize4(false);
   }
   function openExtendedLayout(e) {
     e.preventDefault();
@@ -254,6 +274,10 @@ function Home() {
     e.preventDefault();
     setExtendedLayout(false);
     setCount(0);
+    setClickSize(false);
+    setClickSize2(false);
+    setClickSize3(false);
+    setClickSize4(false);
   }
   function openglassmodal(e) {
     e.preventDefault();
@@ -263,6 +287,10 @@ function Home() {
     e.preventDefault();
     setGlassmodal(false);
     setCount(0);
+    setClickSize(false);
+    setClickSize2(false);
+    setClickSize3(false);
+    setClickSize4(false);
   }
 
   function openModal(e) {
@@ -274,6 +302,10 @@ function Home() {
   function closeModal() {
     setIsOpen(false);
     setCount(0);
+    setClickSize(false);
+    setClickSize2(false);
+    setClickSize3(false);
+    setClickSize4(false);
   }
   function openIdeapadmodal(e) {
     e.preventDefault();
@@ -283,6 +315,10 @@ function Home() {
     e.preventDefault();
     setIdeapadmodal(false);
     setCount(0);
+    setClickSize(false);
+    setClickSize2(false);
+    setClickSize3(false);
+    setClickSize4(false);
   }
   function openMencap(e) {
     e.preventDefault();
@@ -292,6 +328,10 @@ function Home() {
     e.preventDefault();
     setMenCapmodal(false);
     setCount(0);
+    setClickSize(false);
+    setClickSize2(false);
+    setClickSize3(false);
+    setClickSize4(false);
   }
   function openMenShouse(e) {
     e.preventDefault();
@@ -301,6 +341,10 @@ function Home() {
     e.preventDefault();
     setMenSHose(false);
     setCount(0);
+    setClickSize(false);
+    setClickSize2(false);
+    setClickSize3(false);
+    setClickSize4(false);
   }
   function openportoboth(e) {
     e.preventDefault();
@@ -310,6 +354,10 @@ function Home() {
     e.preventDefault();
     setPortoBoth(false);
     setCount(0);
+    setClickSize(false);
+    setClickSize2(false);
+    setClickSize3(false);
+    setClickSize4(false);
   }
   function ADDTOCARTSHOESGIRL(e) {
     e.preventDefault();
@@ -3050,7 +3098,11 @@ function Home() {
                           aria-invalid="true"
                         >
                           <div
-                            className="swatch-option-text"
+                            className={
+                              ClickSize
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
                             id="option-label-size-136-item-166"
                             index="0"
                             aria-checked="false"
@@ -3067,9 +3119,9 @@ function Home() {
                             thumb-width="110"
                             aria-selected="true"
                             thumb-height="90"
-                            onClick={ClickSize}
+                            onClick={SizeClick}
                           >
-                            <h3>37</h3>
+                            <h3 onClick={Clicker}>37</h3>
                           </div>
                           <div
                             className="swatch-option-text"
