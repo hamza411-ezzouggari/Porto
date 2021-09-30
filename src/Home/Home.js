@@ -464,6 +464,15 @@ function Home() {
       priceExtandlayout,
     ]);
   }
+  function ADDTOCARTPORTOLEFTSIDEBAR(e) {
+    e.preventDefault();
+    console.log([
+      Count,
+      "hamza",
+      [Sizeclothes, Sizeclothes2, Sizeclothes3, Sizeclothes4],
+      priceExtandlayout,
+    ]);
+  }
   return (
     <div className="content-hoome">
       <div className={Navbar ? "Navbar-general active" : "Navbar-general"}>
@@ -4407,7 +4416,9 @@ function Home() {
                             id="add-tocart"
                           >
                             <BsBag className="bs-bag-modal" />
-                            <span>Add to Cart</span>
+                            <span onClick={ADDTOCARTPORTOLEFTSIDEBAR}>
+                              Add to Cart
+                            </span>
                           </button>
                         </div>
                       </div>
