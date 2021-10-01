@@ -2568,7 +2568,7 @@ function Home() {
                           data-price-type="finalPrice"
                           className="price-wrapper "
                         >
-                          $101.00
+                          ${priceGlasses}.00
                         </span>
                       </div>
                     </div>
@@ -2730,7 +2730,9 @@ function Home() {
                           className="price-wrapper "
                         >
                           <span className="old-price-wrapper-09">$299.00</span>
-                          <span className="price-premier-09">$259.00</span>
+                          <span className="price-premier-09">
+                            ${priceIdeapad}.00
+                          </span>
                         </span>
                       </div>
                     </div>
@@ -2892,7 +2894,7 @@ function Home() {
                           data-price-type="finalPrice"
                           className="price-wrapper "
                         >
-                          $199.00
+                          ${priceMenCap}
                         </span>
                       </div>
                     </div>
@@ -3503,7 +3505,7 @@ function Home() {
                           data-price-type="finalPrice"
                           className="price-wrapper "
                         >
-                          $890.00
+                          ${priceStickyInfo}.00
                         </span>
                       </div>
                     </div>
@@ -3993,7 +3995,7 @@ function Home() {
                           data-price-type="finalPrice"
                           className="price-wrapper "
                         >
-                          $101.00
+                          ${PricePortoFullWidth}.00
                         </span>
                       </div>
                     </div>
@@ -4271,7 +4273,7 @@ function Home() {
                           className="price-wrapper "
                         >
                           {" "}
-                          <span className="price">$259.00</span>
+                          <span className="price">${pricePortoSidebar}.00</span>
                           <span className="old-price-wrapper">$299.00</span>
                         </span>
                       </div>
@@ -4550,7 +4552,7 @@ function Home() {
                           className="price-wrapper "
                         >
                           {" "}
-                          <span className="price">$259.00</span>
+                          <span className="price">${priceRightsidebar}.00</span>
                           <span className="old-price-wrapper">$299.00</span>
                         </span>
                       </div>
@@ -4713,7 +4715,7 @@ function Home() {
                           className="price-wrapper "
                         >
                           {" "}
-                          <span>$49.00</span>
+                          <span>${priceTransparent}.00</span>
                         </span>
                       </div>
                     </div>
@@ -4876,7 +4878,9 @@ function Home() {
                         >
                           {" "}
                           <span className="price">$259.00</span>
-                          <span className="old-price-wrapper">$299.00</span>
+                          <span className="old-price-wrapper">
+                            ${priceSportwatch}.00
+                          </span>
                         </span>
                       </div>
                     </div>
