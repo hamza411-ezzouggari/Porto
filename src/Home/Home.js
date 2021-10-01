@@ -129,8 +129,17 @@ function Home() {
   const [ClickSize3, setClickSize3] = useState(false);
   const [ClickSize4, setClickSize4] = useState(false);
   const [price, setPrice] = useState(101.01);
+  const [priceGlasses, setPriceGlasses] = useState(101.0);
+  const [priceIdeapad, setPriceIdeapad] = useState(259.0);
+  const [priceMenCap, setPriceMenCap] = useState(199.01);
   const [priceMenshouse, setpriceMenshouse] = useState(39.99);
+  const [priceStickyInfo, setpriceStickyInfo] = useState(79.0);
   const [priceExtandlayout, setPriceExtandlayout] = useState(69.0);
+  const [PricePortoFullWidth, setPricePOrtoFullwidth] = useState(100.0);
+  const [pricePortoSidebar, setpricePortoSidebar] = useState(259.1);
+  const [priceRightsidebar, setpriceRightsidebar] = useState(259.0);
+  const [priceTransparent, setpriceTransparent] = useState(49.0);
+  const [priceSportwatch, setpriceSportwatch] = useState(259.0);
   const [Basket, setBasket] = useState(0);
 
   function ClickSizeclothes(e) {
@@ -967,7 +976,7 @@ function Home() {
                       data-price-amount="101"
                       data-price-type="finalPrice"
                     >
-                      <span className="price-premier">$101.01</span>
+                      <span className="price-premier">${price}</span>
                     </span>
                   </div>
                 </span>
@@ -1046,7 +1055,7 @@ function Home() {
                       data-price-amount="101"
                       data-price-type="finalPrice"
                     >
-                      <span className="price-premier">$101.00</span>
+                      <span className="price-premier">${priceGlasses}.00</span>
                     </span>
                   </div>
                 </span>
@@ -1129,7 +1138,7 @@ function Home() {
                       data-price-type="finalPrice"
                     >
                       <span className="old-price-wrapper">$299.00</span>
-                      <span className="price-premier">$239.00</span>
+                      <span className="price-premier">${priceIdeapad}.00</span>
                     </span>
                   </div>
                 </span>
@@ -1208,7 +1217,7 @@ function Home() {
                       data-price-amount="101"
                       data-price-type="finalPrice"
                     >
-                      <span className="price-premier">$199.00</span>
+                      <span className="price-premier">${priceMenCap}</span>
                     </span>
                   </div>
                 </span>
@@ -1287,7 +1296,7 @@ function Home() {
                       data-price-amount="101"
                       data-price-type="finalPrice"
                     >
-                      <span className="price-premier">$39.99</span>
+                      <span className="price-premier">${priceMenshouse}</span>
                     </span>
                   </div>
                 </span>
@@ -1366,7 +1375,9 @@ function Home() {
                       data-price-amount="101"
                       data-price-type="finalPrice"
                     >
-                      <span className="price-premier">$79.00</span>
+                      <span className="price-premier">
+                        ${priceStickyInfo}.00
+                      </span>
                     </span>
                   </div>
                 </span>
@@ -1450,7 +1461,9 @@ function Home() {
                       data-price-amount="101"
                       data-price-type="finalPrice"
                     >
-                      <span className="price-premier">$69.00</span>
+                      <span className="price-premier">
+                        ${priceExtandlayout}.00
+                      </span>
                     </span>
                   </div>
                 </span>
@@ -1529,7 +1542,9 @@ function Home() {
                       data-price-amount="101"
                       data-price-type="finalPrice"
                     >
-                      <span className="price-premier">$100.00</span>
+                      <span className="price-premier">
+                        ${PricePortoFullWidth}.00
+                      </span>
                     </span>
                   </div>
                 </span>
@@ -1608,7 +1623,9 @@ function Home() {
                       data-price-amount="101"
                       data-price-type="finalPrice"
                     >
-                      <span className="price-premier">$259.10</span>
+                      <span className="price-premier">
+                        ${pricePortoSidebar}0
+                      </span>
                     </span>
                   </div>
                 </span>
@@ -1691,7 +1708,9 @@ function Home() {
                       data-price-type="finalPrice"
                     >
                       <span className="old-price-wrapper">$299.00</span>
-                      <span className="price-premier">$259.00</span>
+                      <span className="price-premier">
+                        ${priceRightsidebar}.00
+                      </span>
                     </span>
                   </div>
                 </span>
@@ -1773,7 +1792,9 @@ function Home() {
                       data-price-amount="101"
                       data-price-type="finalPrice"
                     >
-                      <span className="price-premier">$49.00</span>
+                      <span className="price-premier">
+                        ${priceTransparent}.00
+                      </span>
                     </span>
                   </div>
                 </span>
@@ -1856,7 +1877,9 @@ function Home() {
                       data-price-type="finalPrice"
                     >
                       <span className="old-price-wrapper">$299.00</span>
-                      <span className="price-premier">$259.00</span>
+                      <span className="price-premier">
+                        ${priceSportwatch}.00
+                      </span>
                     </span>
                   </div>
                 </span>
