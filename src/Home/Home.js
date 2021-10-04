@@ -502,7 +502,7 @@ function Home() {
     e.preventDefault();
     console.log(Count);
   }
-  function SportWatch(e) {
+  function ADDtocartSportWatch(e) {
     e.preventDefault();
     console.log(Count);
   }
@@ -2643,6 +2643,7 @@ function Home() {
                             title="Add to Cart"
                             className="action-primary-tocart"
                             id="add-tocart"
+                            onClick={AddtocartGlasses}
                           >
                             <BsBag className="bs-bag-modal" />
                             <span>Add to Cart</span>
@@ -2808,6 +2809,7 @@ function Home() {
                             title="Add to Cart"
                             className="action-primary-tocart"
                             id="add-tocart"
+                            onClick="Addtocartideapad"
                           >
                             <BsBag className="bs-bag-modal" />
                             <span>Add to Cart</span>
@@ -3580,6 +3582,7 @@ function Home() {
                             title="Add to Cart"
                             className="action-primary-tocart"
                             id="add-tocart"
+                            onClick={ADDtocartPOrtoDron}
                           >
                             <BsBag className="bs-bag-modal" />
                             <span>Add to Cart</span>
@@ -4628,6 +4631,7 @@ function Home() {
                             title="Add to Cart"
                             className="action-primary-tocart"
                             id="add-tocart"
+                            onClick={ADDtocartPortoRightsidebar}
                           >
                             <BsBag className="bs-bag-modal" />
                             <span>Add to Cart</span>
@@ -4790,6 +4794,7 @@ function Home() {
                             title="Add to Cart"
                             className="action-primary-tocart"
                             id="add-tocart"
+                            onClick={ADDtocarttransparentImages}
                           >
                             <BsBag className="bs-bag-modal" />
                             <span>Add to Cart</span>
@@ -4956,6 +4961,7 @@ function Home() {
                             title="Add to Cart"
                             className="action-primary-tocart"
                             id="add-tocart"
+                            onClick={ADDtocartSportWatch}
                           >
                             <BsBag className="bs-bag-modal" />
                             <span>Add to Cart</span>
