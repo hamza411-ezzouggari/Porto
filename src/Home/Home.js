@@ -440,13 +440,14 @@ function Home() {
   }
   function OnclickGirlShouse(e) {
     e.preventDefault();
-    setProductbascket([
+    setProductbascket("Girl Shoes", [
       Count,
       "hamza",
       [Size, Size2, Size3, Size4],
       proceGirlShouse,
     ]);
     console.log(productbasket);
+    this.props.onADD(productbasket);
   }
 
   function AddtocartGlasses(e) {
