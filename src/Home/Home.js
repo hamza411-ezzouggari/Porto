@@ -442,18 +442,13 @@ function Home() {
     e.preventDefault();
     console.log([Count, "hamza", [Size4, Size3, Size2, Size], price]);
   }
-  function OnclickMenShoes(e) {
+  function AddtocartGlasses(e) {
     e.preventDefault();
-    console.log([Count, "hamza", [Size4, Size3, Size2, Size], priceMenshouse]);
+    console.log(Count);
   }
-  function PortoExtandlayout(e) {
+  function Addtocartideapad(e) {
     e.preventDefault();
-    console.log([
-      Count,
-      "hamza",
-      [Size4, Size3, Size2, Size],
-      priceExtandlayout,
-    ]);
+    console.log(Count);
   }
   function ADDTOCARTMENCAP(e) {
     e.preventDefault();
@@ -461,6 +456,23 @@ function Home() {
       Count,
       "hamza",
       [Sizeclothes, Sizeclothes2, Sizeclothes3, Sizeclothes4],
+      priceExtandlayout,
+    ]);
+  }
+  function OnclickMenShoes(e) {
+    e.preventDefault();
+    console.log([Count, "hamza", [Size4, Size3, Size2, Size], priceMenshouse]);
+  }
+  function ADDtocartPOrtoDron(e) {
+    e.preventDefault();
+    console.log(Count);
+  }
+  function PortoExtandlayout(e) {
+    e.preventDefault();
+    console.log([
+      Count,
+      "hamza",
+      [Size4, Size3, Size2, Size],
       priceExtandlayout,
     ]);
   }
@@ -481,6 +493,18 @@ function Home() {
       [Sizeclothes, Sizeclothes2, Sizeclothes3, Sizeclothes4],
       priceExtandlayout,
     ]);
+  }
+  function ADDtocartPortoRightsidebar(e) {
+    e.preventDefault();
+    console.log(Count);
+  }
+  function ADDtocarttransparentImages(e) {
+    e.preventDefault();
+    console.log(Count);
+  }
+  function SportWatch(e) {
+    e.preventDefault();
+    console.log(Count);
   }
   return (
     <div className="content-hoome">
