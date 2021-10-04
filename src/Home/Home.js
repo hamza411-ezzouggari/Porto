@@ -447,7 +447,7 @@ function Home() {
       proceGirlShouse,
     ]);
     console.log(productbasket);
-    this.props.onADD(productbasket);
+    this.props.onAdd(productbasket);
   }
 
   function AddtocartGlasses(e) {
