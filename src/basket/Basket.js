@@ -1,11 +1,14 @@
 import React from "react";
 
-function Basket() {
-  return (
-    <div>
-      <h1>Hamza</h1>
-    </div>
-  );
+class Basket extends React.Component {
+  render() {
+    const { productbasket } = this.state;
+    return (
+      <div className="Basket">
+        <h1>Hamza Ezzouggari</h1>
+      </div>
+    );
+  }
 }
 
 export default Basket;

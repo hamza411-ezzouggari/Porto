@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import React from "react";
 import Basket from "./basket/Basket";
 class App extends React.Component {
+  componentWillReceiveProps(nextProps) {
+    this.setState({ books: nextProps.books });
+  }
   state = {
     AddProduct: [],
   };
@@ -19,7 +22,13 @@ class App extends React.Component {
     return (
       <Router>
         <Route path="/" exact component={Home} />
-        <Route path="/Basket" exact component={Basket} />
+        <Route
+          path="/Basket"
+          exact
+          component={Basket}
+          onAdd={this.onAdd}
+          AddProduct={this.state.AddProduct}
+        />
       </Router>
     );
   }
