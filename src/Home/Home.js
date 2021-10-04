@@ -128,7 +128,7 @@ function Home() {
   const [ClickSize2, setClickSize2] = useState(false);
   const [ClickSize3, setClickSize3] = useState(false);
   const [ClickSize4, setClickSize4] = useState(false);
-  const [price, setPrice] = useState(101.01);
+  const [proceGirlShouse, setproceGirlShouse] = useState(101.01);
   const [priceGlasses, setPriceGlasses] = useState(101.0);
   const [priceIdeapad, setPriceIdeapad] = useState(259.0);
   const [priceMenCap, setPriceMenCap] = useState(199.01);
@@ -141,7 +141,7 @@ function Home() {
   const [priceTransparent, setpriceTransparent] = useState(49.0);
   const [priceSportwatch, setpriceSportwatch] = useState(259.0);
   const [Basket, setBasket] = useState(0);
-
+  const [productbasket, setProductbascket] = useState([]);
   function ClickSizeclothes(e) {
     e.preventDefault();
     if (Sizeclothes) {
@@ -438,10 +438,17 @@ function Home() {
       setBasket(Basket - 1);
     }
   }
-  function ADDTOCARTSHOESGIRL(e) {
+  function OnclickGirlShouse(e) {
     e.preventDefault();
-    console.log([Count, "hamza", [Size4, Size3, Size2, Size], price]);
+    setProductbascket([
+      Count,
+      "hamza",
+      [Size, Size2, Size3, Size4],
+      proceGirlShouse,
+    ]);
+    console.log(productbasket);
   }
+
   function AddtocartGlasses(e) {
     e.preventDefault();
     console.log(Count);
@@ -1000,7 +1007,7 @@ function Home() {
                       data-price-amount="101"
                       data-price-type="finalPrice"
                     >
-                      <span className="price-premier">${price}</span>
+                      <span className="price-premier">${proceGirlShouse}</span>
                     </span>
                   </div>
                 </span>
@@ -2292,7 +2299,7 @@ function Home() {
                           data-price-type="finalPrice"
                           className="price-wrapper "
                         >
-                          <h4>${price}</h4>
+                          <h4>${proceGirlShouse}</h4>
                         </span>
                       </div>
                     </div>
@@ -2457,10 +2464,10 @@ function Home() {
                             title="Add to Cart"
                             className="action-primary-tocart"
                             id="add-tocart"
-                            onClick={ADDTOCARTSHOESGIRL}
+                            onClick={OnclickGirlShouse}
                           >
                             <BsBag className="bs-bag-modal" />
-                            <span onClick={OnclickMenShoes}>Add to Cart</span>
+                            <span>Add to Cart</span>
                           </button>
                         </div>
                       </div>
