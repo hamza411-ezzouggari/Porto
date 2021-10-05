@@ -1,17 +1,23 @@
 import "./App.css";
 import Home from "./Home/Home";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 import Basket from "./Basket";
-import { basketProvider } from "./Home/Home";
+import AppContext from "./appContext";
+
 function App() {
+  const [Cart, setCart] = useState([]);
+  const AddToCart = (items) => {
+    Cart = setCart.emp(items);
+  };
+
   return (
-    <basketProvider>
+    <AppContext.Provider value={{ Cart, AddToCart }}>
       <Router>
         <Route path="/" exact component={Home} />
         <Route path="/Basket" component={Basket} />
       </Router>
-    </basketProvider>
+    </AppContext.Provider>
   );
 }
 export default App;

@@ -82,6 +82,7 @@ import watch from "./sport watch/product-21.jpeg";
 import { BsX } from "react-icons/bs";
 import { BsPlus } from "react-icons/bs";
 import { BsDash } from "react-icons/bs";
+import { AppContext } from "../App";
 const customStyles = {
   content: {
     top: "50%",
@@ -140,9 +141,8 @@ function Home() {
   const [priceTransparent, setpriceTransparent] = useState(49.0);
   const [priceSportwatch, setpriceSportwatch] = useState(259.0);
   const [Basket, setBasket] = useState(0);
-  const [ElementsInBasket, setElementsInBasket] = useState([]);
 
-  const basketContext = React.createContext();
+  const { addToCart } = ([AppContext, setAppContext] = useState([]));
 
   function ClickSizeclothes(e) {
     e.preventDefault();
