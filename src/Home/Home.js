@@ -1,4 +1,4 @@
-import React, { useState, useContext, Children } from "react";
+import React, { useState, useContext } from "react";
 import "./Home.css";
 import logo from "./image Navbar/logo_ecomblack_lg.png";
 import loope from "./image Navbar/loupe.png";

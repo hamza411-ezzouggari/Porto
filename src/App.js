@@ -2,7 +2,7 @@ import "./App.css";
 import Home from "./Home/Home";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import React, { useState } from "react";
-import Basket from "./Basket";
+import Basket from "./Basket/Basket";
 
 function App() {
   return (

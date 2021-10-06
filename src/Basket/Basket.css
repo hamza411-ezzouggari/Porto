@@ -1,0 +1,10 @@
+.Navbar-general-2 {
+  margin: 2vh 0px 0px 0px;
+  background-image: linear-gradient(315deg, #5e6263 0%, #d3d3d3 74%);
+}
+.Basket {
+  position: absolute;
+  height: flex;
+  width: 100%;
+  background-color: gold;
+}
