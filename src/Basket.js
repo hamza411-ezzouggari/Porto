@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function basket() {
-  return <div></div>;
+  return (
+    <div>
+      <h1>Hamza</h1>
+    </div>
+  );
 }

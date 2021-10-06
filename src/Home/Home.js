@@ -141,8 +141,7 @@ function Home() {
   const [priceTransparent, setpriceTransparent] = useState(49.0);
   const [priceSportwatch, setpriceSportwatch] = useState(259.0);
   const [Basket, setBasket] = useState(0);
-
-  const { addToCart } = ([AppContext, setAppContext] = useState([]));
+  const [basketContext, setbasketContext] = useState([]);
 
   function ClickSizeclothes(e) {
     e.preventDefault();
@@ -445,13 +444,8 @@ function Home() {
   }
   function OnclickGirlShouse(e) {
     e.preventDefault();
-    setElementsInBasket([
-      Count,
-      "hamza",
-      [Size, Size2, Size3, Size4],
-      proceGirlShouse,
-    ]);
-    console.log(ElementsInBasket);
+    setBasket([Count, "hamza", [Size, Size2, Size3, Size4], proceGirlShouse]);
+    console.log(setBasket);
   }
 
   function AddtocartGlasses(e) {
@@ -2178,3074 +2172,2828 @@ function Home() {
           </div>
         </div>
         <div>
-          <basketContext.Provider defaultValue={ElementsInBasket}>
-            <div>
-              <Modal
-                isOpen={modalIsOpen}
-                onAfterOpen={afterOpenModal}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-              >
-                <div className="mfp-content">
-                  <div className="bsx">
-                    <BsX className="Bsk" onClick={closeModal} />
-                  </div>
-                  <div className="column-main">
-                    <section className="gallery">
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          id="img-1"
-                          checked
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img className="gallery__img" src={shoes00} alt="" />
-                        <label for="img-1" className="gallery__thumb">
-                          <img src={shoes000} alt="" />
-                        </label>
-                      </div>
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          id="img-2"
-                          checked
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img className="gallery__img" src={shoes11} alt="" />
-                        <label for="img-2" className="gallery__thumb">
-                          <img src={shoes111} alt="" />
-                        </label>
-                      </div>
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          id="img-3"
-                          checked
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img className="gallery__img" src={shoes12} alt="" />
-                        <label for="img-3" className="gallery__thumb">
-                          <img src={shoes122} alt="" />
-                        </label>
-                      </div>
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          checked
-                          id="img-4"
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img className="gallery__img" src={shoes13} alt="" />
-                        <label for="img-4" className="gallery__thumb">
-                          <img src={shoes133} alt="" />
-                        </label>
-                      </div>
-                    </section>
-                    <div className="product-main-info">
-                      <div className="page-title-wrapper">
-                        <h1 className="base" itemProp="name">
-                          Girl Shoes
-                        </h1>
-                      </div>
-                      <div className="product-reviews-summary-madel">
-                        <span className="label">
-                          <form className="rating">
-                            <label>
-                              <input
-                                id="rating1"
-                                type="radio"
-                                name="stars"
-                                defaultValue="1"
-                              />
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="2"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="3"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="4"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="5"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                          </form>
-                        </span>
-                      </div>
-                      <hr className="align_hr" />
-                      <div className="product-info-price">
-                        <div
-                          className="price-box-final-price"
-                          data-role="priceBox"
-                        >
-                          <span
-                            id="product-price-3382"
-                            data-price-amount="101.00"
-                            data-price-type="finalPrice"
-                            className="price-wrapper "
-                          >
-                            <h4>${proceGirlShouse}</h4>
-                          </span>
-                        </div>
-                      </div>
-                      <div className="product-attribute">
-                        <div className="value" itemProp="description">
-                          Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non. Duis aute irure
-                          dolor in reprehenderit in voluptate velit esse cillum
-                          dolore eu fugiat nulla pariatur.
-                        </div>
-                      </div>
-                      <div className="product-info-stock">
-                        <div className="stock-available">
-                          <span className="label">Availability : </span>
-                          <span className="stoker">In stock</span>
-                        </div>
-                        <div className="product-attribute-sku">
-                          <strong className="type"> SKU : </strong>
-                          <div className="value"> 4234623 </div>
-                        </div>
-                        <div className="switch-attribute-size">
-                          <span id="option-label-size-137">Size : </span>
-                          <div
-                            className="switch-option-text"
-                            index="0"
-                            defaultValue="0"
-                            aria-invalid="true"
-                          >
-                            <div
-                              className={
-                                ClickSize
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-136-item-166"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="166"
-                              option-label="37"
-                              aria-label="37"
-                              aria-selected="true"
-                              defaultValue={37}
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="37"
-                              role="option"
-                              thumb-width="110"
-                              thumb-height="90"
-                              onClick={SizeClick}
-                            >
-                              <h3 onClick={Clicker}>37</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize2
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-137-item-167"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              aria-selected="true"
-                              option-type="0"
-                              option-id="167"
-                              option-label="38"
-                              aria-label="38"
-                              defaultValue="2"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="XS"
-                              role="option"
-                              thumb-width="110"
-                              thumb-height="90"
-                              onClick={SizeClick2}
-                            >
-                              <h3 onClick={Clicker2}>38</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize3
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-138-item-168"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="168"
-                              option-label="39"
-                              aria-label="39"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="39"
-                              role="option"
-                              aria-selected="true"
-                              thumb-width="110"
-                              thumb-height="90"
-                              defaultValue={39}
-                              onClick={SizeClick3}
-                            >
-                              <h3 onClick={Clicker3}>39</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize4
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-139-item-169"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="169"
-                              option-label="40"
-                              aria-label="40"
-                              aria-selected="true"
-                              option-tooltip-thumb=""
-                              option-tooltip-value="40"
-                              role="option"
-                              thumb-width="110"
-                              defaultValue={40}
-                              thumb-height="90"
-                              onClick={SizeClick4}
-                            >
-                              <h3 onClick={Clicker4}>40</h3>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="product-add-from">
-                        <div className="fieldset">
-                          <div className="control">
-                            <input
-                              type="number"
-                              name="qty"
-                              id="qty"
-                              maxLength="12"
-                              defaultValue={Count}
-                              title="qty"
-                              className="input-text-qty"
-                            />
-                            <div className="qty-changer">
-                              <a className="qty-inc">
-                                <BsPlus className="plus" onClick={AddNumber} />
-                              </a>
-                              <a className="qty-dec" onClick={subtract}>
-                                <BsDash className="BsDash" />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="action">
-                            <button
-                              type="submit"
-                              title="Add to Cart"
-                              className="action-primary-tocart"
-                              id="add-tocart"
-                              onClick={OnclickGirlShouse}
-                            >
-                              <BsBag className="bs-bag-modal" />
-                              <span>Add to Cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="fieldset">
-                        <div className="action2">
-                          <a
-                            target="_parent"
-                            href="#"
-                            title="Go To Product"
-                            className="action-primary"
-                            id="product-gotoproduct"
-                          >
-                            <span>Go To Product</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <div>
+            <Modal
+              isOpen={modalIsOpen}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closeModal} />
                 </div>
-              </Modal>
-            </div>
-            <div>
-              <Modal
-                isOpen={glassmodal}
-                onAfterOpen={afterOpenModal}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-              >
-                <div className="mfp-content">
-                  <div className="bsx">
-                    <BsX className="Bsk" onClick={closeglassmodal} />
-                  </div>
-                  <div className="column-main">
-                    <section className="gallery">
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          id="img-1"
-                          checked
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img className="gallery__img" src={product205} alt="" />
-                        <label for="img-1" className="gallery__thumb">
-                          <img src={product2055} alt="" />
-                        </label>
-                      </div>
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          id="img-2"
-                          checked
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img className="gallery__img" src={product48} alt="" />
-                        <label for="img-2" className="gallery__thumb">
-                          <img src={product488} alt="" />
-                        </label>
-                      </div>
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          id="img-3"
-                          checked
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img className="gallery__img" src={product888} alt="" />
-                        <label for="img-3" className="gallery__thumb">
-                          <img src={product8888} alt="" />
-                        </label>
-                      </div>
-                    </section>
-                    <div className="product-main-info">
-                      <div className="page-title-wrapper">
-                        <h1 className="base" itemProp="name">
-                          Glasses
-                        </h1>
-                      </div>
-                      <div className="product-reviews-summary-madel">
-                        <span className="label">
-                          <form className="rating">
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="1"
-                              />
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="2"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="3"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="4"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="5"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                          </form>
-                        </span>
-                      </div>
-                      <hr className="align_hr" />
-                      <div className="product-info-price">
-                        <div
-                          className="price-box-final-price"
-                          data-role="priceBox"
-                        >
-                          <span
-                            id="product-price-3382"
-                            data-price-amount="101"
-                            data-price-type="finalPrice"
-                            className="price-wrapper "
-                          >
-                            ${priceGlasses}.00
-                          </span>
-                        </div>
-                      </div>
-                      <div className="product-attribute">
-                        <div className="value" itemProp="description">
-                          Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non. Duis aute irure
-                          dolor in reprehenderit in voluptate velit esse cillum
-                          dolore eu fugiat nulla pariatur.
-                        </div>
-                      </div>
-                      <div className="product-info-stock">
-                        <div className="stock-available">
-                          <span className="label">Availability : </span>
-                          <span className="stoker">In stock</span>
-                        </div>
-                        <div className="product-attribute-sku">
-                          <strong className="type"> SKU : </strong>
-                          <div className="value"> 42346423 </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="product-add-from">
-                        <div className="fieldset">
-                          <div className="control">
-                            <input
-                              type="number"
-                              name="qty"
-                              id="qty"
-                              maxlength="12"
-                              defaultValue={Count}
-                              title="qty"
-                              className="input-text-qty"
-                            />
-                            <div className="qty-changer">
-                              <a className="qty-inc">
-                                <BsPlus className="plus" onClick={AddNumber} />
-                              </a>
-                              <a className="qty-dec" onClick={subtract}>
-                                <BsDash className="BsDash" />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="action">
-                            <button
-                              type="submit"
-                              title="Add to Cart"
-                              className="action-primary-tocart"
-                              id="add-tocart"
-                              onClick={AddtocartGlasses}
-                            >
-                              <BsBag className="bs-bag-modal" />
-                              <span>Add to Cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="fieldset">
-                        <div className="action2">
-                          <a
-                            target="_parent"
-                            href="#"
-                            title="Go To Product"
-                            className="action-primary"
-                            id="product-gotoproduct"
-                          >
-                            <span>Go To Product</span>
-                          </a>
-                        </div>
-                      </div>
+                <div className="column-main">
+                  <section className="gallery">
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-1"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={shoes00} alt="" />
+                      <label for="img-1" className="gallery__thumb">
+                        <img src={shoes000} alt="" />
+                      </label>
                     </div>
-                  </div>
-                </div>
-              </Modal>
-            </div>
-            <div>
-              <Modal
-                isOpen={ideapadmodal}
-                onAfterOpen={afterOpenModal}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-              >
-                <div className="mfp-content">
-                  <div className="bsx">
-                    <BsX className="Bsk" onClick={closeIdeapadmodal} />
-                  </div>
-                  <div className="column-main">
-                    <section className="gallery-9">
-                      <div className="gallery__item-5">
-                        <input
-                          type="radio"
-                          id="img-2"
-                          checked
-                          name="gallery-9"
-                          className="gallery__selector"
-                        />
-                        <img
-                          for="img-2"
-                          className="gallery__img__ideapad"
-                          src={ideapad}
-                          alt=""
-                        />{" "}
-                      </div>
-                    </section>
-                    <div className="product-main-info">
-                      <div className="page-title-wrapper">
-                        <h1 className="base-1" itemProp="name">
-                          Ideapad
-                        </h1>
-                      </div>
-                      <div className="product-reviews-summary-madel">
-                        <span className="label">
-                          <form className="rating">
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="1"
-                              />
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="2"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="3"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="4"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="5"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                          </form>
-                        </span>
-                      </div>
-                      <hr className="align_hr" />
-                      <div className="product-info-price">
-                        <div
-                          className="price-box-final-price"
-                          data-role="priceBox"
-                        >
-                          <span
-                            id="product-price-3382"
-                            data-price-amount="101"
-                            data-price-type="finalPrice"
-                            className="price-wrapper "
-                          >
-                            <span className="old-price-wrapper-09">
-                              $299.00
-                            </span>
-                            <span className="price-premier-09">
-                              ${priceIdeapad}.00
-                            </span>
-                          </span>
-                        </div>
-                      </div>
-                      <div className="product-attribute">
-                        <div className="value" itemProp="description">
-                          Pellentesque habitant morbi tristique senectus et
-                          netus et malesuada fames ac turpis egestas. Vestibulum
-                          tortor quam, feugiat vitae, ultricies eget, tempor sit
-                          amet, ante. Donec eu libero sit amet quam egestas
-                          semper. Aenean ultricies mi vitae est. Mauris placerat
-                          eleifend leo.
-                        </div>
-                      </div>
-                      <div className="product-info-stock">
-                        <div className="stock-available">
-                          <span className="label">Availability : </span>
-                          <span className="stoker">In stock</span>
-                        </div>
-                        <div className="product-attribute-sku">
-                          <strong className="type"> SKU : </strong>
-                          <div className="value"> 42346423 </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="product-add-from">
-                        <div className="fieldset">
-                          <div className="control">
-                            <input
-                              type="number"
-                              name="qty"
-                              id="qty"
-                              maxlength="11"
-                              defaultValue={Count}
-                              title="qty"
-                              className="input-text-qty"
-                            />
-                            <div className="qty-changer">
-                              <a className="qty-inc">
-                                <BsPlus className="plus" onClick={AddNumber} />
-                              </a>
-                              <a className="qty-dec" onClick={subtract}>
-                                <BsDash className="BsDash" />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="action">
-                            <button
-                              type="submit"
-                              title="Add to Cart"
-                              className="action-primary-tocart"
-                              id="add-tocart"
-                              onClick={Addtocartideapad}
-                            >
-                              <BsBag className="bs-bag-modal" />
-                              <span>Add to Cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1__2" />
-                      <div className="fieldset">
-                        <div className="action22">
-                          <a
-                            target="_parent"
-                            href="#"
-                            title="Go To Product"
-                            className="action-primary2"
-                            id="product-gotoproduct"
-                          >
-                            <span>Go To Product</span>
-                          </a>
-                        </div>
-                      </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={shoes11} alt="" />
+                      <label for="img-2" className="gallery__thumb">
+                        <img src={shoes111} alt="" />
+                      </label>
                     </div>
-                  </div>
-                </div>
-              </Modal>
-            </div>
-            <div>
-              <Modal
-                isOpen={menCapmodal}
-                onAfterOpen={afterOpenModal}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-              >
-                <div className="mfp-content-9">
-                  <div className="bsx">
-                    <BsX className="Bsk" onClick={closeMencap} />
-                  </div>
-                  <div className="column-main">
-                    <section className="gallery-9">
-                      <div className="gallery__item-5">
-                        <input
-                          type="radio"
-                          id="img-2"
-                          checked
-                          name="gallery-9"
-                          className="gallery__selector"
-                        />
-                        <img
-                          for="img-2"
-                          className="gallery__img__ideapad"
-                          src={menCap3}
-                          alt=""
-                        />{" "}
-                      </div>
-                    </section>
-                    <div className="product-main-info">
-                      <div className="page-title-wrapper">
-                        <h1 className="base-1" itemProp="name">
-                          Men Cap
-                        </h1>
-                      </div>
-                      <div className="product-reviews-summary-madel">
-                        <span className="label">
-                          <form className="rating">
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="1"
-                              />
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="2"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="3"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="4"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="5"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                          </form>
-                        </span>
-                      </div>
-                      <hr className="align_hr" />
-                      <div className="product-info-price">
-                        <div
-                          className="price-box-final-price"
-                          data-role="priceBox"
-                        >
-                          <span
-                            id="product-price-3382"
-                            data-price-amount="101"
-                            data-price-type="finalPrice"
-                            className="price-wrapper "
-                          >
-                            ${priceMenCap}
-                          </span>
-                        </div>
-                      </div>
-                      <div className="product-attribute">
-                        <div className="value" itemProp="description">
-                          Pellentesque habitant morbi tristique senectus et
-                          netus et malesuada fames ac turpis egestas. Vestibulum
-                          tortor quam, feugiat vitae, ultricies eget, tempor sit
-                          amet, ante. Donec eu libero sit amet quam egestas
-                          semper. Aenean ultricies mi vitae est. Mauris placerat
-                          eleifend leo.
-                        </div>
-                      </div>
-                      <div className="product-info-stock">
-                        <div className="stock-available">
-                          <span className="label">Availability : </span>
-                          <span className="stoker">In stock</span>
-                        </div>
-                        <div className="product-attribute-sku">
-                          <strong className="type"> SKU : </strong>
-                          <div className="value"> 42346423 </div>
-                        </div>
-                        <div className="switch-attribute-size">
-                          <span id="option-label-size-137">Size : </span>
-                          <div
-                            className="switch-option-text"
-                            index="0"
-                            defaultValue="0"
-                            aria-invalid="true"
-                          >
-                            <div
-                              className={
-                                ClickSize
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-136-item-166"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="166"
-                              option-label="XS"
-                              aria-label="XS"
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-3"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={shoes12} alt="" />
+                      <label for="img-3" className="gallery__thumb">
+                        <img src={shoes122} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        checked
+                        id="img-4"
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={shoes13} alt="" />
+                      <label for="img-4" className="gallery__thumb">
+                        <img src={shoes133} alt="" />
+                      </label>
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base" itemProp="name">
+                        Girl Shoes
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input
+                              id="rating1"
+                              type="radio"
+                              name="stars"
                               defaultValue="1"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="XS"
-                              role="option"
-                              thumb-width="110"
-                              thumb-height="90"
-                              onClick={ClickSizeclothes}
-                            >
-                              <h3 onClick={Clicker}>XS</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize2
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-137-item-167"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="167"
-                              option-label="S"
-                              aria-label="S"
-                              defaultValue="2"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="S"
-                              role="option"
-                              thumb-width="110"
-                              thumb-height="90"
-                              onClick={ClickSizeclothes2}
-                            >
-                              <h3 onClick={Clicker2}>S</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize3
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-138-item-168"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="168"
-                              option-label="M"
-                              aria-label="M"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="M"
-                              role="option"
-                              thumb-width="110"
-                              thumb-height="90"
-                              defaultValue="3"
-                              onClick={ClickSizeclothes3}
-                            >
-                              <h3 onClick={Clicker3}>M</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize4
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-138-item-168"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="168"
-                              option-label="L"
-                              aria-label="L"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="L"
-                              role="option"
-                              thumb-width="110"
-                              thumb-height="90"
-                              defaultValue="4"
-                              onClick={ClickSizeclothes4}
-                            >
-                              <h3 onClick={Clicker4}>L</h3>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="product-add-from">
-                        <div className="fieldset">
-                          <div className="control">
-                            <input
-                              type="number"
-                              name="qty"
-                              id="qty"
-                              maxlength="12"
-                              defaultValue={Count}
-                              title="qty"
-                              className="input-text-qty"
                             />
-                            <div className="qty-changer">
-                              <a className="qty-inc">
-                                <BsPlus className="plus" onClick={AddNumber} />
-                              </a>
-                              <a className="qty-dec" onClick={subtract}>
-                                <BsDash className="BsDash" />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="action">
-                            <button
-                              type="submit"
-                              title="Add to Cart"
-                              className="action-primary-tocart"
-                              id="add-tocart"
-                            >
-                              <BsBag className="bs-bag-modal" />
-                              <span onClick={ADDTOCARTMENCAP}>Add to Cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1__2" />
-                      <div className="fieldset">
-                        <div className="action22">
-                          <a
-                            target="_parent"
-                            href="#"
-                            title="Go To Product"
-                            className="action-primary2"
-                            id="product-gotoproduct"
-                          >
-                            <span>Go To Product</span>
-                          </a>
-                        </div>
-                      </div>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
                     </div>
-                  </div>
-                </div>
-              </Modal>
-            </div>
-            <div>
-              <Modal
-                isOpen={MenSHose}
-                onAfterOpen={afterOpenModal}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-              >
-                <div className="mfp-content">
-                  <div className="bsx">
-                    <BsX className="Bsk" onClick={clouseMenShouse} />
-                  </div>
-                  <div className="column-main">
-                    <section className="gallery">
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          id="img-1"
-                          checked
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img className="gallery__img" src={menshoes1} alt="" />
-                        <label for="img-1" className="gallery__thumb">
-                          <img src={menshoes1_1} alt="" />
-                        </label>
-                      </div>
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          id="img-2"
-                          checked
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img className="gallery__img" src={menshoes2} alt="" />
-                        <label for="img-2" className="gallery__thumb">
-                          <img src={menshoes2_2} alt="" />
-                        </label>
-                      </div>
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          id="img-3"
-                          checked
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img className="gallery__img" src={menshoes3} alt="" />
-                        <label for="img-3" className="gallery__thumb">
-                          <img src={menshoes3_3} alt="" />
-                        </label>
-                      </div>
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          checked
-                          id="img-4"
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img className="gallery__img" src={menshoes4} alt="" />
-                        <label for="img-4" className="gallery__thumb">
-                          <img src={menshoes4_4} alt="" />
-                        </label>
-                      </div>
-                    </section>
-                    <div className="product-main-info">
-                      <div className="page-title-wrapper">
-                        <h1 className="base" itemProp="name">
-                          Men Shoes
-                        </h1>
-                      </div>
-                      <div className="product-reviews-summary-madel">
-                        <span className="label">
-                          <form className="rating">
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="1"
-                              />
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="2"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="3"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="4"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="5"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                          </form>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101.00"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          <h4>${proceGirlShouse}</h4>
                         </span>
                       </div>
-                      <hr className="align_hr" />
-                      <div className="product-info-price">
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 4234623 </div>
+                      </div>
+                      <div className="switch-attribute-size">
+                        <span id="option-label-size-137">Size : </span>
                         <div
-                          className="price-box-final-price"
-                          data-role="priceBox"
+                          className="switch-option-text"
+                          index="0"
+                          defaultValue="0"
+                          aria-invalid="true"
                         >
-                          <span
-                            id="product-price-3382"
-                            data-price-amount="101"
-                            data-price-type="finalPrice"
-                            className="price-wrapper "
-                          >
-                            <h4>${priceMenshouse}</h4>
-                          </span>
-                        </div>
-                      </div>
-                      <div className="product-attribute">
-                        <div className="value" itemProp="description">
-                          Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non.
-                        </div>
-                      </div>
-                      <div className="product-info-stock">
-                        <div className="stock-available">
-                          <span className="label">Availability : </span>
-                          <span className="stoker">In stock</span>
-                        </div>
-                        <div className="product-attribute-sku">
-                          <strong className="type"> SKU : </strong>
-                          <div className="value"> 4234623 </div>
-                        </div>
-                        <div className="switch-attribute-size">
-                          <span id="option-label-size-137">Size : </span>
                           <div
-                            className="switch-option-text"
+                            className={
+                              ClickSize
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-136-item-166"
                             index="0"
-                            defaultValue="0"
-                            aria-invalid="true"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="166"
+                            option-label="37"
+                            aria-label="37"
+                            aria-selected="true"
+                            defaultValue={37}
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="37"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            onClick={SizeClick}
                           >
-                            <div
-                              className={
-                                ClickSize
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-136-item-166"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="166"
-                              option-label="38"
-                              aria-label="38"
-                              defaultValue="1"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="38"
-                              role="option"
-                              thumb-width="110"
-                              aria-selected="true"
-                              thumb-height="90"
-                              onClick={SizeClick}
-                            >
-                              <h3 onClick={Clicker}>37</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize2
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-137-item-167"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="167"
-                              option-label="39"
-                              aria-label="39"
-                              defaultValue="2"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="XS"
-                              aria-selected="true"
-                              role="option"
-                              thumb-width="110"
-                              thumb-height="90"
-                              onClick={SizeClick2}
-                            >
-                              <h3 onClick={Clicker2}>38</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize3
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-138-item-168"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="168"
-                              option-label="40"
-                              aria-label="40"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="40"
-                              role="option"
-                              thumb-width="110"
-                              aria-selected="true"
-                              thumb-height="90"
-                              defaultValue="3"
-                              onClick={SizeClick3}
-                            >
-                              <h3 onClick={Clicker3}>39</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize4
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-139-item-169"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="169"
-                              option-label="41"
-                              aria-label="41"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="41"
-                              role="option"
-                              thumb-width="110"
-                              aria-selected="true"
-                              defaultValue="4"
-                              thumb-height="90"
-                              onClick={SizeClick4}
-                            >
-                              <h3 onClick={Clicker4}>40</h3>
-                            </div>
+                            <h3 onClick={Clicker}>37</h3>
                           </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="product-add-from">
-                        <div className="fieldset">
-                          <div className="control">
-                            <input
-                              type="number"
-                              name="qty"
-                              id="qty"
-                              maxlength="12"
-                              defaultValue={Count}
-                              title="qty"
-                              className="input-text-qty"
-                            />
-                            <div className="qty-changer">
-                              <a className="qty-inc">
-                                <BsPlus className="plus" onClick={AddNumber} />
-                              </a>
-                              <a className="qty-dec" onClick={subtract}>
-                                <BsDash className="BsDash" />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="action">
-                            <button
-                              type="submit"
-                              title="Add to Cart"
-                              className="action-primary-tocart"
-                              id="add-tocart"
-                            >
-                              <BsBag className="bs-bag-modal" />
-                              <span onClick={OnclickMenShoes}>Add to Cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="fieldset">
-                        <div className="action2">
-                          <a
-                            target="_parent"
-                            href="#"
-                            title="Go To Product"
-                            className="action-primary"
-                            id="product-gotoproduct"
-                          >
-                            <span>Go To Product</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Modal>
-            </div>
-            <div>
-              <Modal
-                isOpen={portoBoth}
-                onAfterOpen={afterOpenModal}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-              >
-                <div className="mfp-content-dron">
-                  <div className="bsx">
-                    <BsX className="Bsk" onClick={closeportoboth} />
-                  </div>
-                  <div className="column-main">
-                    <section className="gallery">
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          id="img-1"
-                          checked
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img className="gallery__img" src={dron11} alt="" />
-                        <label for="img-1" className="gallery__thumb">
-                          <img src={dron111} alt="" />
-                        </label>
-                      </div>
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          id="img-2"
-                          checked
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img className="gallery__img" src={dron2} alt="" />
-                        <label for="img-2" className="gallery__thumb">
-                          <img src={dron22} alt="" />
-                        </label>
-                      </div>
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          id="img-3"
-                          checked
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img
-                          className="gallery__img"
-                          id="imges0933"
-                          src={dron33}
-                          alt=""
-                        />
-                        <label for="img-3" className="gallery__thumb">
-                          <img src={dron333} alt="" />
-                        </label>
-                      </div>
-                    </section>
-                    <div className="product-main-info">
-                      <div className="page-title-wrapper">
-                        <h1 className="base" itemProp="name">
-                          Porto Both Sticky Info
-                        </h1>
-                      </div>
-                      <div className="product-reviews-summary-madel">
-                        <span className="label">
-                          <form className="rating">
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="1"
-                              />
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="2"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="3"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="4"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="5"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                          </form>
-                        </span>
-                      </div>
-                      <hr className="align_hr" />
-                      <div className="product-info-price">
-                        <div
-                          className="price-box-final-price"
-                          data-role="priceBox"
-                        >
-                          <span
-                            id="product-price-3382"
-                            data-price-amount="101"
-                            data-price-type="finalPrice"
-                            className="price-wrapper "
-                          >
-                            ${priceStickyInfo}.00
-                          </span>
-                        </div>
-                      </div>
-                      <div className="product-attribute">
-                        <div className="value" itemProp="description">
-                          Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non. Duis aute irure
-                          dolor in reprehenderit in voluptate velit esse cillum
-                          dolore eu fugiat nulla pariatur.
-                        </div>
-                      </div>
-                      <div className="product-info-stock">
-                        <div className="stock-available">
-                          <span className="label">Availability : </span>
-                          <span className="stoker">In stock</span>
-                        </div>
-                        <div className="product-attribute-sku">
-                          <strong className="type"> SKU : </strong>
-                          <div className="value"> 4234623 </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="product-add-from">
-                        <div className="fieldset">
-                          <div className="control">
-                            <input
-                              type="number"
-                              name="qty"
-                              id="qty"
-                              maxlength="12"
-                              defaultValue={Count}
-                              title="qty"
-                              className="input-text-qty"
-                            />
-                            <div className="qty-changer">
-                              <a className="qty-inc">
-                                <BsPlus className="plus" onClick={AddNumber} />
-                              </a>
-                              <a className="qty-dec" onClick={subtract}>
-                                <BsDash className="BsDash" />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="action">
-                            <button
-                              type="submit"
-                              title="Add to Cart"
-                              className="action-primary-tocart"
-                              id="add-tocart"
-                              onClick={ADDtocartPOrtoDron}
-                            >
-                              <BsBag className="bs-bag-modal" />
-                              <span>Add to Cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="fieldset">
-                        <div className="action2">
-                          <a
-                            target="_parent"
-                            href="#"
-                            title="Go To Product"
-                            className="action-primary"
-                            id="product-gotoproduct"
-                          >
-                            <span>Go To Product</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Modal>
-            </div>
-            <div>
-              <Modal
-                isOpen={ExtendedLayout}
-                onAfterOpen={afterOpenModal}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-              >
-                <div className="mfp-content">
-                  <div className="bsx">
-                    <BsX className="Bsk" onClick={closeExtendedLayout} />
-                  </div>
-                  <div className="column-main">
-                    <section className="gallery">
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          id="img-1"
-                          checked
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img
-                          className="gallery__img"
-                          src={shoesclassy11}
-                          alt=""
-                        />
-                        <label for="img-1" className="gallery__thumb">
-                          <img src={shoesclassy111} alt="" />
-                        </label>
-                      </div>
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          id="img-2"
-                          checked
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img
-                          className="gallery__img"
-                          src={shoesclassy22}
-                          alt=""
-                        />
-                        <label for="img-2" className="gallery__thumb">
-                          <img src={shoesclassy222} alt="" />
-                        </label>
-                      </div>
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          id="img-3"
-                          checked
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img
-                          className="gallery__img"
-                          src={shoesclassy33}
-                          alt=""
-                        />
-                        3{" "}
-                        <label for="img-3" className="gallery__thumb">
-                          <img src={shoesclassy333} alt="" />
-                        </label>
-                      </div>
-                      <div className="gallery__item">
-                        <input
-                          type="radio"
-                          checked
-                          id="img-4"
-                          name="gallery"
-                          className="gallery__selector"
-                        />
-                        <img
-                          className="gallery__img"
-                          src={shoesclassy44}
-                          alt=""
-                        />
-                        <label for="img-4" className="gallery__thumb">
-                          <img src={shoesclassy444} alt="" />
-                        </label>
-                      </div>
-                    </section>
-                    <div className="product-main-info">
-                      <div className="page-title-wrapper">
-                        <h1 className="base" itemProp="name">
-                          Porto Extended Layout
-                        </h1>
-                      </div>
-                      <div className="product-reviews-summary-madel">
-                        <span className="label">
-                          <form className="rating">
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="1"
-                              />
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="2"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="3"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="4"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="5"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                          </form>
-                        </span>
-                      </div>
-                      <hr className="align_hr" />
-                      <div className="product-info-price">
-                        <div
-                          className="price-box-final-price"
-                          data-role="priceBox"
-                        >
-                          <span
-                            id="product-price-3382"
-                            data-price-amount="101"
-                            data-price-type="finalPrice"
-                            className="price-wrapper "
-                          >
-                            <h4>$ {priceExtandlayout}.00</h4>
-                          </span>
-                        </div>
-                      </div>
-                      <div className="product-attribute">
-                        <div className="value" itemProp="description">
-                          Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non. Duis aute irure
-                          dolor in reprehenderit in voluptate velit esse cillum
-                          dolore eu fugiat nulla pariatur
-                        </div>
-                      </div>
-                      <div className="product-info-stock">
-                        <div className="stock-available">
-                          <span className="label">Availability : </span>
-                          <span className="stoker">In stock</span>
-                        </div>
-                        <div className="product-attribute-sku">
-                          <strong className="type"> SKU : </strong>
-                          <div className="value"> 4234623 </div>
-                        </div>
-                        <div className="switch-attribute-size">
-                          <span id="option-label-size-137">Size : </span>
                           <div
-                            className="switch-option-text"
+                            className={
+                              ClickSize2
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-137-item-167"
                             index="0"
-                            defaultValue="0"
-                            aria-invalid="true"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            aria-selected="true"
+                            option-type="0"
+                            option-id="167"
+                            option-label="38"
+                            aria-label="38"
+                            defaultValue="2"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="XS"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            onClick={SizeClick2}
                           >
-                            <div
-                              className={
-                                ClickSize
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-136-item-166"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="166"
-                              option-label="37"
-                              aria-label="37"
-                              defaultValue="1"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="37"
-                              role="option"
-                              aria-selected="true"
-                              thumb-width="110"
-                              thumb-height="90"
-                              onClick={SizeClick}
-                            >
-                              <h3 onClick={Clicker}>37</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize2
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-137-item-167"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="167"
-                              option-label="38"
-                              aria-label="38"
-                              defaultValue="2"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="XS"
-                              role="option"
-                              thumb-width="110"
-                              aria-selected="true"
-                              thumb-height="90"
-                              onClick={SizeClick2}
-                            >
-                              <h3 onClick={Clicker2}>38</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize3
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-138-item-168"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="168"
-                              option-label="39"
-                              aria-label="39"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="39"
-                              role="option"
-                              aria-selected="true"
-                              thumb-width="110"
-                              thumb-height="90"
-                              defaultValue="3"
-                              onClick={SizeClick3}
-                            >
-                              <h3 onClick={Clicker3}>39</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize4
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-139-item-169"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="169"
-                              option-label="40"
-                              aria-label="40"
-                              option-tooltip-thumb=""
-                              option-tooltip-value="40"
-                              aria-selected="true"
-                              role="option"
-                              thumb-width="110"
-                              defaultValue="4"
-                              thumb-height="90"
-                              onClick={SizeClick4}
-                            >
-                              <h3 onClick={Clicker4}>40</h3>
-                            </div>
+                            <h3 onClick={Clicker2}>38</h3>
                           </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="product-add-from">
-                        <div className="fieldset">
-                          <div className="control">
-                            <input
-                              type="number"
-                              name="qty"
-                              id="qty"
-                              maxlength="12"
-                              defaultValue={Count}
-                              title="qty"
-                              className="input-text-qty"
-                            />
-                            <div className="qty-changer">
-                              <a className="qty-inc">
-                                <BsPlus className="plus" onClick={AddNumber} />
-                              </a>
-                              <a className="qty-dec" onClick={subtract}>
-                                <BsDash className="BsDash" />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="action">
-                            <button
-                              type="submit"
-                              title="Add to Cart"
-                              className="action-primary-tocart"
-                              id="add-tocart"
-                            >
-                              <BsBag className="bs-bag-modal" />
-                              <span onClick={PortoExtandlayout}>
-                                Add to Cart
-                              </span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="fieldset">
-                        <div className="action2">
-                          <a
-                            target="_parent"
-                            href="#"
-                            title="Go To Product"
-                            className="action-primary"
-                            id="product-gotoproduct"
-                          >
-                            <span>Go To Product</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Modal>
-            </div>
-            <div>
-              <Modal
-                isOpen={Portowidth}
-                onAfterOpen={afterOpenModal}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-              >
-                <div className="mfp-content-9">
-                  <div className="bsx">
-                    <BsX className="Bsk" onClick={closePortowidth} />
-                  </div>
-                  <div className="column-main">
-                    <section className="gallery-9">
-                      <div className="gallery__item-5">
-                        <input
-                          type="radio"
-                          id="img-2"
-                          checked
-                          name="gallery-9"
-                          className="gallery__selector"
-                        />
-                        <img
-                          for="img-2"
-                          className="gallery__img__ideapad"
-                          src={portofullwidth}
-                          alt=""
-                        />{" "}
-                      </div>
-                    </section>
-                    <div className="product-main-info">
-                      <div className="page-title-wrapper">
-                        <h1 className="base-1" itemProp="name">
-                          Porto Full-Width
-                        </h1>
-                      </div>
-                      <div className="product-reviews-summary-madel">
-                        <span className="label">
-                          <form className="rating">
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="1"
-                              />
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="2"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="3"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="4"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="5"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                          </form>
-                        </span>
-                      </div>
-                      <hr className="align_hr" />
-                      <div className="product-info-price">
-                        <div
-                          className="price-box-final-price"
-                          data-role="priceBox"
-                        >
-                          <span
-                            id="product-price-3382"
-                            data-price-amount="101"
-                            data-price-type="finalPrice"
-                            className="price-wrapper "
-                          >
-                            ${PricePortoFullWidth}.00
-                          </span>
-                        </div>
-                      </div>
-                      <div className="product-attribute">
-                        <div className="value" itemProp="description">
-                          Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non. Duis aute irure
-                          dolor in reprehenderit in voluptate velit esse cillum
-                          dolore eu fugiat nulla pariatur.
-                        </div>
-                      </div>
-                      <div className="product-info-stock">
-                        <div className="stock-available">
-                          <span className="label">Availability : </span>
-                          <span className="stoker">In stock</span>
-                        </div>
-                        <div className="product-attribute-sku">
-                          <strong className="type"> SKU : </strong>
-                          <div className="value"> 42346423 </div>
-                        </div>
-                        <div className="switch-attribute-size">
-                          <span id="option-label-size-137">Size : </span>
                           <div
-                            className="switch-option-text"
+                            className={
+                              ClickSize3
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-138-item-168"
                             index="0"
-                            defaultValue="0"
-                            aria-invalid="true"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="168"
+                            option-label="39"
+                            aria-label="39"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="39"
+                            role="option"
+                            aria-selected="true"
+                            thumb-width="110"
+                            thumb-height="90"
+                            defaultValue={39}
+                            onClick={SizeClick3}
                           >
-                            <div
-                              className={
-                                ClickSize
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-136-item-166"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="166"
-                              option-label="XS"
-                              aria-label="XS"
-                              defaultValue="1"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="XS"
-                              role="option"
-                              thumb-width="110"
-                              aria-selected="true"
-                              thumb-height="90"
-                              onClick={ClickSizeclothes}
-                            >
-                              <h3 onClick={Clicker}>XS</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize2
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-137-item-167"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="167"
-                              option-label="S"
-                              aria-label="S"
-                              value="2"
-                              option-tooltip-thumb=""
-                              option-tooltip-value="S"
-                              role="option"
-                              thumb-width="110"
-                              thumb-height="90"
-                              aria-selected="true"
-                              onClick={ClickSizeclothes2}
-                            >
-                              <h3 onClick={Clicker2}>S</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize3
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-138-item-168"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="168"
-                              option-label="M"
-                              aria-label="M"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="M"
-                              role="option"
-                              thumb-width="110"
-                              thumb-height="90"
-                              aria-selected="true"
-                              onClick={ClickSizeclothes3}
-                              defaultValue="3"
-                            >
-                              <h3 onClick={Clicker3}>M</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize4
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-138-item-168"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="168"
-                              option-label="L"
-                              aria-label="L"
-                              option-tooltip-thumb=""
-                              option-tooltip-value="L"
-                              role="option"
-                              thumb-width="110"
-                              thumb-height="90"
-                              aria-selected="true"
-                              defaultValue="4"
-                              onClick={ClickSizeclothes4}
-                            >
-                              <h3 onClick={Clicker4}>L</h3>
-                            </div>
+                            <h3 onClick={Clicker3}>39</h3>
+                          </div>
+                          <div
+                            className={
+                              ClickSize4
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-139-item-169"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="169"
+                            option-label="40"
+                            aria-label="40"
+                            aria-selected="true"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="40"
+                            role="option"
+                            thumb-width="110"
+                            defaultValue={40}
+                            thumb-height="90"
+                            onClick={SizeClick4}
+                          >
+                            <h3 onClick={Clicker4}>40</h3>
                           </div>
                         </div>
                       </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="product-add-from">
-                        <div className="fieldset">
-                          <div className="control">
-                            <input
-                              type="number"
-                              name="qty"
-                              id="qty"
-                              maxlength="12"
-                              defaultValue={Count}
-                              title="qty"
-                              className="input-text-qty"
-                            />
-                            <div className="qty-changer">
-                              <a className="qty-inc">
-                                <BsPlus className="plus" onClick={AddNumber} />
-                              </a>
-                              <a className="qty-dec" onClick={subtract}>
-                                <BsDash className="BsDash" />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="action">
-                            <button
-                              type="submit"
-                              title="Add to Cart"
-                              className="action-primary-tocart"
-                              id="add-tocart"
-                            >
-                              <BsBag className="bs-bag-modal" />
-                              <span onClick={ADDTOCARTPORTOWIDTH}>
-                                Add to Cart
-                              </span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1__2" />
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
                       <div className="fieldset">
-                        <div className="action22">
-                          <a
-                            target="_parent"
-                            href="#"
-                            title="Go To Product"
-                            className="action-primary2"
-                            id="product-gotoproduct"
-                          >
-                            <span>Go To Product</span>
-                          </a>
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxLength="12"
+                            Value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
                         </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                            onClick={OnclickGirlShouse}
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span>Add to Cart</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="fieldset">
+                      <div className="action2">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
-              </Modal>
-            </div>
-            <div>
-              <Modal
-                isOpen={leftSlidebar}
-                onAfterOpen={afterOpenModal}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-              >
-                <div className="mfp-content-9">
-                  <div className="bsx">
-                    <BsX className="Bsk" onClick={closeleftSlidebar} />
-                  </div>
-                  <div className="column-main">
-                    <section className="gallery-9">
-                      <div className="gallery__item-5">
-                        <input
-                          type="radio"
-                          id="img-2"
-                          checked
-                          name="gallery-9"
-                          className="gallery__selector"
-                        />
-                        <img
-                          for="img-2"
-                          className="gallery__img__ideapad"
-                          src={leftSlider}
-                          alt=""
-                        />
-                      </div>
-                    </section>
-                    <div className="product-main-info">
-                      <div className="page-title-wrapper">
-                        <h1 className="base-1" itemProp="name">
-                          porto left Sidebar
-                        </h1>
-                      </div>
-                      <div className="product-reviews-summary-madel">
-                        <span className="label">
-                          <form className="rating">
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="1"
-                              />
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="2"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="3"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="4"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="5"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                          </form>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
+              isOpen={glassmodal}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closeglassmodal} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery">
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-1"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={product205} alt="" />
+                      <label for="img-1" className="gallery__thumb">
+                        <img src={product2055} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={product48} alt="" />
+                      <label for="img-2" className="gallery__thumb">
+                        <img src={product488} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-3"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={product888} alt="" />
+                      <label for="img-3" className="gallery__thumb">
+                        <img src={product8888} alt="" />
+                      </label>
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base" itemProp="name">
+                        Glasses
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" defaultValue="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          ${priceGlasses}.00
                         </span>
                       </div>
-                      <hr className="align_hr" />
-                      <div className="product-info-price">
-                        <div
-                          className="price-box-final-price"
-                          data-role="priceBox"
-                        >
-                          <span
-                            id="product-price-3382"
-                            data-price-amount="101"
-                            data-price-type="finalPrice"
-                            className="price-wrapper "
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 42346423 </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
+                      <div className="fieldset">
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            Value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                            onClick={AddtocartGlasses}
                           >
-                            {" "}
-                            <span className="price">
-                              ${pricePortoSidebar}.00
+                            <BsBag className="bs-bag-modal" />
+                            <span>Add to Cart</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="fieldset">
+                      <div className="action2">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
+              isOpen={ideapadmodal}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closeIdeapadmodal} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery-9">
+                    <div className="gallery__item-5">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery-9"
+                        className="gallery__selector"
+                      />
+                      <img
+                        for="img-2"
+                        className="gallery__img__ideapad"
+                        src={ideapad}
+                        alt=""
+                      />{" "}
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base-1" itemProp="name">
+                        Ideapad
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" defaultValue="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          <span className="old-price-wrapper-09">$299.00</span>
+                          <span className="price-premier-09">
+                            ${priceIdeapad}.00
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada fames ac turpis egestas. Vestibulum tortor
+                        quam, feugiat vitae, ultricies eget, tempor sit amet,
+                        ante. Donec eu libero sit amet quam egestas semper.
+                        Aenean ultricies mi vitae est. Mauris placerat eleifend
+                        leo.
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 42346423 </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
+                      <div className="fieldset">
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="11"
+                            Value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                            onClick={Addtocartideapad}
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span>Add to Cart</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1__2" />
+                    <div className="fieldset">
+                      <div className="action22">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary2"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
+              isOpen={menCapmodal}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content-9">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closeMencap} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery-9">
+                    <div className="gallery__item-5">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery-9"
+                        className="gallery__selector"
+                      />
+                      <img
+                        for="img-2"
+                        className="gallery__img__ideapad"
+                        src={menCap3}
+                        alt=""
+                      />{" "}
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base-1" itemProp="name">
+                        Men Cap
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" defaultValue="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          ${priceMenCap}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada fames ac turpis egestas. Vestibulum tortor
+                        quam, feugiat vitae, ultricies eget, tempor sit amet,
+                        ante. Donec eu libero sit amet quam egestas semper.
+                        Aenean ultricies mi vitae est. Mauris placerat eleifend
+                        leo.
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 42346423 </div>
+                      </div>
+                      <div className="switch-attribute-size">
+                        <span id="option-label-size-137">Size : </span>
+                        <div
+                          className="switch-option-text"
+                          index="0"
+                          defaultValue="0"
+                          aria-invalid="true"
+                        >
+                          <div
+                            className={
+                              ClickSize
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-136-item-166"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="166"
+                            option-label="XS"
+                            aria-label="XS"
+                            defaultValue="1"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="XS"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            onClick={ClickSizeclothes}
+                          >
+                            <h3 onClick={Clicker}>XS</h3>
+                          </div>
+                          <div
+                            className={
+                              ClickSize2
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-137-item-167"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="167"
+                            option-label="S"
+                            aria-label="S"
+                            defaultValue="2"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="S"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            onClick={ClickSizeclothes2}
+                          >
+                            <h3 onClick={Clicker2}>S</h3>
+                          </div>
+                          <div
+                            className={
+                              ClickSize3
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-138-item-168"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="168"
+                            option-label="M"
+                            aria-label="M"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="M"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            defaultValue="3"
+                            onClick={ClickSizeclothes3}
+                          >
+                            <h3 onClick={Clicker3}>M</h3>
+                          </div>
+                          <div
+                            className={
+                              ClickSize4
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-138-item-168"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="168"
+                            option-label="L"
+                            aria-label="L"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="L"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            defaultValue="4"
+                            onClick={ClickSizeclothes4}
+                          >
+                            <h3 onClick={Clicker4}>L</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
+                      <div className="fieldset">
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            Value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span onClick={ADDTOCARTMENCAP}>Add to Cart</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1__2" />
+                    <div className="fieldset">
+                      <div className="action22">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary2"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
+              isOpen={MenSHose}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={clouseMenShouse} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery">
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-1"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={menshoes1} alt="" />
+                      <label for="img-1" className="gallery__thumb">
+                        <img src={menshoes1_1} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={menshoes2} alt="" />
+                      <label for="img-2" className="gallery__thumb">
+                        <img src={menshoes2_2} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-3"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={menshoes3} alt="" />
+                      <label for="img-3" className="gallery__thumb">
+                        <img src={menshoes3_3} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        checked
+                        id="img-4"
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={menshoes4} alt="" />
+                      <label for="img-4" className="gallery__thumb">
+                        <img src={menshoes4_4} alt="" />
+                      </label>
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base" itemProp="name">
+                        Men Shoes
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" defaultValue="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          <h4>${priceMenshouse}</h4>
+                        </span>
+                      </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non.
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 4234623 </div>
+                      </div>
+                      <div className="switch-attribute-size">
+                        <span id="option-label-size-137">Size : </span>
+                        <div
+                          className="switch-option-text"
+                          index="0"
+                          defaultValue="0"
+                          aria-invalid="true"
+                        >
+                          <div
+                            className={
+                              ClickSize
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-136-item-166"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="166"
+                            option-label="38"
+                            aria-label="38"
+                            defaultValue="1"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="38"
+                            role="option"
+                            thumb-width="110"
+                            aria-selected="true"
+                            thumb-height="90"
+                            onClick={SizeClick}
+                          >
+                            <h3 onClick={Clicker}>37</h3>
+                          </div>
+                          <div
+                            className={
+                              ClickSize2
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-137-item-167"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="167"
+                            option-label="39"
+                            aria-label="39"
+                            defaultValue="2"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="XS"
+                            aria-selected="true"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            onClick={SizeClick2}
+                          >
+                            <h3 onClick={Clicker2}>38</h3>
+                          </div>
+                          <div
+                            className={
+                              ClickSize3
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-138-item-168"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="168"
+                            option-label="40"
+                            aria-label="40"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="40"
+                            role="option"
+                            thumb-width="110"
+                            aria-selected="true"
+                            thumb-height="90"
+                            defaultValue="3"
+                            onClick={SizeClick3}
+                          >
+                            <h3 onClick={Clicker3}>39</h3>
+                          </div>
+                          <div
+                            className={
+                              ClickSize4
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-139-item-169"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="169"
+                            option-label="41"
+                            aria-label="41"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="41"
+                            role="option"
+                            thumb-width="110"
+                            aria-selected="true"
+                            defaultValue="4"
+                            thumb-height="90"
+                            onClick={SizeClick4}
+                          >
+                            <h3 onClick={Clicker4}>40</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
+                      <div className="fieldset">
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            Value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span onClick={OnclickMenShoes}>Add to Cart</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="fieldset">
+                      <div className="action2">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
+              isOpen={portoBoth}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content-dron">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closeportoboth} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery">
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-1"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={dron11} alt="" />
+                      <label for="img-1" className="gallery__thumb">
+                        <img src={dron111} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img className="gallery__img" src={dron2} alt="" />
+                      <label for="img-2" className="gallery__thumb">
+                        <img src={dron22} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-3"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img
+                        className="gallery__img"
+                        id="imges0933"
+                        src={dron33}
+                        alt=""
+                      />
+                      <label for="img-3" className="gallery__thumb">
+                        <img src={dron333} alt="" />
+                      </label>
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base" itemProp="name">
+                        Porto Both Sticky Info
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" defaultValue="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          ${priceStickyInfo}.00
+                        </span>
+                      </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 4234623 </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
+                      <div className="fieldset">
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            Value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                            onClick={ADDtocartPOrtoDron}
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span>Add to Cart</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="fieldset">
+                      <div className="action2">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
+              isOpen={ExtendedLayout}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closeExtendedLayout} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery">
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-1"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img
+                        className="gallery__img"
+                        src={shoesclassy11}
+                        alt=""
+                      />
+                      <label for="img-1" className="gallery__thumb">
+                        <img src={shoesclassy111} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img
+                        className="gallery__img"
+                        src={shoesclassy22}
+                        alt=""
+                      />
+                      <label for="img-2" className="gallery__thumb">
+                        <img src={shoesclassy222} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        id="img-3"
+                        checked
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img
+                        className="gallery__img"
+                        src={shoesclassy33}
+                        alt=""
+                      />
+                      3{" "}
+                      <label for="img-3" className="gallery__thumb">
+                        <img src={shoesclassy333} alt="" />
+                      </label>
+                    </div>
+                    <div className="gallery__item">
+                      <input
+                        type="radio"
+                        checked
+                        id="img-4"
+                        name="gallery"
+                        className="gallery__selector"
+                      />
+                      <img
+                        className="gallery__img"
+                        src={shoesclassy44}
+                        alt=""
+                      />
+                      <label for="img-4" className="gallery__thumb">
+                        <img src={shoesclassy444} alt="" />
+                      </label>
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base" itemProp="name">
+                        Porto Extended Layout
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" defaultValue="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          <h4>$ {priceExtandlayout}.00</h4>
+                        </span>
+                      </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 4234623 </div>
+                      </div>
+                      <div className="switch-attribute-size">
+                        <span id="option-label-size-137">Size : </span>
+                        <div
+                          className="switch-option-text"
+                          index="0"
+                          defaultValue="0"
+                          aria-invalid="true"
+                        >
+                          <div
+                            className={
+                              ClickSize
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-136-item-166"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="166"
+                            option-label="37"
+                            aria-label="37"
+                            defaultValue="1"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="37"
+                            role="option"
+                            aria-selected="true"
+                            thumb-width="110"
+                            thumb-height="90"
+                            onClick={SizeClick}
+                          >
+                            <h3 onClick={Clicker}>37</h3>
+                          </div>
+                          <div
+                            className={
+                              ClickSize2
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-137-item-167"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="167"
+                            option-label="38"
+                            aria-label="38"
+                            defaultValue="2"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="XS"
+                            role="option"
+                            thumb-width="110"
+                            aria-selected="true"
+                            thumb-height="90"
+                            onClick={SizeClick2}
+                          >
+                            <h3 onClick={Clicker2}>38</h3>
+                          </div>
+                          <div
+                            className={
+                              ClickSize3
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-138-item-168"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="168"
+                            option-label="39"
+                            aria-label="39"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="39"
+                            role="option"
+                            aria-selected="true"
+                            thumb-width="110"
+                            thumb-height="90"
+                            defaultValue="3"
+                            onClick={SizeClick3}
+                          >
+                            <h3 onClick={Clicker3}>39</h3>
+                          </div>
+                          <div
+                            className={
+                              ClickSize4
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-139-item-169"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="169"
+                            option-label="40"
+                            aria-label="40"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="40"
+                            aria-selected="true"
+                            role="option"
+                            thumb-width="110"
+                            defaultValue="4"
+                            thumb-height="90"
+                            onClick={SizeClick4}
+                          >
+                            <h3 onClick={Clicker4}>40</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
+                      <div className="fieldset">
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            Value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span onClick={PortoExtandlayout}>Add to Cart</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="fieldset">
+                      <div className="action2">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
+              isOpen={Portowidth}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content-9">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closePortowidth} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery-9">
+                    <div className="gallery__item-5">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery-9"
+                        className="gallery__selector"
+                      />
+                      <img
+                        for="img-2"
+                        className="gallery__img__ideapad"
+                        src={portofullwidth}
+                        alt=""
+                      />{" "}
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base-1" itemProp="name">
+                        Porto Full-Width
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" defaultValue="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          ${PricePortoFullWidth}.00
+                        </span>
+                      </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 42346423 </div>
+                      </div>
+                      <div className="switch-attribute-size">
+                        <span id="option-label-size-137">Size : </span>
+                        <div
+                          className="switch-option-text"
+                          index="0"
+                          defaultValue="0"
+                          aria-invalid="true"
+                        >
+                          <div
+                            className={
+                              ClickSize
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-136-item-166"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="166"
+                            option-label="XS"
+                            aria-label="XS"
+                            defaultValue="1"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="XS"
+                            role="option"
+                            thumb-width="110"
+                            aria-selected="true"
+                            thumb-height="90"
+                            onClick={ClickSizeclothes}
+                          >
+                            <h3 onClick={Clicker}>XS</h3>
+                          </div>
+                          <div
+                            className={
+                              ClickSize2
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-137-item-167"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="167"
+                            option-label="S"
+                            aria-label="S"
+                            value="2"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="S"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            aria-selected="true"
+                            onClick={ClickSizeclothes2}
+                          >
+                            <h3 onClick={Clicker2}>S</h3>
+                          </div>
+                          <div
+                            className={
+                              ClickSize3
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-138-item-168"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="168"
+                            option-label="M"
+                            aria-label="M"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="M"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            aria-selected="true"
+                            onClick={ClickSizeclothes3}
+                            defaultValue="3"
+                          >
+                            <h3 onClick={Clicker3}>M</h3>
+                          </div>
+                          <div
+                            className={
+                              ClickSize4
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-138-item-168"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="168"
+                            option-label="L"
+                            aria-label="L"
+                            option-tooltip-thumb=""
+                            option-tooltip-value="L"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            aria-selected="true"
+                            defaultValue="4"
+                            onClick={ClickSizeclothes4}
+                          >
+                            <h3 onClick={Clicker4}>L</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
+                      <div className="fieldset">
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            Value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span onClick={ADDTOCARTPORTOWIDTH}>
+                              Add to Cart
                             </span>
-                            <span className="old-price-wrapper">$299.00</span>
-                          </span>
+                          </button>
                         </div>
                       </div>
-                      <div className="product-attribute">
-                        <div className="value" itemProp="description">
-                          Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non. Duis aute irure
-                          dolor in reprehenderit in voluptate velit esse cillum
-                          dolore eu fugiat nulla pariatur.
-                        </div>
+                    </div>
+                    <hr className="align_center-hr_1__2" />
+                    <div className="fieldset">
+                      <div className="action22">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary2"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
                       </div>
-                      <div className="product-info-stock">
-                        <div className="stock-available">
-                          <span className="label">Availability : </span>
-                          <span className="stoker">In stock</span>
-                        </div>
-                        <div className="product-attribute-sku">
-                          <strong className="type"> SKU : </strong>
-                          <div className="value"> 42346423 </div>
-                        </div>
-                        <div className="switch-attribute-size">
-                          <span id="option-label-size-137">Size : </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
+              isOpen={leftSlidebar}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content-9">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closeleftSlidebar} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery-9">
+                    <div className="gallery__item-5">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery-9"
+                        className="gallery__selector"
+                      />
+                      <img
+                        for="img-2"
+                        className="gallery__img__ideapad"
+                        src={leftSlider}
+                        alt=""
+                      />
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base-1" itemProp="name">
+                        porto left Sidebar
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" defaultValue="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          {" "}
+                          <span className="price">${pricePortoSidebar}.00</span>
+                          <span className="old-price-wrapper">$299.00</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 42346423 </div>
+                      </div>
+                      <div className="switch-attribute-size">
+                        <span id="option-label-size-137">Size : </span>
+                        <div
+                          className="switch-option-text"
+                          index="0"
+                          defaultValue="0"
+                          aria-invalid="true"
+                        >
                           <div
-                            className="switch-option-text"
+                            className={
+                              ClickSize
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-136-item-166"
                             index="0"
-                            defaultValue="0"
-                            aria-invalid="true"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="166"
+                            option-label="XS"
+                            aria-label="XS"
+                            defaultValue="1"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="XS"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            aria-selected="true"
+                            onClick={ClickSizeclothes}
                           >
-                            <div
-                              className={
-                                ClickSize
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-136-item-166"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="166"
-                              option-label="XS"
-                              aria-label="XS"
-                              defaultValue="1"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="XS"
-                              role="option"
-                              thumb-width="110"
-                              thumb-height="90"
-                              aria-selected="true"
-                              onClick={ClickSizeclothes}
-                            >
-                              <h3 onClick={Clicker}>XS</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize2
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-137-item-167"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="167"
-                              option-label="S"
-                              aria-label="S"
-                              defaultValue="2"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="S"
-                              role="option"
-                              thumb-width="110"
-                              aria-selected="true"
-                              thumb-height="90"
-                              onClick={ClickSizeclothes2}
-                            >
-                              <h3 onClick={Clicker2}>S</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize3
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-138-item-168"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="168"
-                              option-label="M"
-                              aria-label="M"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="M"
-                              aria-selected="true"
-                              role="option"
-                              thumb-width="110"
-                              thumb-height="90"
-                              defaultValue="3"
-                              onClick={ClickSizeclothes3}
-                            >
-                              <h3 onClick={Clicker3}>M</h3>
-                            </div>
-                            <div
-                              className={
-                                ClickSize4
-                                  ? "swatch-option-text action"
-                                  : "swatch-option-text"
-                              }
-                              id="option-label-size-138-item-168"
-                              index="0"
-                              aria-checked="false"
-                              aria-describedby="option-label-size-137"
-                              tabindex="0"
-                              option-type="0"
-                              option-id="168"
-                              option-label="L"
-                              aria-label="L"
-                              option-tooltip-thumb=""
-                              option-tooltip-defaultValue="L"
-                              aria-selected="true"
-                              role="option"
-                              thumb-width="110"
-                              thumb-height="90"
-                              defaultValue="4"
-                              onClick={ClickSizeclothes4}
-                            >
-                              <h3 onClick={Clicker4}>L</h3>
-                            </div>
+                            <h3 onClick={Clicker}>XS</h3>
                           </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="product-add-from">
-                        <div className="fieldset">
-                          <div className="control">
-                            <input
-                              type="number"
-                              name="qty"
-                              id="qty"
-                              maxlength="12"
-                              defaultValue={Count}
-                              title="qty"
-                              className="input-text-qty"
-                            />
-                            <div className="qty-changer">
-                              <a className="qty-inc-1">
-                                <BsPlus className="plus" onClick={AddNumber} />
-                              </a>
-                              <a className="qty-dec-1" onClick={subtract}>
-                                <BsDash className="BsDash" />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="action">
-                            <button
-                              type="submit"
-                              title="Add to Cart"
-                              className="action-primary-tocart"
-                              id="add-tocart"
-                            >
-                              <BsBag className="bs-bag-modal" />
-                              <span onClick={ADDTOCARTPORTOLEFTSIDEBAR}>
-                                Add to Cart
-                              </span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1__2" />
-                      <div className="fieldset">
-                        <div className="action22">
-                          <a
-                            target="_parent"
-                            href="#"
-                            title="Go To Product"
-                            className="action-primary2"
-                            id="product-gotoproduct"
+                          <div
+                            className={
+                              ClickSize2
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-137-item-167"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="167"
+                            option-label="S"
+                            aria-label="S"
+                            defaultValue="2"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="S"
+                            role="option"
+                            thumb-width="110"
+                            aria-selected="true"
+                            thumb-height="90"
+                            onClick={ClickSizeclothes2}
                           >
-                            <span>Go To Product</span>
-                          </a>
+                            <h3 onClick={Clicker2}>S</h3>
+                          </div>
+                          <div
+                            className={
+                              ClickSize3
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-138-item-168"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="168"
+                            option-label="M"
+                            aria-label="M"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="M"
+                            aria-selected="true"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            defaultValue="3"
+                            onClick={ClickSizeclothes3}
+                          >
+                            <h3 onClick={Clicker3}>M</h3>
+                          </div>
+                          <div
+                            className={
+                              ClickSize4
+                                ? "swatch-option-text action"
+                                : "swatch-option-text"
+                            }
+                            id="option-label-size-138-item-168"
+                            index="0"
+                            aria-checked="false"
+                            aria-describedby="option-label-size-137"
+                            tabindex="0"
+                            option-type="0"
+                            option-id="168"
+                            option-label="L"
+                            aria-label="L"
+                            option-tooltip-thumb=""
+                            option-tooltip-defaultValue="L"
+                            aria-selected="true"
+                            role="option"
+                            thumb-width="110"
+                            thumb-height="90"
+                            defaultValue="4"
+                            onClick={ClickSizeclothes4}
+                          >
+                            <h3 onClick={Clicker4}>L</h3>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </Modal>
-            </div>
-            <div>
-              <Modal
-                isOpen={RightSidebar}
-                onAfterOpen={afterOpenModal}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-              >
-                <div className="mfp-content-9">
-                  <div className="bsx">
-                    <BsX className="Bsk" onClick={closeRightSidebar} />
-                  </div>
-                  <div className="column-main">
-                    <section className="gallery-9">
-                      <div className="gallery__item-5">
-                        <input
-                          type="radio"
-                          id="img-2"
-                          checked
-                          name="gallery-9"
-                          className="gallery__selector"
-                        />
-                        <img
-                          for="img-2"
-                          className="gallery__img__ideapad"
-                          src={suitcase}
-                          alt=""
-                        />{" "}
-                      </div>
-                    </section>
-                    <div className="product-main-info">
-                      <div className="page-title-wrapper">
-                        <h1 className="base-1" itemProp="name">
-                          Porto Right Sidebar
-                        </h1>
-                      </div>
-                      <div className="product-reviews-summary-madel">
-                        <span className="label">
-                          <form className="rating">
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="1"
-                              />
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="2"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="3"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="4"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="5"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                          </form>
-                        </span>
-                      </div>
-                      <hr className="align_hr" />
-                      <div className="product-info-price">
-                        <div
-                          className="price-box-final-price"
-                          data-role="priceBox"
-                        >
-                          <span
-                            id="product-price-3382"
-                            data-price-amount="101"
-                            data-price-type="finalPrice"
-                            className="price-wrapper "
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
+                      <div className="fieldset">
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            Value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc-1">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec-1" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
                           >
-                            {" "}
-                            <span className="price">
-                              ${priceRightsidebar}.00
+                            <BsBag className="bs-bag-modal" />
+                            <span onClick={ADDTOCARTPORTOLEFTSIDEBAR}>
+                              Add to Cart
                             </span>
-                            <span className="old-price-wrapper">$299.00</span>
-                          </span>
+                          </button>
                         </div>
                       </div>
-                      <div className="product-attribute">
-                        <div className="value" itemProp="description">
-                          Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non. Duis aute irure
-                          dolor in reprehenderit in voluptate velit esse cillum
-                          dolore eu fugiat nulla pariatur.
-                        </div>
-                      </div>
-                      <div className="product-info-stock">
-                        <div className="stock-available">
-                          <span className="label">Availability : </span>
-                          <span className="stoker">In stock</span>
-                        </div>
-                        <div className="product-attribute-sku">
-                          <strong className="type"> SKU : </strong>
-                          <div className="value"> 42346423 </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="product-add-from">
-                        <div className="fieldset">
-                          <div className="control">
-                            <input
-                              type="number"
-                              name="qty"
-                              id="qty"
-                              maxlength="12"
-                              defaultValue={Count}
-                              title="qty"
-                              className="input-text-qty"
-                            />
-                            <div className="qty-changer">
-                              <a className="qty-inc-1">
-                                <BsPlus className="plus" onClick={AddNumber} />
-                              </a>
-                              <a className="qty-dec-1" onClick={subtract}>
-                                <BsDash className="BsDash" />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="action">
-                            <button
-                              type="submit"
-                              title="Add to Cart"
-                              className="action-primary-tocart"
-                              id="add-tocart"
-                              onClick={ADDtocartPortoRightsidebar}
-                            >
-                              <BsBag className="bs-bag-modal" />
-                              <span>Add to Cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1__2" />
-                      <div className="fieldset">
-                        <div className="action22">
-                          <a
-                            target="_parent"
-                            href="#"
-                            title="Go To Product"
-                            className="action-primary2"
-                            id="product-gotoproduct"
-                          >
-                            <span>Go To Product</span>
-                          </a>
-                        </div>
+                    </div>
+                    <hr className="align_center-hr_1__2" />
+                    <div className="fieldset">
+                      <div className="action22">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary2"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
-              </Modal>
-            </div>
-            <div>
-              <Modal
-                isOpen={Transparentimage}
-                onAfterOpen={afterOpenModal}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-              >
-                <div className="mfp-content-9">
-                  <div className="bsx">
-                    <BsX className="Bsk" onClick={closeTransparentimage} />
-                  </div>
-                  <div className="column-main">
-                    <section className="gallery-9">
-                      <div className="gallery__item-5">
-                        <input
-                          type="radio"
-                          id="img-2"
-                          checked
-                          name="gallery-9"
-                          className="gallery__selector"
-                        />
-                        <img
-                          for="img-2"
-                          className="gallery__img__ideapad"
-                          src={transparentimages}
-                          alt=""
-                        />{" "}
-                      </div>
-                    </section>
-                    <div className="product-main-info">
-                      <div className="page-title-wrapper">
-                        <h1 className="base-1" itemProp="name">
-                          1 Porto Transparent Images
-                        </h1>
-                      </div>
-                      <div className="product-reviews-summary-madel">
-                        <span className="label">
-                          <form className="rating">
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="1"
-                              />
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="2"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="3"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="4"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="5"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                          </form>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
+              isOpen={RightSidebar}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content-9">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closeRightSidebar} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery-9">
+                    <div className="gallery__item-5">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery-9"
+                        className="gallery__selector"
+                      />
+                      <img
+                        for="img-2"
+                        className="gallery__img__ideapad"
+                        src={suitcase}
+                        alt=""
+                      />{" "}
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base-1" itemProp="name">
+                        Porto Right Sidebar
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" defaultValue="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          {" "}
+                          <span className="price">${priceRightsidebar}.00</span>
+                          <span className="old-price-wrapper">$299.00</span>
                         </span>
                       </div>
-                      <hr className="align_hr" />
-                      <div className="product-info-price">
-                        <div
-                          className="price-box-final-price"
-                          data-role="priceBox"
-                        >
-                          <span
-                            id="product-price-3382"
-                            data-price-amount="101"
-                            data-price-type="finalPrice"
-                            className="price-wrapper "
-                          >
-                            {" "}
-                            <span>${priceTransparent}.00</span>
-                          </span>
-                        </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.
                       </div>
-                      <div className="product-attribute">
-                        <div className="value" itemProp="description">
-                          Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non. Duis aute irure
-                          dolor in reprehenderit in voluptate velit esse cillum
-                          dolore eu fugiat nulla pariatur.
-                        </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
                       </div>
-                      <div className="product-info-stock">
-                        <div className="stock-available">
-                          <span className="label">Availability : </span>
-                          <span className="stoker">In stock</span>
-                        </div>
-                        <div className="product-attribute-sku">
-                          <strong className="type"> SKU : </strong>
-                          <div className="value"> 42346423 </div>
-                        </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 42346423 </div>
                       </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="product-add-from">
-                        <div className="fieldset">
-                          <div className="control">
-                            <input
-                              type="number"
-                              name="qty"
-                              id="qty"
-                              maxlength="12"
-                              defaultValue={Count}
-                              title="qty"
-                              className="input-text-qty"
-                            />
-                            <div className="qty-changer">
-                              <a className="qty-inc-1">
-                                <BsPlus className="plus" onClick={AddNumber} />
-                              </a>
-                              <a className="qty-dec-1" onClick={subtract}>
-                                <BsDash className="BsDash" />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="action">
-                            <button
-                              type="submit"
-                              title="Add to Cart"
-                              className="action-primary-tocart"
-                              id="add-tocart"
-                              onClick={ADDtocarttransparentImages}
-                            >
-                              <BsBag className="bs-bag-modal" />
-                              <span>Add to Cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1__2" />
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
                       <div className="fieldset">
-                        <div className="action22">
-                          <a
-                            target="_parent"
-                            href="#"
-                            title="Go To Product"
-                            className="action-primary2"
-                            id="product-gotoproduct"
-                          >
-                            <span>Go To Product</span>
-                          </a>
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            Value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc-1">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec-1" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
                         </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                            onClick={ADDtocartPortoRightsidebar}
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span>Add to Cart</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1__2" />
+                    <div className="fieldset">
+                      <div className="action22">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary2"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
-              </Modal>
-            </div>
-            <div>
-              <Modal
-                isOpen={SportsWatch}
-                onAfterOpen={afterOpenModal}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-              >
-                <div className="mfp-content-9">
-                  <div className="bsx">
-                    <BsX className="Bsk" onClick={closeSportsWatch} />
-                  </div>
-                  <div className="column-main">
-                    <section className="gallery-9">
-                      <div className="gallery__item-5">
-                        <input
-                          type="radio"
-                          id="img-2"
-                          checked
-                          name="gallery-9"
-                          className="gallery__selector"
-                        />
-                        <img
-                          for="img-2"
-                          className="gallery__img__ideapad"
-                          src={watch}
-                          alt=""
-                        />{" "}
-                      </div>
-                    </section>
-                    <div className="product-main-info">
-                      <div className="page-title-wrapper">
-                        <h1 className="base-1" itemProp="name">
-                          Sports Wach
-                        </h1>
-                      </div>
-                      <div className="product-reviews-summary-madel">
-                        <span className="label">
-                          <form className="rating">
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="1"
-                              />
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="2"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="3"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="4"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                            <label>
-                              <input
-                                type="radio"
-                                name="stars"
-                                defaultValue="5"
-                              />
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                              <span className="icon">★</span>
-                            </label>
-                          </form>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
+              isOpen={Transparentimage}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content-9">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closeTransparentimage} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery-9">
+                    <div className="gallery__item-5">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery-9"
+                        className="gallery__selector"
+                      />
+                      <img
+                        for="img-2"
+                        className="gallery__img__ideapad"
+                        src={transparentimages}
+                        alt=""
+                      />{" "}
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base-1" itemProp="name">
+                        1 Porto Transparent Images
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" defaultValue="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          {" "}
+                          <span>${priceTransparent}.00</span>
                         </span>
                       </div>
-                      <hr className="align_hr" />
-                      <div className="product-info-price">
-                        <div
-                          className="price-box-final-price"
-                          data-role="priceBox"
-                        >
-                          <span
-                            id="product-price-3382"
-                            data-price-amount="101"
-                            data-price-type="finalPrice"
-                            className="price-wrapper "
-                          >
-                            {" "}
-                            <span className="price">$259.00</span>
-                            <span className="old-price-wrapper">
-                              ${priceSportwatch}.00
-                            </span>
-                          </span>
-                        </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.
                       </div>
-                      <div className="product-attribute">
-                        <div className="value" itemProp="description">
-                          Pellentesque habitant morbi tristique senectus et
-                          netus et malesuada fames ac turpis egestas. Vestibulum
-                          tortor quam, feugiat vitae, ultricies eget, tempor sit
-                          amet, ante. Donec eu libero sit amet quam egestas
-                          semper. Aenean ultricies mi vitae est. Mauris placerat
-                          eleifend leo.
-                        </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
                       </div>
-                      <div className="product-info-stock">
-                        <div className="stock-available">
-                          <span className="label">Availability : </span>
-                          <span className="stoker">In stock</span>
-                        </div>
-                        <div className="product-attribute-sku">
-                          <strong className="type"> SKU : </strong>
-                          <div className="value"> 42346423 </div>
-                        </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 42346423 </div>
                       </div>
-                      <hr className="align_center-hr_1" />
-                      <div className="product-add-from">
-                        <div className="fieldset">
-                          <div className="control">
-                            <input
-                              type="number"
-                              name="qty"
-                              id="qty"
-                              maxlength="12"
-                              defaultValue={Count}
-                              title="qty"
-                              className="input-text-qty"
-                            />
-                            <div className="qty-changer">
-                              <a className="qty-inc-1">
-                                <BsPlus className="plus" onClick={AddNumber} />
-                              </a>
-                              <a className="qty-dec-1" onClick={subtract}>
-                                <BsDash className="BsDash" />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="action">
-                            <button
-                              type="submit"
-                              title="Add to Cart"
-                              className="action-primary-tocart"
-                              id="add-tocart"
-                              onClick={ADDtocartSportWatch}
-                            >
-                              <BsBag className="bs-bag-modal" />
-                              <span>Add to Cart</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="align_center-hr_1__2" />
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
                       <div className="fieldset">
-                        <div className="action22">
-                          <a
-                            target="_parent"
-                            href="#"
-                            title="Go To Product"
-                            className="action-primary2"
-                            id="product-gotoproduct"
-                          >
-                            <span>Go To Product</span>
-                          </a>
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            Value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc-1">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec-1" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
                         </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                            onClick={ADDtocarttransparentImages}
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span>Add to Cart</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1__2" />
+                    <div className="fieldset">
+                      <div className="action22">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary2"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
-              </Modal>
-            </div>
-          </basketContext.Provider>
+              </div>
+            </Modal>
+          </div>
+          <div>
+            <Modal
+              isOpen={SportsWatch}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <div className="mfp-content-9">
+                <div className="bsx">
+                  <BsX className="Bsk" onClick={closeSportsWatch} />
+                </div>
+                <div className="column-main">
+                  <section className="gallery-9">
+                    <div className="gallery__item-5">
+                      <input
+                        type="radio"
+                        id="img-2"
+                        checked
+                        name="gallery-9"
+                        className="gallery__selector"
+                      />
+                      <img
+                        for="img-2"
+                        className="gallery__img__ideapad"
+                        src={watch}
+                        alt=""
+                      />{" "}
+                    </div>
+                  </section>
+                  <div className="product-main-info">
+                    <div className="page-title-wrapper">
+                      <h1 className="base-1" itemProp="name">
+                        Sports Wach
+                      </h1>
+                    </div>
+                    <div className="product-reviews-summary-madel">
+                      <span className="label">
+                        <form className="rating">
+                          <label>
+                            <input type="radio" name="stars" defaultValue="1" />
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="2" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="3" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="4" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="stars" defaultValue="5" />
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                            <span className="icon">★</span>
+                          </label>
+                        </form>
+                      </span>
+                    </div>
+                    <hr className="align_hr" />
+                    <div className="product-info-price">
+                      <div
+                        className="price-box-final-price"
+                        data-role="priceBox"
+                      >
+                        <span
+                          id="product-price-3382"
+                          data-price-amount="101"
+                          data-price-type="finalPrice"
+                          className="price-wrapper "
+                        >
+                          {" "}
+                          <span className="price">$259.00</span>
+                          <span className="old-price-wrapper">
+                            ${priceSportwatch}.00
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                    <div className="product-attribute">
+                      <div className="value" itemProp="description">
+                        Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada fames ac turpis egestas. Vestibulum tortor
+                        quam, feugiat vitae, ultricies eget, tempor sit amet,
+                        ante. Donec eu libero sit amet quam egestas semper.
+                        Aenean ultricies mi vitae est. Mauris placerat eleifend
+                        leo.
+                      </div>
+                    </div>
+                    <div className="product-info-stock">
+                      <div className="stock-available">
+                        <span className="label">Availability : </span>
+                        <span className="stoker">In stock</span>
+                      </div>
+                      <div className="product-attribute-sku">
+                        <strong className="type"> SKU : </strong>
+                        <div className="value"> 42346423 </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1" />
+                    <div className="product-add-from">
+                      <div className="fieldset">
+                        <div className="control">
+                          <input
+                            type="number"
+                            name="qty"
+                            id="qty"
+                            maxlength="12"
+                            Value={Count}
+                            title="qty"
+                            className="input-text-qty"
+                          />
+                          <div className="qty-changer">
+                            <a className="qty-inc-1">
+                              <BsPlus className="plus" onClick={AddNumber} />
+                            </a>
+                            <a className="qty-dec-1" onClick={subtract}>
+                              <BsDash className="BsDash" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="action">
+                          <button
+                            type="submit"
+                            title="Add to Cart"
+                            className="action-primary-tocart"
+                            id="add-tocart"
+                            onClick={ADDtocartSportWatch}
+                          >
+                            <BsBag className="bs-bag-modal" />
+                            <span>Add to Cart</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr className="align_center-hr_1__2" />
+                    <div className="fieldset">
+                      <div className="action22">
+                        <a
+                          target="_parent"
+                          href="#"
+                          title="Go To Product"
+                          className="action-primary2"
+                          id="product-gotoproduct"
+                        >
+                          <span>Go To Product</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Modal>
+          </div>
         </div>
       </div>
     </div>
