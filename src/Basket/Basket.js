@@ -237,7 +237,9 @@ function basket() {
         </nav>
       </div>
       <div className="section">
-        <section></section>
+        <div className="page-title-wrapper-Cart">
+          <h1>Shopping Cart :</h1>
+        </div>
       </div>
       <div className="fother-Section-principal-basket">
         <div className="porto-separator-taller-tow">
