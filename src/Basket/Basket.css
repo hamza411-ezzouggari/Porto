@@ -1,5 +1,6 @@
 .Navbar-general-2 {
   margin: 2vh 0px 0px 0px;
+  position: relative;
 }
 .Basket {
   position: absolute;
@@ -18,6 +19,7 @@
 .fother-Section-principal-basket {
   width: 100%;
 }
+
 .fother-Section-principal-basket {
   display: flex;
   flex-direction: column !important;
@@ -36,4 +38,11 @@
   margin-block-end: 0.67em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+.cart-item-animation {
+  position: relative;
+  margin: 2rem 0px 0px 0px;
+  height: 100%;
+  width: 94%;
+  background-color: red;
 }

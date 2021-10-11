@@ -142,7 +142,7 @@ function Home() {
   const [priceSportwatch, setpriceSportwatch] = useState(259.0);
   const [Basket, setBasket] = useState(0);
 
-  const { onAddToCart } = useContext(appContext);
+  const { onAddToCart, cart } = useContext(appContext);
 
   function ClickSizeclothes(e) {
     e.preventDefault();
@@ -448,6 +448,7 @@ function Home() {
       [Sizeclothes, Sizeclothes2, Sizeclothes3, Sizeclothes4],
       proceGirlShouse
     );
+    console.log(onAddToCart);
   }
 
   function AddtocartGlasses(e) {

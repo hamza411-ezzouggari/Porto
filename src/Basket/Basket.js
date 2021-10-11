@@ -244,6 +244,11 @@ function Basket() {
           <h1>Shopping Cart :</h1>
         </div>
       </div>
+      <div className="cart-item-animation">
+        {cart.map((item) => {
+          return <div>{item.cart}</div>;
+        })}
+      </div>
       <div className="fother-Section-principal-basket">
         <div className="porto-separator-taller-tow">
           <hr className="align_center-hr-basket" />
