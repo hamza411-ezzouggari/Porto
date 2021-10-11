@@ -4,20 +4,25 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import React, { useState, useContext } from "react";
 import Basket from "./Basket/Basket";
 import AppContext from "./appContext";
+
 function App() {
-  const { Cart, setCart } = useState([]);
+  const [cart, setCart] = useState([]);
+
   const onAddToCart = (item) => {
-    var newCart = Cart.concat(Cart);
-    setCart = newCart;
+    var newCart = cart.map((item) => item);
+    newCart.push(item);
+    setCart(newCart);
   };
+
   const onRemoveItemFromCart = (item) => {
-    var newCart = Cart.filter((element) => {
+    var newCart = cart.filter((element) => {
       return element != item;
     });
     setCart(newCart);
   };
+
   return (
-    <AppContext.Provider value={{ Cart, onRemoveItemFromCart, onAddToCart }}>
+    <AppContext.Provider value={{ cart, onRemoveItemFromCart, onAddToCart }}>
       <Router>
         <Route path="/" exact component={Home} />
         <Route path="/Basket" component={Basket} />

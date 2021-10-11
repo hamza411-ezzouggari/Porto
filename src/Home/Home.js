@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, createContext } from "react";
 import "./Home.css";
 import logo from "./image Navbar/logo_ecomblack_lg.png";
 import loope from "./image Navbar/loupe.png";
@@ -82,7 +82,7 @@ import watch from "./sport watch/product-21.jpeg";
 import { BsX } from "react-icons/bs";
 import { BsPlus } from "react-icons/bs";
 import { BsDash } from "react-icons/bs";
-import { AppContext } from "../App";
+import appContext from "../appContext";
 const customStyles = {
   content: {
     top: "50%",
@@ -141,7 +141,8 @@ function Home() {
   const [priceTransparent, setpriceTransparent] = useState(49.0);
   const [priceSportwatch, setpriceSportwatch] = useState(259.0);
   const [Basket, setBasket] = useState(0);
-  const [basketContext, setbasketContext] = useState([]);
+
+  const { onAddToCart } = useContext(appContext);
 
   function ClickSizeclothes(e) {
     e.preventDefault();
@@ -439,13 +440,14 @@ function Home() {
       setBasket(Basket - 1);
     }
   }
-  function useBasket() {
-    return useContext(basketContext);
-  }
   function OnclickGirlShouse(e) {
     e.preventDefault();
-    setBasket([Count, "hamza", [Size, Size2, Size3, Size4], proceGirlShouse]);
-    console.log(setBasket);
+    onAddToCart(
+      Count,
+      priceGlasses,
+      [Sizeclothes, Sizeclothes2, Sizeclothes3, Sizeclothes4],
+      proceGirlShouse
+    );
   }
 
   function AddtocartGlasses(e) {

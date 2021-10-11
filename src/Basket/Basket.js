@@ -11,7 +11,11 @@ import { ImTwitter } from "react-icons/im";
 import { ImInstagram } from "react-icons/im";
 import "./Basket.css";
 import "../Home/Home.css";
-function basket() {
+import appContext from "../appContext";
+
+function Basket() {
+  const { Cart, onRemoveItemFromCart } = useContext(appContext);
+
   return (
     <div className="Basket">
       <div className="Navbar-general-2">
@@ -402,4 +406,4 @@ function basket() {
     </div>
   );
 }
-export default basket;
+export default Basket;
