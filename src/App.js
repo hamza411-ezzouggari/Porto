@@ -12,14 +12,15 @@ function App() {
     var newCart = cart.map((item) => item);
     newCart.push(item);
     setCart(newCart);
+    console.log(cart);
   };
 
-  const onRemoveItemFromCart = (item) => {
+  function onRemoveItemFromCart(item) {
     var newCart = cart.filter((element) => {
       return element != item;
     });
     setCart(newCart);
-  };
+  }
 
   return (
     <AppContext.Provider value={{ cart, onRemoveItemFromCart, onAddToCart }}>

@@ -442,13 +442,12 @@ function Home() {
   }
   function OnclickGirlShouse(e) {
     e.preventDefault();
-    onAddToCart(
+    onAddToCart([
       Count,
       priceGlasses,
       [Sizeclothes, Sizeclothes2, Sizeclothes3, Sizeclothes4],
-      proceGirlShouse
-    );
-    console.log(onAddToCart);
+      proceGirlShouse,
+    ]);
   }
 
   function AddtocartGlasses(e) {
