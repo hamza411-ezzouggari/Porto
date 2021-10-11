@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import logo from "../Home/image Navbar/logo_ecomblack_lg.png";
 import shop1 from "../Home/image Navbar/shop1_megamenu.jpg";
 import banner from "../Home/image Navbar/menu-banner.jpg";
