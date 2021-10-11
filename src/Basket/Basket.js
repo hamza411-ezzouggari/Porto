@@ -14,8 +14,7 @@ import "../Home/Home.css";
 import appContext from "../appContext";
 
 function Basket() {
-  const { Cart, onRemoveItemFromCart } = useContext(appContext);
-
+  const { cart, onRemoveItemFromCart, onAddToCart } = useContext(appContext);
   return (
     <div className="Basket">
       <div className="Navbar-general-2">
