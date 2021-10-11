@@ -514,6 +514,10 @@ function Home() {
     e.preventDefault();
     console.log(Count);
   }
+  function handelBasket(e) {
+    e.preventDefault();
+    window.location.href = "../Basket/Basket.js";
+  }
   return (
     <div className="content-hoome">
       <div className={Navbar ? "Navbar-general active" : "Navbar-general"}>
@@ -731,7 +735,7 @@ function Home() {
                 <img src={user} alt="images" />
               </li>
               <li className="img-user">
-                <img src={shopping} alt="images" />
+                <img onClick={handelBasket} src={shopping} alt="images" />
                 <span className="lengthofbasket">{Basket}</span>
               </li>
             </div>
