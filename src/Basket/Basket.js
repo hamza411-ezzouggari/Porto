@@ -246,7 +246,7 @@ function Basket() {
       </div>
       <div className="cart-item-animation">
         {cart.map((item) => {
-          return <div>{item[0]}</div>;
+          return <div>{item[3]}</div>;
         })}
       </div>
       <div className="fother-Section-principal-basket">
